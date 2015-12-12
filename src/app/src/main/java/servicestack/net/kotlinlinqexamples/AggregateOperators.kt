@@ -17,7 +17,7 @@ class AggregateOperators {
     fun linq74() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        val oddNumbers = numbers.count() { it % 2 == 1 }
+        val oddNumbers = numbers.count { it % 2 == 1 }
 
         Log.d("There are $oddNumbers odd numbers in the list.")
     }
