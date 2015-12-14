@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
         DataKt.init(getResources());
 
         Log.i("101 Kotlin LINQ Examples");
-        Log.i("======================\n");
+        Log.i("========================\n");
         Run(new Restrictions());
         Run(new Projections());
         Run(new Partitioning());

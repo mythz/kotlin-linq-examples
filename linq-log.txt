@@ -1,0 +1,4339 @@
+101 Kotlin LINQ Examples
+========================
+
+
+# LINQ1
+Numbers < 5:
+4
+1
+3
+2
+0
+
+# LINQ2
+Sold out products:
+Chef Anton's Gumbo Mix is sold out!
+Alice Mutton is sold out!
+Thüringer Rostbratwurst is sold out!
+Gorgonzola Telino is sold out!
+Perth Pasties is sold out!
+
+# LINQ3
+In-stock products that cost more than 3.00:
+Chai is in stock and costs more than 3.00.
+Chang is in stock and costs more than 3.00.
+Aniseed Syrup is in stock and costs more than 3.00.
+Chef Anton's Cajun Seasoning is in stock and costs more than 3.00.
+Grandma's Boysenberry Spread is in stock and costs more than 3.00.
+Uncle Bob's Organic Dried Pears is in stock and costs more than 3.00.
+Northwoods Cranberry Sauce is in stock and costs more than 3.00.
+Mishi Kobe Niku is in stock and costs more than 3.00.
+Ikura is in stock and costs more than 3.00.
+Queso Cabrales is in stock and costs more than 3.00.
+Queso Manchego La Pastora is in stock and costs more than 3.00.
+Konbu is in stock and costs more than 3.00.
+Tofu is in stock and costs more than 3.00.
+Genen Shouyu is in stock and costs more than 3.00.
+Pavlova is in stock and costs more than 3.00.
+Carnarvon Tigers is in stock and costs more than 3.00.
+Teatime Chocolate Biscuits is in stock and costs more than 3.00.
+Sir Rodney's Marmalade is in stock and costs more than 3.00.
+Sir Rodney's Scones is in stock and costs more than 3.00.
+Gustaf's Knäckebröd is in stock and costs more than 3.00.
+Tunnbröd is in stock and costs more than 3.00.
+Guaraná Fantástica is in stock and costs more than 3.00.
+NuNuCa Nuß-Nougat-Creme is in stock and costs more than 3.00.
+Gumbär Gummibärchen is in stock and costs more than 3.00.
+Schoggi Schokolade is in stock and costs more than 3.00.
+Rössle Sauerkraut is in stock and costs more than 3.00.
+Nord-Ost Matjeshering is in stock and costs more than 3.00.
+Mascarpone Fabioli is in stock and costs more than 3.00.
+Sasquatch Ale is in stock and costs more than 3.00.
+Steeleye Stout is in stock and costs more than 3.00.
+Inlagd Sill is in stock and costs more than 3.00.
+Gravad lax is in stock and costs more than 3.00.
+Côte de Blaye is in stock and costs more than 3.00.
+Chartreuse verte is in stock and costs more than 3.00.
+Boston Crab Meat is in stock and costs more than 3.00.
+Jack's New England Clam Chowder is in stock and costs more than 3.00.
+Singaporean Hokkien Fried Mee is in stock and costs more than 3.00.
+Ipoh Coffee is in stock and costs more than 3.00.
+Gula Malacca is in stock and costs more than 3.00.
+Rogede sild is in stock and costs more than 3.00.
+Spegesild is in stock and costs more than 3.00.
+Zaanse koeken is in stock and costs more than 3.00.
+Chocolade is in stock and costs more than 3.00.
+Maxilaku is in stock and costs more than 3.00.
+Valkoinen suklaa is in stock and costs more than 3.00.
+Manjimup Dried Apples is in stock and costs more than 3.00.
+Filo Mix is in stock and costs more than 3.00.
+Tourtière is in stock and costs more than 3.00.
+Pâté chinois is in stock and costs more than 3.00.
+Gnocchi di nonna Alice is in stock and costs more than 3.00.
+Ravioli Angelo is in stock and costs more than 3.00.
+Escargots de Bourgogne is in stock and costs more than 3.00.
+Raclette Courdavault is in stock and costs more than 3.00.
+Camembert Pierrot is in stock and costs more than 3.00.
+Sirop d'érable is in stock and costs more than 3.00.
+Tarte au sucre is in stock and costs more than 3.00.
+Vegie-spread is in stock and costs more than 3.00.
+Wimmers gute Semmelknödel is in stock and costs more than 3.00.
+Louisiana Fiery Hot Pepper Sauce is in stock and costs more than 3.00.
+Louisiana Hot Spiced Okra is in stock and costs more than 3.00.
+Laughing Lumberjack Lager is in stock and costs more than 3.00.
+Scottish Longbreads is in stock and costs more than 3.00.
+Gudbrandsdalsost is in stock and costs more than 3.00.
+Outback Lager is in stock and costs more than 3.00.
+Flotemysost is in stock and costs more than 3.00.
+Mozzarella di Giovanni is in stock and costs more than 3.00.
+Röd Kaviar is in stock and costs more than 3.00.
+Longlife Tofu is in stock and costs more than 3.00.
+Rhönbräu Klosterbier is in stock and costs more than 3.00.
+Lakkalikööri is in stock and costs more than 3.00.
+Original Frankfurter grüne Soße is in stock and costs more than 3.00.
+
+# LINQ4
+Customers from Washington and their orders:
+Customer LAZYK Lazy K Kountry Store
+  Order 10482: 1997/03/21
+  Order 10545: 1997/05/22
+Customer TRAIH Trail's Head Gourmet Provisioners
+  Order 10574: 1997/06/19
+  Order 10577: 1997/06/23
+  Order 10822: 1998/01/08
+Customer WHITC White Clover Markets
+  Order 10269: 1996/07/31
+  Order 10344: 1996/11/01
+  Order 10469: 1997/03/10
+  Order 10483: 1997/03/24
+  Order 10504: 1997/04/11
+  Order 10596: 1997/07/11
+  Order 10693: 1997/10/06
+  Order 10696: 1997/10/08
+  Order 10723: 1997/10/30
+  Order 10740: 1997/11/13
+  Order 10861: 1998/01/30
+  Order 10904: 1998/02/24
+  Order 11032: 1998/04/17
+  Order 11066: 1998/05/01
+
+# LINQ5
+Short digits:
+The word five is shorter than its value.
+The word six is shorter than its value.
+The word seven is shorter than its value.
+The word eight is shorter than its value.
+The word nine is shorter than its value.
+
+# LINQ06
+Numbers + 1:
+6
+5
+2
+4
+10
+9
+7
+8
+3
+1
+
+# LINQ07
+Product Names:
+Chai
+Chang
+Aniseed Syrup
+Chef Anton's Cajun Seasoning
+Chef Anton's Gumbo Mix
+Grandma's Boysenberry Spread
+Uncle Bob's Organic Dried Pears
+Northwoods Cranberry Sauce
+Mishi Kobe Niku
+Ikura
+Queso Cabrales
+Queso Manchego La Pastora
+Konbu
+Tofu
+Genen Shouyu
+Pavlova
+Alice Mutton
+Carnarvon Tigers
+Teatime Chocolate Biscuits
+Sir Rodney's Marmalade
+Sir Rodney's Scones
+Gustaf's Knäckebröd
+Tunnbröd
+Guaraná Fantástica
+NuNuCa Nuß-Nougat-Creme
+Gumbär Gummibärchen
+Schoggi Schokolade
+Rössle Sauerkraut
+Thüringer Rostbratwurst
+Nord-Ost Matjeshering
+Gorgonzola Telino
+Mascarpone Fabioli
+Geitost
+Sasquatch Ale
+Steeleye Stout
+Inlagd Sill
+Gravad lax
+Côte de Blaye
+Chartreuse verte
+Boston Crab Meat
+Jack's New England Clam Chowder
+Singaporean Hokkien Fried Mee
+Ipoh Coffee
+Gula Malacca
+Rogede sild
+Spegesild
+Zaanse koeken
+Chocolade
+Maxilaku
+Valkoinen suklaa
+Manjimup Dried Apples
+Filo Mix
+Perth Pasties
+Tourtière
+Pâté chinois
+Gnocchi di nonna Alice
+Ravioli Angelo
+Escargots de Bourgogne
+Raclette Courdavault
+Camembert Pierrot
+Sirop d'érable
+Tarte au sucre
+Vegie-spread
+Wimmers gute Semmelknödel
+Louisiana Fiery Hot Pepper Sauce
+Louisiana Hot Spiced Okra
+Laughing Lumberjack Lager
+Scottish Longbreads
+Gudbrandsdalsost
+Outback Lager
+Flotemysost
+Mozzarella di Giovanni
+Röd Kaviar
+Longlife Tofu
+Rhönbräu Klosterbier
+Lakkalikööri
+Original Frankfurter grüne Soße
+
+# LINQ08
+Number strings:
+five
+four
+one
+three
+nine
+eight
+six
+seven
+two
+zero
+
+# LINQ09
+Uppercase: APPLE, Lowercase: apple
+Uppercase: BLUEBERRY, Lowercase: blueberry
+Uppercase: CHERRY, Lowercase: cherry
+
+# LINQ10
+The digit five is odd.
+The digit four is even.
+The digit one is odd.
+The digit three is odd.
+The digit nine is odd.
+The digit eight is even.
+The digit six is even.
+The digit seven is odd.
+The digit two is even.
+The digit zero is even.
+
+# LINQ11
+Product Info:
+Chai is in the category Beverages and costs 18.0 per unit.
+Chang is in the category Beverages and costs 19.0 per unit.
+Aniseed Syrup is in the category Condiments and costs 10.0 per unit.
+Chef Anton's Cajun Seasoning is in the category Condiments and costs 22.0 per unit.
+Chef Anton's Gumbo Mix is in the category Condiments and costs 21.35 per unit.
+Grandma's Boysenberry Spread is in the category Condiments and costs 25.0 per unit.
+Uncle Bob's Organic Dried Pears is in the category Produce and costs 30.0 per unit.
+Northwoods Cranberry Sauce is in the category Condiments and costs 40.0 per unit.
+Mishi Kobe Niku is in the category Meat/Poultry and costs 97.0 per unit.
+Ikura is in the category Seafood and costs 31.0 per unit.
+Queso Cabrales is in the category Dairy Products and costs 21.0 per unit.
+Queso Manchego La Pastora is in the category Dairy Products and costs 38.0 per unit.
+Konbu is in the category Seafood and costs 6.0 per unit.
+Tofu is in the category Produce and costs 23.25 per unit.
+Genen Shouyu is in the category Condiments and costs 15.5 per unit.
+Pavlova is in the category Confections and costs 17.45 per unit.
+Alice Mutton is in the category Meat/Poultry and costs 39.0 per unit.
+Carnarvon Tigers is in the category Seafood and costs 62.5 per unit.
+Teatime Chocolate Biscuits is in the category Confections and costs 9.2 per unit.
+Sir Rodney's Marmalade is in the category Confections and costs 81.0 per unit.
+Sir Rodney's Scones is in the category Confections and costs 10.0 per unit.
+Gustaf's Knäckebröd is in the category Grains/Cereals and costs 21.0 per unit.
+Tunnbröd is in the category Grains/Cereals and costs 9.0 per unit.
+Guaraná Fantástica is in the category Beverages and costs 4.5 per unit.
+NuNuCa Nuß-Nougat-Creme is in the category Confections and costs 14.0 per unit.
+Gumbär Gummibärchen is in the category Confections and costs 31.23 per unit.
+Schoggi Schokolade is in the category Confections and costs 43.9 per unit.
+Rössle Sauerkraut is in the category Produce and costs 45.6 per unit.
+Thüringer Rostbratwurst is in the category Meat/Poultry and costs 123.79 per unit.
+Nord-Ost Matjeshering is in the category Seafood and costs 25.89 per unit.
+Gorgonzola Telino is in the category Dairy Products and costs 12.5 per unit.
+Mascarpone Fabioli is in the category Dairy Products and costs 32.0 per unit.
+Geitost is in the category Dairy Products and costs 2.5 per unit.
+Sasquatch Ale is in the category Beverages and costs 14.0 per unit.
+Steeleye Stout is in the category Beverages and costs 18.0 per unit.
+Inlagd Sill is in the category Seafood and costs 19.0 per unit.
+Gravad lax is in the category Seafood and costs 26.0 per unit.
+Côte de Blaye is in the category Beverages and costs 263.5 per unit.
+Chartreuse verte is in the category Beverages and costs 18.0 per unit.
+Boston Crab Meat is in the category Seafood and costs 18.4 per unit.
+Jack's New England Clam Chowder is in the category Seafood and costs 9.65 per unit.
+Singaporean Hokkien Fried Mee is in the category Grains/Cereals and costs 14.0 per unit.
+Ipoh Coffee is in the category Beverages and costs 46.0 per unit.
+Gula Malacca is in the category Condiments and costs 19.45 per unit.
+Rogede sild is in the category Seafood and costs 9.5 per unit.
+Spegesild is in the category Seafood and costs 12.0 per unit.
+Zaanse koeken is in the category Confections and costs 9.5 per unit.
+Chocolade is in the category Confections and costs 12.75 per unit.
+Maxilaku is in the category Confections and costs 20.0 per unit.
+Valkoinen suklaa is in the category Confections and costs 16.25 per unit.
+Manjimup Dried Apples is in the category Produce and costs 53.0 per unit.
+Filo Mix is in the category Grains/Cereals and costs 7.0 per unit.
+Perth Pasties is in the category Meat/Poultry and costs 32.8 per unit.
+Tourtière is in the category Meat/Poultry and costs 7.45 per unit.
+Pâté chinois is in the category Meat/Poultry and costs 24.0 per unit.
+Gnocchi di nonna Alice is in the category Grains/Cereals and costs 38.0 per unit.
+Ravioli Angelo is in the category Grains/Cereals and costs 19.5 per unit.
+Escargots de Bourgogne is in the category Seafood and costs 13.25 per unit.
+Raclette Courdavault is in the category Dairy Products and costs 55.0 per unit.
+Camembert Pierrot is in the category Dairy Products and costs 34.0 per unit.
+Sirop d'érable is in the category Condiments and costs 28.5 per unit.
+Tarte au sucre is in the category Confections and costs 49.3 per unit.
+Vegie-spread is in the category Condiments and costs 43.9 per unit.
+Wimmers gute Semmelknödel is in the category Grains/Cereals and costs 33.25 per unit.
+Louisiana Fiery Hot Pepper Sauce is in the category Condiments and costs 21.05 per unit.
+Louisiana Hot Spiced Okra is in the category Condiments and costs 17.0 per unit.
+Laughing Lumberjack Lager is in the category Beverages and costs 14.0 per unit.
+Scottish Longbreads is in the category Confections and costs 12.5 per unit.
+Gudbrandsdalsost is in the category Dairy Products and costs 36.0 per unit.
+Outback Lager is in the category Beverages and costs 15.0 per unit.
+Flotemysost is in the category Dairy Products and costs 21.5 per unit.
+Mozzarella di Giovanni is in the category Dairy Products and costs 34.8 per unit.
+Röd Kaviar is in the category Seafood and costs 15.0 per unit.
+Longlife Tofu is in the category Produce and costs 10.0 per unit.
+Rhönbräu Klosterbier is in the category Beverages and costs 7.75 per unit.
+Lakkalikööri is in the category Beverages and costs 18.0 per unit.
+Original Frankfurter grüne Soße is in the category Condiments and costs 13.0 per unit.
+
+# LINQ12
+Number: In-place?
+5: false
+4: false
+1: false
+3: true
+9: false
+8: false
+6: true
+7: true
+2: false
+0: false
+
+# LINQ13
+Numbers < 5:
+four
+one
+three
+two
+zero
+
+# LINQ14
+Pairs where a < b:
+0 is less than 1
+0 is less than 3
+0 is less than 5
+0 is less than 7
+0 is less than 8
+2 is less than 3
+2 is less than 5
+2 is less than 7
+2 is less than 8
+4 is less than 5
+4 is less than 7
+4 is less than 8
+5 is less than 7
+5 is less than 8
+6 is less than 7
+6 is less than 8
+
+# LINQ15
+(ALFKI, 10702, 330.0)
+(ALFKI, 10952, 471.2)
+(ANATR, 10308, 88.8)
+(ANATR, 10625, 479.75)
+(ANATR, 10759, 320.0)
+(ANTON, 10365, 403.2)
+(ANTON, 10682, 375.5)
+(AROUT, 10355, 480.0)
+(AROUT, 10453, 407.7)
+(AROUT, 10741, 228.0)
+(AROUT, 10743, 319.2)
+(AROUT, 10793, 191.1)
+(AROUT, 10864, 282.0)
+(AROUT, 10920, 390.0)
+(AROUT, 11016, 491.5)
+(BERGS, 10445, 174.9)
+(BERGS, 10689, 472.5)
+(BERGS, 10778, 96.5)
+(BLAUS, 10501, 149.0)
+(BLAUS, 10509, 136.8)
+(BLAUS, 10582, 330.0)
+(BLAUS, 10614, 464.0)
+(BLONP, 10628, 450.0)
+(BOLID, 10970, 224.0)
+(BONAP, 10331, 88.5)
+(BONAP, 10730, 484.26)
+(BONAP, 10732, 360.0)
+(BONAP, 10940, 360.0)
+(BSBEV, 10289, 479.4)
+(BSBEV, 10484, 386.2)
+(BSBEV, 10538, 139.8)
+(BSBEV, 10539, 355.5)
+(BSBEV, 10578, 477.0)
+(BSBEV, 10599, 493.0)
+(BSBEV, 10947, 220.0)
+(CACTU, 10521, 225.5)
+(CACTU, 10782, 12.5)
+(CACTU, 10819, 477.0)
+(CACTU, 10881, 150.0)
+(CACTU, 11054, 305.0)
+(CENTC, 10259, 100.8)
+(COMMI, 10466, 216.0)
+(COMMI, 10969, 108.0)
+(COMMI, 11042, 405.75)
+(CONSH, 10462, 156.0)
+(DRACD, 10363, 447.2)
+(DRACD, 10391, 86.4)
+(DRACD, 10797, 420.0)
+(DRACD, 11067, 86.85)
+(DUMON, 10311, 268.8)
+(DUMON, 10609, 424.0)
+(DUMON, 10683, 63.0)
+(ERNSH, 10771, 344.0)
+(FAMIA, 10386, 166.0)
+(FAMIA, 10414, 224.83)
+(FAMIA, 10581, 310.0)
+(FAMIA, 10725, 287.8)
+(FOLKO, 10378, 103.2)
+(FOLKO, 10434, 321.12)
+(FOLKO, 10460, 176.1)
+(FOLKO, 10824, 250.8)
+(FOLKO, 10955, 74.4)
+(FOLKO, 10980, 248.0)
+(FRANS, 10422, 49.8)
+(FRANS, 10710, 93.5)
+(FRANS, 10753, 88.0)
+(FRANS, 10807, 18.4)
+(FRANS, 11060, 266.0)
+(FURIB, 10352, 136.3)
+(FURIB, 10491, 259.5)
+(FURIB, 10604, 230.85)
+(FURIB, 10963, 57.8)
+(GALED, 10366, 136.0)
+(GALED, 10426, 338.2)
+(GALED, 10568, 155.0)
+(GALED, 10887, 70.0)
+(GALED, 10928, 137.5)
+(GODOS, 10874, 310.0)
+(GODOS, 11037, 60.0)
+(GOURL, 10652, 318.84)
+(GOURL, 10777, 224.0)
+(GOURL, 10959, 131.75)
+(GOURL, 11049, 273.6)
+(GREAL, 10528, 392.2)
+(GREAL, 10589, 72.0)
+(GREAL, 10936, 456.0)
+(GREAL, 11006, 329.68)
+(GREAL, 11040, 200.0)
+(GROSR, 10785, 387.5)
+(HANAR, 10770, 236.25)
+(HANAR, 10925, 475.15)
+(HILAA, 10476, 180.48)
+(HILAA, 10613, 353.2)
+(HILAA, 10705, 378.0)
+(HILAA, 10863, 441.15)
+(HILAA, 10960, 265.35)
+(HUNGC, 10375, 338.0)
+(HUNGC, 10394, 442.0)
+(HUNGC, 10415, 102.4)
+(HUNGC, 10600, 479.8)
+(ISLAT, 10318, 240.4)
+(ISLAT, 10321, 144.0)
+(ISLAT, 10473, 230.4)
+(ISLAT, 10674, 45.0)
+(ISLAT, 10798, 446.6)
+(KOENE, 10323, 164.4)
+(KOENE, 10506, 415.8)
+(KOENE, 10542, 469.11)
+(LACOR, 10972, 251.5)
+(LACOR, 10973, 291.55)
+(LAMAI, 10358, 429.4)
+(LAMAI, 10371, 72.96)
+(LAMAI, 10425, 360.0)
+(LAMAI, 10454, 331.2)
+(LAMAI, 10610, 299.25)
+(LAMAI, 10631, 55.8)
+(LAMAI, 10832, 475.11)
+(LAMAI, 11051, 36.0)
+(LAUGB, 10495, 278.0)
+(LAUGB, 10620, 57.5)
+(LAUGB, 10810, 187.0)
+(LAZYK, 10482, 147.0)
+(LAZYK, 10545, 210.0)
+(LEHMS, 10279, 351.0)
+(LEHMS, 10534, 465.7)
+(LEHMS, 10891, 368.93)
+(LETSS, 10579, 317.75)
+(LILAS, 10381, 112.0)
+(LILAS, 10899, 122.4)
+(LILAS, 11065, 189.42)
+(LILAS, 11071, 484.5)
+(LINOD, 10405, 400.0)
+(LINOD, 10840, 211.2)
+(LINOD, 11014, 243.18)
+(LONEP, 10307, 424.0)
+(LONEP, 10317, 288.0)
+(LONEP, 10544, 417.2)
+(LONEP, 10662, 125.0)
+(LONEP, 10867, 98.4)
+(LONEP, 10883, 36.0)
+(MAGAA, 10275, 291.84)
+(MAGAA, 10467, 235.2)
+(MAGAA, 10754, 55.2)
+(MAGAA, 10950, 110.0)
+(MAISD, 11004, 295.38)
+(MEREP, 10376, 399.0)
+(MEREP, 10505, 147.9)
+(MORGK, 10699, 114.0)
+(MORGK, 10945, 245.0)
+(NORTS, 10517, 352.0)
+(NORTS, 10752, 252.0)
+(NORTS, 11057, 45.0)
+(OCEAN, 10409, 319.2)
+(OCEAN, 10531, 110.0)
+(OCEAN, 10898, 30.0)
+(OTTIK, 10508, 240.0)
+(PERIC, 10322, 112.0)
+(PERIC, 11073, 300.0)
+(PICCO, 10489, 439.2)
+(PRINI, 10336, 285.12)
+(QUEDE, 10261, 448.0)
+(QUEDE, 10291, 497.52)
+(QUEDE, 10794, 314.76)
+(QUICK, 10313, 182.4)
+(RANCH, 10448, 443.4)
+(RANCH, 11019, 76.0)
+(REGGC, 10288, 80.1)
+(REGGC, 10428, 192.0)
+(REGGC, 10562, 488.7)
+(REGGC, 10586, 23.8)
+(REGGC, 10655, 154.4)
+(REGGC, 11062, 406.4)
+(RICAR, 10299, 349.5)
+(RICAR, 10648, 372.38)
+(RICSU, 10951, 458.76)
+(RICSU, 11075, 498.1)
+(ROMEY, 10281, 86.5)
+(ROMEY, 10282, 155.4)
+(ROMEY, 10306, 498.5)
+(ROMEY, 10917, 365.89)
+(ROMEY, 11013, 361.0)
+(SANTG, 10520, 200.0)
+(SAVEA, 10815, 40.0)
+(SIMOB, 10341, 352.6)
+(SIMOB, 11074, 232.08)
+(SPECD, 10738, 52.35)
+(SPECD, 10907, 108.5)
+(SPECD, 11043, 210.0)
+(SPLIR, 10271, 48.0)
+(SPLIR, 10349, 141.6)
+(SPLIR, 10432, 485.0)
+(SPLIR, 10974, 439.0)
+(SUPRD, 10767, 28.0)
+(THEBI, 10310, 336.0)
+(THEBI, 10708, 180.4)
+(THEBI, 10992, 69.6)
+(THECR, 10775, 228.0)
+(THECR, 11003, 326.0)
+(TOMSP, 10438, 454.0)
+(TOMSP, 10446, 246.24)
+(TOMSP, 10548, 240.1)
+(TORTU, 10276, 420.0)
+(TORTU, 11069, 360.0)
+(TRADH, 10496, 190.0)
+(TRAIH, 10822, 237.9)
+(VAFFE, 10602, 48.75)
+(VICTE, 10334, 144.8)
+(VICTE, 10450, 425.12)
+(VICTE, 10478, 471.2)
+(VICTE, 10806, 439.6)
+(VICTE, 10843, 159.0)
+(VINET, 10295, 121.6)
+(VINET, 10737, 139.8)
+(VINET, 10739, 240.0)
+(WANDK, 10348, 363.6)
+(WANDK, 10651, 397.8)
+(WARTH, 10266, 346.56)
+(WARTH, 10412, 334.8)
+(WARTH, 10437, 393.0)
+(WARTH, 11025, 270.0)
+(WELLI, 10585, 142.5)
+(WELLI, 10809, 140.0)
+(WELLI, 10900, 33.75)
+(WELLI, 10905, 342.0)
+(WHITC, 10723, 468.45)
+(WILMK, 10248, 440.0)
+(WILMK, 10615, 120.0)
+(WILMK, 10673, 412.35)
+(WILMK, 10873, 336.8)
+(WILMK, 10910, 452.9)
+(WOLZA, 10374, 459.0)
+(WOLZA, 10792, 399.85)
+(WOLZA, 10870, 160.0)
+(WOLZA, 10906, 427.5)
+
+# LINQ16
+(ALFKI, 10835, Thu Jan 15 00:00:00 PST 1998)
+(ALFKI, 10952, Mon Mar 16 00:00:00 PST 1998)
+(ALFKI, 11011, Thu Apr 09 00:00:00 PDT 1998)
+(ANATR, 10926, Wed Mar 04 00:00:00 PST 1998)
+(ANTON, 10856, Wed Jan 28 00:00:00 PST 1998)
+(AROUT, 10864, Mon Feb 02 00:00:00 PST 1998)
+(AROUT, 10920, Tue Mar 03 00:00:00 PST 1998)
+(AROUT, 10953, Mon Mar 16 00:00:00 PST 1998)
+(AROUT, 11016, Fri Apr 10 00:00:00 PDT 1998)
+(BERGS, 10837, Fri Jan 16 00:00:00 PST 1998)
+(BERGS, 10857, Wed Jan 28 00:00:00 PST 1998)
+(BERGS, 10866, Tue Feb 03 00:00:00 PST 1998)
+(BERGS, 10875, Fri Feb 06 00:00:00 PST 1998)
+(BERGS, 10924, Wed Mar 04 00:00:00 PST 1998)
+(BLAUS, 10853, Tue Jan 27 00:00:00 PST 1998)
+(BLAUS, 10956, Tue Mar 17 00:00:00 PST 1998)
+(BLAUS, 11058, Wed Apr 29 00:00:00 PDT 1998)
+(BLONP, 10826, Mon Jan 12 00:00:00 PST 1998)
+(BOLID, 10970, Tue Mar 24 00:00:00 PST 1998)
+(BONAP, 10827, Mon Jan 12 00:00:00 PST 1998)
+(BONAP, 10871, Thu Feb 05 00:00:00 PST 1998)
+(BONAP, 10876, Mon Feb 09 00:00:00 PST 1998)
+(BONAP, 10932, Fri Mar 06 00:00:00 PST 1998)
+(BONAP, 10940, Wed Mar 11 00:00:00 PST 1998)
+(BONAP, 11076, Wed May 06 00:00:00 PDT 1998)
+(BOTTM, 10918, Mon Mar 02 00:00:00 PST 1998)
+(BOTTM, 10944, Thu Mar 12 00:00:00 PST 1998)
+(BOTTM, 10949, Fri Mar 13 00:00:00 PST 1998)
+(BOTTM, 10975, Wed Mar 25 00:00:00 PST 1998)
+(BOTTM, 10982, Fri Mar 27 00:00:00 PST 1998)
+(BOTTM, 11027, Thu Apr 16 00:00:00 PDT 1998)
+(BOTTM, 11045, Thu Apr 23 00:00:00 PDT 1998)
+(BOTTM, 11048, Fri Apr 24 00:00:00 PDT 1998)
+(BSBEV, 10943, Wed Mar 11 00:00:00 PST 1998)
+(BSBEV, 10947, Fri Mar 13 00:00:00 PST 1998)
+(BSBEV, 11023, Tue Apr 14 00:00:00 PDT 1998)
+(CACTU, 10819, Wed Jan 07 00:00:00 PST 1998)
+(CACTU, 10881, Wed Feb 11 00:00:00 PST 1998)
+(CACTU, 10937, Tue Mar 10 00:00:00 PST 1998)
+(CACTU, 11054, Tue Apr 28 00:00:00 PDT 1998)
+(CHOPS, 10966, Fri Mar 20 00:00:00 PST 1998)
+(CHOPS, 11029, Thu Apr 16 00:00:00 PDT 1998)
+(CHOPS, 11041, Wed Apr 22 00:00:00 PDT 1998)
+(COMMI, 10969, Mon Mar 23 00:00:00 PST 1998)
+(COMMI, 11042, Wed Apr 22 00:00:00 PDT 1998)
+(CONSH, 10848, Fri Jan 23 00:00:00 PST 1998)
+(DRACD, 10825, Fri Jan 09 00:00:00 PST 1998)
+(DRACD, 11036, Mon Apr 20 00:00:00 PDT 1998)
+(DRACD, 11067, Mon May 04 00:00:00 PDT 1998)
+(DUMON, 10890, Mon Feb 16 00:00:00 PST 1998)
+(EASTC, 10987, Tue Mar 31 00:00:00 PST 1998)
+(EASTC, 11024, Wed Apr 15 00:00:00 PDT 1998)
+(EASTC, 11047, Fri Apr 24 00:00:00 PDT 1998)
+(EASTC, 11056, Tue Apr 28 00:00:00 PDT 1998)
+(ERNSH, 10836, Fri Jan 16 00:00:00 PST 1998)
+(ERNSH, 10854, Tue Jan 27 00:00:00 PST 1998)
+(ERNSH, 10895, Wed Feb 18 00:00:00 PST 1998)
+(ERNSH, 10968, Mon Mar 23 00:00:00 PST 1998)
+(ERNSH, 10979, Thu Mar 26 00:00:00 PST 1998)
+(ERNSH, 10990, Wed Apr 01 00:00:00 PST 1998)
+(ERNSH, 11008, Wed Apr 08 00:00:00 PDT 1998)
+(ERNSH, 11017, Mon Apr 13 00:00:00 PDT 1998)
+(ERNSH, 11072, Tue May 05 00:00:00 PDT 1998)
+(FOLKO, 10824, Fri Jan 09 00:00:00 PST 1998)
+(FOLKO, 10880, Tue Feb 10 00:00:00 PST 1998)
+(FOLKO, 10902, Mon Feb 23 00:00:00 PST 1998)
+(FOLKO, 10955, Tue Mar 17 00:00:00 PST 1998)
+(FOLKO, 10977, Thu Mar 26 00:00:00 PST 1998)
+(FOLKO, 10980, Fri Mar 27 00:00:00 PST 1998)
+(FOLKO, 10993, Wed Apr 01 00:00:00 PST 1998)
+(FOLKO, 11001, Mon Apr 06 00:00:00 PDT 1998)
+(FOLKO, 11050, Mon Apr 27 00:00:00 PDT 1998)
+(FRANK, 10859, Thu Jan 29 00:00:00 PST 1998)
+(FRANK, 10929, Thu Mar 05 00:00:00 PST 1998)
+(FRANK, 11012, Thu Apr 09 00:00:00 PDT 1998)
+(FRANR, 10860, Thu Jan 29 00:00:00 PST 1998)
+(FRANR, 10971, Tue Mar 24 00:00:00 PST 1998)
+(FRANS, 11026, Wed Apr 15 00:00:00 PDT 1998)
+(FRANS, 11060, Thu Apr 30 00:00:00 PDT 1998)
+(FURIB, 10963, Thu Mar 19 00:00:00 PST 1998)
+(GALED, 10887, Fri Feb 13 00:00:00 PST 1998)
+(GALED, 10928, Thu Mar 05 00:00:00 PST 1998)
+(GODOS, 10872, Thu Feb 05 00:00:00 PST 1998)
+(GODOS, 10874, Fri Feb 06 00:00:00 PST 1998)
+(GODOS, 10888, Mon Feb 16 00:00:00 PST 1998)
+(GODOS, 10911, Thu Feb 26 00:00:00 PST 1998)
+(GODOS, 10948, Fri Mar 13 00:00:00 PST 1998)
+(GODOS, 11009, Wed Apr 08 00:00:00 PDT 1998)
+(GODOS, 11037, Tue Apr 21 00:00:00 PDT 1998)
+(GOURL, 10959, Wed Mar 18 00:00:00 PST 1998)
+(GOURL, 11049, Fri Apr 24 00:00:00 PDT 1998)
+(GREAL, 10816, Tue Jan 06 00:00:00 PST 1998)
+(GREAL, 10936, Mon Mar 09 00:00:00 PST 1998)
+(GREAL, 11006, Tue Apr 07 00:00:00 PDT 1998)
+(GREAL, 11040, Wed Apr 22 00:00:00 PDT 1998)
+(GREAL, 11061, Thu Apr 30 00:00:00 PDT 1998)
+(HANAR, 10886, Fri Feb 13 00:00:00 PST 1998)
+(HANAR, 10903, Tue Feb 24 00:00:00 PST 1998)
+(HANAR, 10922, Tue Mar 03 00:00:00 PST 1998)
+(HANAR, 10925, Wed Mar 04 00:00:00 PST 1998)
+(HANAR, 10981, Fri Mar 27 00:00:00 PST 1998)
+(HANAR, 11022, Tue Apr 14 00:00:00 PDT 1998)
+(HANAR, 11052, Mon Apr 27 00:00:00 PDT 1998)
+(HILAA, 10863, Mon Feb 02 00:00:00 PST 1998)
+(HILAA, 10901, Mon Feb 23 00:00:00 PST 1998)
+(HILAA, 10957, Wed Mar 18 00:00:00 PST 1998)
+(HILAA, 10960, Thu Mar 19 00:00:00 PST 1998)
+(HILAA, 10976, Wed Mar 25 00:00:00 PST 1998)
+(HILAA, 11055, Tue Apr 28 00:00:00 PDT 1998)
+(HUNGO, 10897, Thu Feb 19 00:00:00 PST 1998)
+(HUNGO, 10912, Thu Feb 26 00:00:00 PST 1998)
+(HUNGO, 10985, Mon Mar 30 00:00:00 PST 1998)
+(HUNGO, 11063, Thu Apr 30 00:00:00 PDT 1998)
+(ISLAT, 10829, Tue Jan 13 00:00:00 PST 1998)
+(ISLAT, 10933, Fri Mar 06 00:00:00 PST 1998)
+(KOENE, 10817, Tue Jan 06 00:00:00 PST 1998)
+(KOENE, 10849, Fri Jan 23 00:00:00 PST 1998)
+(KOENE, 10893, Wed Feb 18 00:00:00 PST 1998)
+(KOENE, 11028, Thu Apr 16 00:00:00 PDT 1998)
+(LACOR, 10858, Thu Jan 29 00:00:00 PST 1998)
+(LACOR, 10927, Thu Mar 05 00:00:00 PST 1998)
+(LACOR, 10972, Tue Mar 24 00:00:00 PST 1998)
+(LACOR, 10973, Tue Mar 24 00:00:00 PST 1998)
+(LAMAI, 10832, Wed Jan 14 00:00:00 PST 1998)
+(LAMAI, 10923, Tue Mar 03 00:00:00 PST 1998)
+(LAMAI, 11051, Mon Apr 27 00:00:00 PDT 1998)
+(LAUGB, 10810, Thu Jan 01 00:00:00 PST 1998)
+(LEHMS, 10862, Fri Jan 30 00:00:00 PST 1998)
+(LEHMS, 10891, Tue Feb 17 00:00:00 PST 1998)
+(LEHMS, 10934, Mon Mar 09 00:00:00 PST 1998)
+(LEHMS, 11070, Tue May 05 00:00:00 PDT 1998)
+(LETSS, 10884, Thu Feb 12 00:00:00 PST 1998)
+(LILAS, 10823, Fri Jan 09 00:00:00 PST 1998)
+(LILAS, 10899, Fri Feb 20 00:00:00 PST 1998)
+(LILAS, 10997, Fri Apr 03 00:00:00 PST 1998)
+(LILAS, 11065, Fri May 01 00:00:00 PDT 1998)
+(LILAS, 11071, Tue May 05 00:00:00 PDT 1998)
+(LINOD, 10811, Fri Jan 02 00:00:00 PST 1998)
+(LINOD, 10838, Mon Jan 19 00:00:00 PST 1998)
+(LINOD, 10840, Mon Jan 19 00:00:00 PST 1998)
+(LINOD, 10919, Mon Mar 02 00:00:00 PST 1998)
+(LINOD, 10954, Tue Mar 17 00:00:00 PST 1998)
+(LINOD, 11014, Fri Apr 10 00:00:00 PDT 1998)
+(LINOD, 11039, Tue Apr 21 00:00:00 PDT 1998)
+(LONEP, 10867, Tue Feb 03 00:00:00 PST 1998)
+(LONEP, 10883, Thu Feb 12 00:00:00 PST 1998)
+(LONEP, 11018, Mon Apr 13 00:00:00 PDT 1998)
+(MAGAA, 10818, Wed Jan 07 00:00:00 PST 1998)
+(MAGAA, 10939, Tue Mar 10 00:00:00 PST 1998)
+(MAGAA, 10950, Mon Mar 16 00:00:00 PST 1998)
+(MAISD, 10892, Tue Feb 17 00:00:00 PST 1998)
+(MAISD, 10896, Thu Feb 19 00:00:00 PST 1998)
+(MAISD, 10978, Thu Mar 26 00:00:00 PST 1998)
+(MAISD, 11004, Tue Apr 07 00:00:00 PDT 1998)
+(MORGK, 10945, Thu Mar 12 00:00:00 PST 1998)
+(NORTS, 11057, Wed Apr 29 00:00:00 PDT 1998)
+(OCEAN, 10898, Fri Feb 20 00:00:00 PST 1998)
+(OCEAN, 10958, Wed Mar 18 00:00:00 PST 1998)
+(OCEAN, 10986, Mon Mar 30 00:00:00 PST 1998)
+(OLDWO, 10855, Tue Jan 27 00:00:00 PST 1998)
+(OLDWO, 10965, Fri Mar 20 00:00:00 PST 1998)
+(OLDWO, 11034, Mon Apr 20 00:00:00 PDT 1998)
+(OTTIK, 10833, Thu Jan 15 00:00:00 PST 1998)
+(OTTIK, 10999, Fri Apr 03 00:00:00 PST 1998)
+(OTTIK, 11020, Tue Apr 14 00:00:00 PDT 1998)
+(PERIC, 10995, Thu Apr 02 00:00:00 PST 1998)
+(PERIC, 11073, Tue May 05 00:00:00 PDT 1998)
+(PICCO, 10844, Wed Jan 21 00:00:00 PST 1998)
+(PICCO, 11053, Mon Apr 27 00:00:00 PDT 1998)
+(PRINI, 10808, Thu Jan 01 00:00:00 PST 1998)
+(PRINI, 11007, Wed Apr 08 00:00:00 PDT 1998)
+(QUEDE, 10989, Tue Mar 31 00:00:00 PST 1998)
+(QUEEN, 10868, Wed Feb 04 00:00:00 PST 1998)
+(QUEEN, 10913, Thu Feb 26 00:00:00 PST 1998)
+(QUEEN, 10914, Fri Feb 27 00:00:00 PST 1998)
+(QUEEN, 10961, Thu Mar 19 00:00:00 PST 1998)
+(QUEEN, 11068, Mon May 04 00:00:00 PDT 1998)
+(QUICK, 10845, Wed Jan 21 00:00:00 PST 1998)
+(QUICK, 10865, Mon Feb 02 00:00:00 PST 1998)
+(QUICK, 10878, Tue Feb 10 00:00:00 PST 1998)
+(QUICK, 10938, Tue Mar 10 00:00:00 PST 1998)
+(QUICK, 10962, Thu Mar 19 00:00:00 PST 1998)
+(QUICK, 10991, Wed Apr 01 00:00:00 PST 1998)
+(QUICK, 10996, Thu Apr 02 00:00:00 PST 1998)
+(QUICK, 11021, Tue Apr 14 00:00:00 PDT 1998)
+(RANCH, 10828, Tue Jan 13 00:00:00 PST 1998)
+(RANCH, 10916, Fri Feb 27 00:00:00 PST 1998)
+(RANCH, 11019, Mon Apr 13 00:00:00 PDT 1998)
+(RATTC, 10820, Wed Jan 07 00:00:00 PST 1998)
+(RATTC, 10852, Mon Jan 26 00:00:00 PST 1998)
+(RATTC, 10889, Mon Feb 16 00:00:00 PST 1998)
+(RATTC, 10988, Tue Mar 31 00:00:00 PST 1998)
+(RATTC, 11000, Mon Apr 06 00:00:00 PDT 1998)
+(RATTC, 11077, Wed May 06 00:00:00 PDT 1998)
+(REGGC, 10812, Fri Jan 02 00:00:00 PST 1998)
+(REGGC, 10908, Thu Feb 26 00:00:00 PST 1998)
+(REGGC, 10942, Wed Mar 11 00:00:00 PST 1998)
+(REGGC, 11010, Thu Apr 09 00:00:00 PDT 1998)
+(REGGC, 11062, Thu Apr 30 00:00:00 PDT 1998)
+(RICAR, 10813, Mon Jan 05 00:00:00 PST 1998)
+(RICAR, 10851, Mon Jan 26 00:00:00 PST 1998)
+(RICAR, 10877, Mon Feb 09 00:00:00 PST 1998)
+(RICAR, 11059, Wed Apr 29 00:00:00 PDT 1998)
+(RICSU, 10931, Fri Mar 06 00:00:00 PST 1998)
+(RICSU, 10951, Mon Mar 16 00:00:00 PST 1998)
+(RICSU, 11033, Fri Apr 17 00:00:00 PDT 1998)
+(RICSU, 11075, Wed May 06 00:00:00 PDT 1998)
+(ROMEY, 10917, Mon Mar 02 00:00:00 PST 1998)
+(ROMEY, 11013, Thu Apr 09 00:00:00 PDT 1998)
+(SANTG, 10831, Wed Jan 14 00:00:00 PST 1998)
+(SANTG, 10909, Thu Feb 26 00:00:00 PST 1998)
+(SANTG, 11015, Fri Apr 10 00:00:00 PDT 1998)
+(SAVEA, 10815, Mon Jan 05 00:00:00 PST 1998)
+(SAVEA, 10847, Thu Jan 22 00:00:00 PST 1998)
+(SAVEA, 10882, Wed Feb 11 00:00:00 PST 1998)
+(SAVEA, 10894, Wed Feb 18 00:00:00 PST 1998)
+(SAVEA, 10941, Wed Mar 11 00:00:00 PST 1998)
+(SAVEA, 10983, Fri Mar 27 00:00:00 PST 1998)
+(SAVEA, 10984, Mon Mar 30 00:00:00 PST 1998)
+(SAVEA, 11002, Mon Apr 06 00:00:00 PDT 1998)
+(SAVEA, 11030, Fri Apr 17 00:00:00 PDT 1998)
+(SAVEA, 11031, Fri Apr 17 00:00:00 PDT 1998)
+(SAVEA, 11064, Fri May 01 00:00:00 PDT 1998)
+(SEVES, 10869, Wed Feb 04 00:00:00 PST 1998)
+(SIMOB, 11074, Wed May 06 00:00:00 PDT 1998)
+(SPECD, 10907, Wed Feb 25 00:00:00 PST 1998)
+(SPECD, 10964, Fri Mar 20 00:00:00 PST 1998)
+(SPECD, 11043, Wed Apr 22 00:00:00 PDT 1998)
+(SPLIR, 10821, Thu Jan 08 00:00:00 PST 1998)
+(SPLIR, 10974, Wed Mar 25 00:00:00 PST 1998)
+(SUPRD, 10841, Tue Jan 20 00:00:00 PST 1998)
+(SUPRD, 10846, Thu Jan 22 00:00:00 PST 1998)
+(SUPRD, 10885, Thu Feb 12 00:00:00 PST 1998)
+(SUPRD, 10930, Fri Mar 06 00:00:00 PST 1998)
+(SUPRD, 11035, Mon Apr 20 00:00:00 PDT 1998)
+(SUPRD, 11038, Tue Apr 21 00:00:00 PDT 1998)
+(THEBI, 10992, Wed Apr 01 00:00:00 PST 1998)
+(THECR, 11003, Mon Apr 06 00:00:00 PDT 1998)
+(TOMSP, 10967, Mon Mar 23 00:00:00 PST 1998)
+(TORTU, 10842, Tue Jan 20 00:00:00 PST 1998)
+(TORTU, 10915, Fri Feb 27 00:00:00 PST 1998)
+(TORTU, 11069, Mon May 04 00:00:00 PDT 1998)
+(TRADH, 10830, Tue Jan 13 00:00:00 PST 1998)
+(TRADH, 10834, Thu Jan 15 00:00:00 PST 1998)
+(TRADH, 10839, Mon Jan 19 00:00:00 PST 1998)
+(TRAIH, 10822, Thu Jan 08 00:00:00 PST 1998)
+(VAFFE, 10921, Tue Mar 03 00:00:00 PST 1998)
+(VAFFE, 10946, Thu Mar 12 00:00:00 PST 1998)
+(VAFFE, 10994, Thu Apr 02 00:00:00 PST 1998)
+(VICTE, 10814, Mon Jan 05 00:00:00 PST 1998)
+(VICTE, 10843, Wed Jan 21 00:00:00 PST 1998)
+(VICTE, 10850, Fri Jan 23 00:00:00 PST 1998)
+(WANDK, 11046, Thu Apr 23 00:00:00 PDT 1998)
+(WARTH, 11025, Wed Apr 15 00:00:00 PDT 1998)
+(WELLI, 10809, Thu Jan 01 00:00:00 PST 1998)
+(WELLI, 10900, Fri Feb 20 00:00:00 PST 1998)
+(WELLI, 10905, Tue Feb 24 00:00:00 PST 1998)
+(WELLI, 10935, Mon Mar 09 00:00:00 PST 1998)
+(WHITC, 10861, Fri Jan 30 00:00:00 PST 1998)
+(WHITC, 10904, Tue Feb 24 00:00:00 PST 1998)
+(WHITC, 11032, Fri Apr 17 00:00:00 PDT 1998)
+(WHITC, 11066, Fri May 01 00:00:00 PDT 1998)
+(WILMK, 10873, Fri Feb 06 00:00:00 PST 1998)
+(WILMK, 10879, Tue Feb 10 00:00:00 PST 1998)
+(WILMK, 10910, Thu Feb 26 00:00:00 PST 1998)
+(WILMK, 11005, Tue Apr 07 00:00:00 PDT 1998)
+(WOLZA, 10870, Wed Feb 04 00:00:00 PST 1998)
+(WOLZA, 10906, Wed Feb 25 00:00:00 PST 1998)
+(WOLZA, 10998, Fri Apr 03 00:00:00 PST 1998)
+(WOLZA, 11044, Thu Apr 23 00:00:00 PDT 1998)
+
+# LINQ17
+(ANTON, 10573, 2082.0)
+(AROUT, 10558, 2142.9)
+(AROUT, 10953, 4441.25)
+(BERGS, 10384, 2222.4)
+(BERGS, 10524, 3192.65)
+(BERGS, 10672, 3815.25)
+(BERGS, 10857, 2048.21)
+(BLONP, 10360, 7390.2)
+(BOLID, 10801, 3026.85)
+(BONAP, 10340, 2436.18)
+(BONAP, 10511, 2550.0)
+(BOTTM, 10742, 3118.0)
+(BOTTM, 10949, 4422.0)
+(CHOPS, 10519, 2314.2)
+(CHOPS, 10746, 2311.7)
+(COMMI, 10290, 2169.0)
+(EASTC, 10400, 3063.0)
+(EASTC, 10987, 2772.0)
+(EASTC, 11056, 3740.0)
+(ERNSH, 10351, 5398.72)
+(ERNSH, 10382, 2900.0)
+(ERNSH, 10390, 2090.88)
+(ERNSH, 10402, 2713.5)
+(ERNSH, 10430, 4899.2)
+(ERNSH, 10514, 8623.45)
+(ERNSH, 10595, 4725.0)
+(ERNSH, 10633, 5510.59)
+(ERNSH, 10698, 3436.44)
+(ERNSH, 10764, 2286.0)
+(ERNSH, 10773, 2030.4)
+(ERNSH, 10776, 6635.28)
+(ERNSH, 10795, 2158.0)
+(ERNSH, 10836, 4705.5)
+(ERNSH, 10854, 2966.5)
+(ERNSH, 10895, 6379.4)
+(ERNSH, 10979, 4813.5)
+(ERNSH, 10990, 4288.85)
+(ERNSH, 11008, 4680.9)
+(ERNSH, 11017, 6750.0)
+(ERNSH, 11072, 5218.0)
+(FOLIG, 10634, 4985.5)
+(FOLIG, 10789, 3687.0)
+(FOLKO, 10533, 2222.2)
+(FOLKO, 10561, 2844.5)
+(FOLKO, 10703, 2545.0)
+(FOLKO, 10762, 4337.0)
+(FOLKO, 10977, 2233.0)
+(FOLKO, 10993, 4895.44)
+(FOLKO, 11001, 2769.0)
+(FRANK, 10267, 3536.6)
+(FRANK, 10337, 2467.0)
+(FRANK, 10670, 2301.75)
+(FRANK, 11012, 2825.3)
+(GODOS, 10629, 2775.05)
+(GODOS, 10872, 2058.46)
+(GODOS, 10948, 2362.25)
+(GOURL, 10709, 3424.0)
+(GREAL, 10616, 4807.0)
+(GREAL, 10816, 8446.45)
+(HANAR, 10886, 3127.5)
+(HANAR, 10981, 15810.0)
+(HILAA, 10395, 2122.92)
+(HILAA, 10490, 3163.2)
+(HILAA, 10601, 2285.0)
+(HILAA, 10641, 2054.0)
+(HILAA, 10796, 2341.36)
+(HUNGO, 10298, 2645.0)
+(HUNGO, 10335, 2036.16)
+(HUNGO, 10503, 2048.5)
+(HUNGO, 10516, 2381.05)
+(HUNGO, 10567, 2519.0)
+(HUNGO, 10687, 4960.9)
+(HUNGO, 10701, 2864.5)
+(HUNGO, 10897, 10835.24)
+(HUNGO, 10912, 6200.55)
+(HUNGO, 10985, 2023.38)
+(KOENE, 10718, 3463.0)
+(KOENE, 10817, 10952.84)
+(KOENE, 10893, 5502.11)
+(KOENE, 11028, 2160.0)
+(LAMAI, 10413, 2123.2)
+(LAMAI, 10787, 2622.76)
+(LEHMS, 10522, 2318.24)
+(LEHMS, 10772, 3603.22)
+(LILAS, 10823, 2826.0)
+(LINOD, 10638, 2720.05)
+(LINOD, 11039, 3090.0)
+(MAISD, 10760, 2917.0)
+(MAISD, 10892, 2090.0)
+(MEREP, 10339, 3354.0)
+(MEREP, 10424, 9194.56)
+(MEREP, 10570, 2465.25)
+(MEREP, 10605, 4109.7)
+(MEREP, 10618, 2697.5)
+(MORGK, 10575, 2147.4)
+(OCEAN, 10986, 2220.0)
+(OLDWO, 10305, 3741.3)
+(OLDWO, 10855, 2227.89)
+(OTTIK, 10766, 2310.0)
+(PICCO, 10353, 8593.28)
+(PICCO, 10530, 4180.0)
+(PICCO, 11053, 3055.0)
+(PRINI, 11007, 2633.9)
+(QUEEN, 10372, 9210.9)
+(QUEEN, 10637, 2761.94)
+(QUEEN, 11068, 2027.08)
+(QUICK, 10273, 2037.28)
+(QUICK, 10286, 3016.0)
+(QUICK, 10345, 2924.8)
+(QUICK, 10361, 2046.24)
+(QUICK, 10451, 3849.66)
+(QUICK, 10515, 9921.3)
+(QUICK, 10540, 10191.7)
+(QUICK, 10549, 3554.28)
+(QUICK, 10588, 3120.0)
+(QUICK, 10658, 4464.6)
+(QUICK, 10691, 10164.8)
+(QUICK, 10694, 4825.0)
+(QUICK, 10745, 4529.8)
+(QUICK, 10845, 3812.7)
+(QUICK, 10865, 16387.5)
+(QUICK, 10938, 2731.88)
+(QUICK, 10962, 3584.0)
+(QUICK, 10991, 2296.0)
+(QUICK, 11021, 6306.24)
+(RATTC, 10314, 2094.3)
+(RATTC, 10316, 2835.0)
+(RATTC, 10401, 3868.6)
+(RATTC, 10479, 10495.6)
+(RATTC, 10598, 2388.5)
+(RATTC, 10852, 2984.0)
+(RATTC, 10889, 11380.0)
+(RATTC, 10988, 3574.8)
+(RICAR, 10851, 2603.0)
+(RICSU, 10255, 2490.5)
+(RICSU, 10419, 2097.6)
+(RICSU, 10666, 4666.94)
+(RICSU, 11033, 3232.8)
+(SANTG, 10831, 2684.4)
+(SAVEA, 10324, 5275.72)
+(SAVEA, 10393, 2556.95)
+(SAVEA, 10398, 2505.6)
+(SAVEA, 10440, 4924.14)
+(SAVEA, 10452, 2018.5)
+(SAVEA, 10510, 4707.54)
+(SAVEA, 10555, 2944.4)
+(SAVEA, 10607, 6475.4)
+(SAVEA, 10612, 6375.0)
+(SAVEA, 10657, 4371.6)
+(SAVEA, 10678, 5256.5)
+(SAVEA, 10711, 4451.7)
+(SAVEA, 10713, 2827.9)
+(SAVEA, 10714, 2205.75)
+(SAVEA, 10748, 2196.0)
+(SAVEA, 10757, 3082.0)
+(SAVEA, 10847, 4931.92)
+(SAVEA, 10894, 2753.1)
+(SAVEA, 10941, 4011.75)
+(SAVEA, 11030, 12615.05)
+(SAVEA, 11031, 2393.5)
+(SAVEA, 11064, 4330.4)
+(SEVES, 10359, 3471.68)
+(SEVES, 10523, 2444.31)
+(SEVES, 10804, 2278.4)
+(SIMOB, 10417, 11188.4)
+(SIMOB, 10802, 2942.81)
+(SPECD, 10964, 2052.5)
+(SPLIR, 10329, 4578.43)
+(SPLIR, 10369, 2390.4)
+(SUPRD, 10252, 3597.9)
+(SUPRD, 10302, 2708.8)
+(SUPRD, 10458, 3891.0)
+(SUPRD, 10841, 4581.0)
+(SUPRD, 10930, 2255.5)
+(THEBI, 10805, 2775.0)
+(TORTU, 10518, 4150.05)
+(VAFFE, 10465, 2518.0)
+(VAFFE, 10688, 3160.6)
+(VICTE, 10546, 2812.0)
+(WARTH, 10455, 2684.0)
+(WARTH, 10583, 2237.5)
+(WHITC, 10344, 2296.0)
+(WHITC, 10693, 2071.2)
+(WHITC, 10861, 3523.4)
+(WHITC, 11032, 8902.5)
+
+# LINQ18
+(LAZYK, 10482)
+(LAZYK, 10545)
+(TRAIH, 10574)
+(TRAIH, 10577)
+(TRAIH, 10822)
+(WHITC, 10469)
+(WHITC, 10483)
+(WHITC, 10504)
+(WHITC, 10596)
+(WHITC, 10693)
+(WHITC, 10696)
+(WHITC, 10723)
+(WHITC, 10740)
+(WHITC, 10861)
+(WHITC, 10904)
+(WHITC, 11032)
+(WHITC, 11066)
+
+# LINQ19
+Customer #1 has an order with OrderID 10643
+Customer #1 has an order with OrderID 10692
+Customer #1 has an order with OrderID 10702
+Customer #1 has an order with OrderID 10835
+Customer #1 has an order with OrderID 10952
+Customer #1 has an order with OrderID 11011
+Customer #2 has an order with OrderID 10308
+Customer #2 has an order with OrderID 10625
+Customer #2 has an order with OrderID 10759
+Customer #2 has an order with OrderID 10926
+Customer #3 has an order with OrderID 10365
+Customer #3 has an order with OrderID 10507
+Customer #3 has an order with OrderID 10535
+Customer #3 has an order with OrderID 10573
+Customer #3 has an order with OrderID 10677
+Customer #3 has an order with OrderID 10682
+Customer #3 has an order with OrderID 10856
+Customer #4 has an order with OrderID 10355
+Customer #4 has an order with OrderID 10383
+Customer #4 has an order with OrderID 10453
+Customer #4 has an order with OrderID 10558
+Customer #4 has an order with OrderID 10707
+Customer #4 has an order with OrderID 10741
+Customer #4 has an order with OrderID 10743
+Customer #4 has an order with OrderID 10768
+Customer #4 has an order with OrderID 10793
+Customer #4 has an order with OrderID 10864
+Customer #4 has an order with OrderID 10920
+Customer #4 has an order with OrderID 10953
+Customer #4 has an order with OrderID 11016
+Customer #5 has an order with OrderID 10278
+Customer #5 has an order with OrderID 10280
+Customer #5 has an order with OrderID 10384
+Customer #5 has an order with OrderID 10444
+Customer #5 has an order with OrderID 10445
+Customer #5 has an order with OrderID 10524
+Customer #5 has an order with OrderID 10572
+Customer #5 has an order with OrderID 10626
+Customer #5 has an order with OrderID 10654
+Customer #5 has an order with OrderID 10672
+Customer #5 has an order with OrderID 10689
+Customer #5 has an order with OrderID 10733
+Customer #5 has an order with OrderID 10778
+Customer #5 has an order with OrderID 10837
+Customer #5 has an order with OrderID 10857
+Customer #5 has an order with OrderID 10866
+Customer #5 has an order with OrderID 10875
+Customer #5 has an order with OrderID 10924
+Customer #6 has an order with OrderID 10501
+Customer #6 has an order with OrderID 10509
+Customer #6 has an order with OrderID 10582
+Customer #6 has an order with OrderID 10614
+Customer #6 has an order with OrderID 10853
+Customer #6 has an order with OrderID 10956
+Customer #6 has an order with OrderID 11058
+Customer #7 has an order with OrderID 10265
+Customer #7 has an order with OrderID 10297
+Customer #7 has an order with OrderID 10360
+Customer #7 has an order with OrderID 10436
+Customer #7 has an order with OrderID 10449
+Customer #7 has an order with OrderID 10559
+Customer #7 has an order with OrderID 10566
+Customer #7 has an order with OrderID 10584
+Customer #7 has an order with OrderID 10628
+Customer #7 has an order with OrderID 10679
+Customer #7 has an order with OrderID 10826
+Customer #8 has an order with OrderID 10326
+Customer #8 has an order with OrderID 10801
+Customer #8 has an order with OrderID 10970
+Customer #9 has an order with OrderID 10331
+Customer #9 has an order with OrderID 10340
+Customer #9 has an order with OrderID 10362
+Customer #9 has an order with OrderID 10470
+Customer #9 has an order with OrderID 10511
+Customer #9 has an order with OrderID 10525
+Customer #9 has an order with OrderID 10663
+Customer #9 has an order with OrderID 10715
+Customer #9 has an order with OrderID 10730
+Customer #9 has an order with OrderID 10732
+Customer #9 has an order with OrderID 10755
+Customer #9 has an order with OrderID 10827
+Customer #9 has an order with OrderID 10871
+Customer #9 has an order with OrderID 10876
+Customer #9 has an order with OrderID 10932
+Customer #9 has an order with OrderID 10940
+Customer #9 has an order with OrderID 11076
+Customer #10 has an order with OrderID 10389
+Customer #10 has an order with OrderID 10410
+Customer #10 has an order with OrderID 10411
+Customer #10 has an order with OrderID 10431
+Customer #10 has an order with OrderID 10492
+Customer #10 has an order with OrderID 10742
+Customer #10 has an order with OrderID 10918
+Customer #10 has an order with OrderID 10944
+Customer #10 has an order with OrderID 10949
+Customer #10 has an order with OrderID 10975
+Customer #10 has an order with OrderID 10982
+Customer #10 has an order with OrderID 11027
+Customer #10 has an order with OrderID 11045
+Customer #10 has an order with OrderID 11048
+Customer #11 has an order with OrderID 10289
+Customer #11 has an order with OrderID 10471
+Customer #11 has an order with OrderID 10484
+Customer #11 has an order with OrderID 10538
+Customer #11 has an order with OrderID 10539
+Customer #11 has an order with OrderID 10578
+Customer #11 has an order with OrderID 10599
+Customer #11 has an order with OrderID 10943
+Customer #11 has an order with OrderID 10947
+Customer #11 has an order with OrderID 11023
+Customer #12 has an order with OrderID 10521
+Customer #12 has an order with OrderID 10782
+Customer #12 has an order with OrderID 10819
+Customer #12 has an order with OrderID 10881
+Customer #12 has an order with OrderID 10937
+Customer #12 has an order with OrderID 11054
+Customer #13 has an order with OrderID 10259
+Customer #14 has an order with OrderID 10254
+Customer #14 has an order with OrderID 10370
+Customer #14 has an order with OrderID 10519
+Customer #14 has an order with OrderID 10731
+Customer #14 has an order with OrderID 10746
+Customer #14 has an order with OrderID 10966
+Customer #14 has an order with OrderID 11029
+Customer #14 has an order with OrderID 11041
+Customer #15 has an order with OrderID 10290
+Customer #15 has an order with OrderID 10466
+Customer #15 has an order with OrderID 10494
+Customer #15 has an order with OrderID 10969
+Customer #15 has an order with OrderID 11042
+Customer #16 has an order with OrderID 10435
+Customer #16 has an order with OrderID 10462
+Customer #16 has an order with OrderID 10848
+Customer #17 has an order with OrderID 10363
+Customer #17 has an order with OrderID 10391
+Customer #17 has an order with OrderID 10797
+Customer #17 has an order with OrderID 10825
+Customer #17 has an order with OrderID 11036
+Customer #17 has an order with OrderID 11067
+Customer #18 has an order with OrderID 10311
+Customer #18 has an order with OrderID 10609
+Customer #18 has an order with OrderID 10683
+Customer #18 has an order with OrderID 10890
+Customer #19 has an order with OrderID 10364
+Customer #19 has an order with OrderID 10400
+Customer #19 has an order with OrderID 10532
+Customer #19 has an order with OrderID 10726
+Customer #19 has an order with OrderID 10987
+Customer #19 has an order with OrderID 11024
+Customer #19 has an order with OrderID 11047
+Customer #19 has an order with OrderID 11056
+Customer #20 has an order with OrderID 10258
+Customer #20 has an order with OrderID 10263
+Customer #20 has an order with OrderID 10351
+Customer #20 has an order with OrderID 10368
+Customer #20 has an order with OrderID 10382
+Customer #20 has an order with OrderID 10390
+Customer #20 has an order with OrderID 10402
+Customer #20 has an order with OrderID 10403
+Customer #20 has an order with OrderID 10430
+Customer #20 has an order with OrderID 10442
+Customer #20 has an order with OrderID 10514
+Customer #20 has an order with OrderID 10571
+Customer #20 has an order with OrderID 10595
+Customer #20 has an order with OrderID 10633
+Customer #20 has an order with OrderID 10667
+Customer #20 has an order with OrderID 10698
+Customer #20 has an order with OrderID 10764
+Customer #20 has an order with OrderID 10771
+Customer #20 has an order with OrderID 10773
+Customer #20 has an order with OrderID 10776
+Customer #20 has an order with OrderID 10795
+Customer #20 has an order with OrderID 10836
+Customer #20 has an order with OrderID 10854
+Customer #20 has an order with OrderID 10895
+Customer #20 has an order with OrderID 10968
+Customer #20 has an order with OrderID 10979
+Customer #20 has an order with OrderID 10990
+Customer #20 has an order with OrderID 11008
+Customer #20 has an order with OrderID 11017
+Customer #20 has an order with OrderID 11072
+Customer #21 has an order with OrderID 10347
+Customer #21 has an order with OrderID 10386
+Customer #21 has an order with OrderID 10414
+Customer #21 has an order with OrderID 10512
+Customer #21 has an order with OrderID 10581
+Customer #21 has an order with OrderID 10650
+Customer #21 has an order with OrderID 10725
+Customer #23 has an order with OrderID 10408
+Customer #23 has an order with OrderID 10480
+Customer #23 has an order with OrderID 10634
+Customer #23 has an order with OrderID 10763
+Customer #23 has an order with OrderID 10789
+Customer #24 has an order with OrderID 10264
+Customer #24 has an order with OrderID 10327
+Customer #24 has an order with OrderID 10378
+Customer #24 has an order with OrderID 10434
+Customer #24 has an order with OrderID 10460
+Customer #24 has an order with OrderID 10533
+Customer #24 has an order with OrderID 10561
+Customer #24 has an order with OrderID 10703
+Customer #24 has an order with OrderID 10762
+Customer #24 has an order with OrderID 10774
+Customer #24 has an order with OrderID 10824
+Customer #24 has an order with OrderID 10880
+Customer #24 has an order with OrderID 10902
+Customer #24 has an order with OrderID 10955
+Customer #24 has an order with OrderID 10977
+Customer #24 has an order with OrderID 10980
+Customer #24 has an order with OrderID 10993
+Customer #24 has an order with OrderID 11001
+Customer #24 has an order with OrderID 11050
+Customer #25 has an order with OrderID 10267
+Customer #25 has an order with OrderID 10337
+Customer #25 has an order with OrderID 10342
+Customer #25 has an order with OrderID 10396
+Customer #25 has an order with OrderID 10488
+Customer #25 has an order with OrderID 10560
+Customer #25 has an order with OrderID 10623
+Customer #25 has an order with OrderID 10653
+Customer #25 has an order with OrderID 10670
+Customer #25 has an order with OrderID 10675
+Customer #25 has an order with OrderID 10717
+Customer #25 has an order with OrderID 10791
+Customer #25 has an order with OrderID 10859
+Customer #25 has an order with OrderID 10929
+Customer #25 has an order with OrderID 11012
+Customer #26 has an order with OrderID 10671
+Customer #26 has an order with OrderID 10860
+Customer #26 has an order with OrderID 10971
+Customer #27 has an order with OrderID 10422
+Customer #27 has an order with OrderID 10710
+Customer #27 has an order with OrderID 10753
+Customer #27 has an order with OrderID 10807
+Customer #27 has an order with OrderID 11026
+Customer #27 has an order with OrderID 11060
+Customer #28 has an order with OrderID 10328
+Customer #28 has an order with OrderID 10352
+Customer #28 has an order with OrderID 10464
+Customer #28 has an order with OrderID 10491
+Customer #28 has an order with OrderID 10551
+Customer #28 has an order with OrderID 10604
+Customer #28 has an order with OrderID 10664
+Customer #28 has an order with OrderID 10963
+Customer #29 has an order with OrderID 10366
+Customer #29 has an order with OrderID 10426
+Customer #29 has an order with OrderID 10568
+Customer #29 has an order with OrderID 10887
+Customer #29 has an order with OrderID 10928
+Customer #30 has an order with OrderID 10303
+Customer #30 has an order with OrderID 10550
+Customer #30 has an order with OrderID 10629
+Customer #30 has an order with OrderID 10872
+Customer #30 has an order with OrderID 10874
+Customer #30 has an order with OrderID 10888
+Customer #30 has an order with OrderID 10911
+Customer #30 has an order with OrderID 10948
+Customer #30 has an order with OrderID 11009
+Customer #30 has an order with OrderID 11037
+Customer #31 has an order with OrderID 10423
+Customer #31 has an order with OrderID 10652
+Customer #31 has an order with OrderID 10685
+Customer #31 has an order with OrderID 10709
+Customer #31 has an order with OrderID 10734
+Customer #31 has an order with OrderID 10777
+Customer #31 has an order with OrderID 10790
+Customer #31 has an order with OrderID 10959
+Customer #31 has an order with OrderID 11049
+Customer #32 has an order with OrderID 10528
+Customer #32 has an order with OrderID 10589
+Customer #32 has an order with OrderID 10616
+Customer #32 has an order with OrderID 10617
+Customer #32 has an order with OrderID 10656
+Customer #32 has an order with OrderID 10681
+Customer #32 has an order with OrderID 10816
+Customer #32 has an order with OrderID 10936
+Customer #32 has an order with OrderID 11006
+Customer #32 has an order with OrderID 11040
+Customer #32 has an order with OrderID 11061
+Customer #33 has an order with OrderID 10268
+Customer #33 has an order with OrderID 10785
+Customer #34 has an order with OrderID 10250
+Customer #34 has an order with OrderID 10253
+Customer #34 has an order with OrderID 10541
+Customer #34 has an order with OrderID 10645
+Customer #34 has an order with OrderID 10690
+Customer #34 has an order with OrderID 10770
+Customer #34 has an order with OrderID 10783
+Customer #34 has an order with OrderID 10886
+Customer #34 has an order with OrderID 10903
+Customer #34 has an order with OrderID 10922
+Customer #34 has an order with OrderID 10925
+Customer #34 has an order with OrderID 10981
+Customer #34 has an order with OrderID 11022
+Customer #34 has an order with OrderID 11052
+Customer #35 has an order with OrderID 10257
+Customer #35 has an order with OrderID 10395
+Customer #35 has an order with OrderID 10476
+Customer #35 has an order with OrderID 10486
+Customer #35 has an order with OrderID 10490
+Customer #35 has an order with OrderID 10498
+Customer #35 has an order with OrderID 10552
+Customer #35 has an order with OrderID 10601
+Customer #35 has an order with OrderID 10613
+Customer #35 has an order with OrderID 10641
+Customer #35 has an order with OrderID 10705
+Customer #35 has an order with OrderID 10796
+Customer #35 has an order with OrderID 10863
+Customer #35 has an order with OrderID 10901
+Customer #35 has an order with OrderID 10957
+Customer #35 has an order with OrderID 10960
+Customer #35 has an order with OrderID 10976
+Customer #35 has an order with OrderID 11055
+Customer #36 has an order with OrderID 10375
+Customer #36 has an order with OrderID 10394
+Customer #36 has an order with OrderID 10415
+Customer #36 has an order with OrderID 10600
+Customer #36 has an order with OrderID 10660
+Customer #37 has an order with OrderID 10298
+Customer #37 has an order with OrderID 10309
+Customer #37 has an order with OrderID 10335
+Customer #37 has an order with OrderID 10373
+Customer #37 has an order with OrderID 10380
+Customer #37 has an order with OrderID 10429
+Customer #37 has an order with OrderID 10503
+Customer #37 has an order with OrderID 10516
+Customer #37 has an order with OrderID 10567
+Customer #37 has an order with OrderID 10646
+Customer #37 has an order with OrderID 10661
+Customer #37 has an order with OrderID 10687
+Customer #37 has an order with OrderID 10701
+Customer #37 has an order with OrderID 10712
+Customer #37 has an order with OrderID 10736
+Customer #37 has an order with OrderID 10897
+Customer #37 has an order with OrderID 10912
+Customer #37 has an order with OrderID 10985
+Customer #37 has an order with OrderID 11063
+Customer #38 has an order with OrderID 10315
+Customer #38 has an order with OrderID 10318
+Customer #38 has an order with OrderID 10321
+Customer #38 has an order with OrderID 10473
+Customer #38 has an order with OrderID 10621
+Customer #38 has an order with OrderID 10674
+Customer #38 has an order with OrderID 10749
+Customer #38 has an order with OrderID 10798
+Customer #38 has an order with OrderID 10829
+Customer #38 has an order with OrderID 10933
+Customer #39 has an order with OrderID 10323
+Customer #39 has an order with OrderID 10325
+Customer #39 has an order with OrderID 10456
+Customer #39 has an order with OrderID 10457
+Customer #39 has an order with OrderID 10468
+Customer #39 has an order with OrderID 10506
+Customer #39 has an order with OrderID 10542
+Customer #39 has an order with OrderID 10630
+Customer #39 has an order with OrderID 10718
+Customer #39 has an order with OrderID 10799
+Customer #39 has an order with OrderID 10817
+Customer #39 has an order with OrderID 10849
+Customer #39 has an order with OrderID 10893
+Customer #39 has an order with OrderID 11028
+Customer #40 has an order with OrderID 10858
+Customer #40 has an order with OrderID 10927
+Customer #40 has an order with OrderID 10972
+Customer #40 has an order with OrderID 10973
+Customer #41 has an order with OrderID 10350
+Customer #41 has an order with OrderID 10358
+Customer #41 has an order with OrderID 10371
+Customer #41 has an order with OrderID 10413
+Customer #41 has an order with OrderID 10425
+Customer #41 has an order with OrderID 10454
+Customer #41 has an order with OrderID 10493
+Customer #41 has an order with OrderID 10500
+Customer #41 has an order with OrderID 10610
+Customer #41 has an order with OrderID 10631
+Customer #41 has an order with OrderID 10787
+Customer #41 has an order with OrderID 10832
+Customer #41 has an order with OrderID 10923
+Customer #41 has an order with OrderID 11051
+Customer #42 has an order with OrderID 10495
+Customer #42 has an order with OrderID 10620
+Customer #42 has an order with OrderID 10810
+Customer #43 has an order with OrderID 10482
+Customer #43 has an order with OrderID 10545
+Customer #44 has an order with OrderID 10279
+Customer #44 has an order with OrderID 10284
+Customer #44 has an order with OrderID 10343
+Customer #44 has an order with OrderID 10497
+Customer #44 has an order with OrderID 10522
+Customer #44 has an order with OrderID 10534
+Customer #44 has an order with OrderID 10536
+Customer #44 has an order with OrderID 10557
+Customer #44 has an order with OrderID 10592
+Customer #44 has an order with OrderID 10593
+Customer #44 has an order with OrderID 10772
+Customer #44 has an order with OrderID 10862
+Customer #44 has an order with OrderID 10891
+Customer #44 has an order with OrderID 10934
+Customer #44 has an order with OrderID 11070
+Customer #45 has an order with OrderID 10579
+Customer #45 has an order with OrderID 10719
+Customer #45 has an order with OrderID 10735
+Customer #45 has an order with OrderID 10884
+Customer #46 has an order with OrderID 10283
+Customer #46 has an order with OrderID 10296
+Customer #46 has an order with OrderID 10330
+Customer #46 has an order with OrderID 10357
+Customer #46 has an order with OrderID 10381
+Customer #46 has an order with OrderID 10461
+Customer #46 has an order with OrderID 10499
+Customer #46 has an order with OrderID 10543
+Customer #46 has an order with OrderID 10780
+Customer #46 has an order with OrderID 10823
+Customer #46 has an order with OrderID 10899
+Customer #46 has an order with OrderID 10997
+Customer #46 has an order with OrderID 11065
+Customer #46 has an order with OrderID 11071
+Customer #47 has an order with OrderID 10405
+Customer #47 has an order with OrderID 10485
+Customer #47 has an order with OrderID 10638
+Customer #47 has an order with OrderID 10697
+Customer #47 has an order with OrderID 10729
+Customer #47 has an order with OrderID 10811
+Customer #47 has an order with OrderID 10838
+Customer #47 has an order with OrderID 10840
+Customer #47 has an order with OrderID 10919
+Customer #47 has an order with OrderID 10954
+Customer #47 has an order with OrderID 11014
+Customer #47 has an order with OrderID 11039
+Customer #48 has an order with OrderID 10307
+Customer #48 has an order with OrderID 10317
+Customer #48 has an order with OrderID 10544
+Customer #48 has an order with OrderID 10662
+Customer #48 has an order with OrderID 10665
+Customer #48 has an order with OrderID 10867
+Customer #48 has an order with OrderID 10883
+Customer #48 has an order with OrderID 11018
+Customer #49 has an order with OrderID 10275
+Customer #49 has an order with OrderID 10300
+Customer #49 has an order with OrderID 10404
+Customer #49 has an order with OrderID 10467
+Customer #49 has an order with OrderID 10635
+Customer #49 has an order with OrderID 10754
+Customer #49 has an order with OrderID 10784
+Customer #49 has an order with OrderID 10818
+Customer #49 has an order with OrderID 10939
+Customer #49 has an order with OrderID 10950
+Customer #50 has an order with OrderID 10529
+Customer #50 has an order with OrderID 10649
+Customer #50 has an order with OrderID 10760
+Customer #50 has an order with OrderID 10892
+Customer #50 has an order with OrderID 10896
+Customer #50 has an order with OrderID 10978
+Customer #50 has an order with OrderID 11004
+Customer #51 has an order with OrderID 10332
+Customer #51 has an order with OrderID 10339
+Customer #51 has an order with OrderID 10376
+Customer #51 has an order with OrderID 10424
+Customer #51 has an order with OrderID 10439
+Customer #51 has an order with OrderID 10505
+Customer #51 has an order with OrderID 10565
+Customer #51 has an order with OrderID 10570
+Customer #51 has an order with OrderID 10590
+Customer #51 has an order with OrderID 10605
+Customer #51 has an order with OrderID 10618
+Customer #51 has an order with OrderID 10619
+Customer #51 has an order with OrderID 10724
+Customer #52 has an order with OrderID 10277
+Customer #52 has an order with OrderID 10575
+Customer #52 has an order with OrderID 10699
+Customer #52 has an order with OrderID 10779
+Customer #52 has an order with OrderID 10945
+Customer #53 has an order with OrderID 10517
+Customer #53 has an order with OrderID 10752
+Customer #53 has an order with OrderID 11057
+Customer #54 has an order with OrderID 10409
+Customer #54 has an order with OrderID 10531
+Customer #54 has an order with OrderID 10898
+Customer #54 has an order with OrderID 10958
+Customer #54 has an order with OrderID 10986
+Customer #55 has an order with OrderID 10260
+Customer #55 has an order with OrderID 10305
+Customer #55 has an order with OrderID 10338
+Customer #55 has an order with OrderID 10441
+Customer #55 has an order with OrderID 10594
+Customer #55 has an order with OrderID 10680
+Customer #55 has an order with OrderID 10706
+Customer #55 has an order with OrderID 10855
+Customer #55 has an order with OrderID 10965
+Customer #55 has an order with OrderID 11034
+Customer #56 has an order with OrderID 10407
+Customer #56 has an order with OrderID 10508
+Customer #56 has an order with OrderID 10554
+Customer #56 has an order with OrderID 10580
+Customer #56 has an order with OrderID 10684
+Customer #56 has an order with OrderID 10766
+Customer #56 has an order with OrderID 10833
+Customer #56 has an order with OrderID 10999
+Customer #56 has an order with OrderID 11020
+Customer #58 has an order with OrderID 10322
+Customer #58 has an order with OrderID 10354
+Customer #58 has an order with OrderID 10474
+Customer #58 has an order with OrderID 10502
+Customer #58 has an order with OrderID 10995
+Customer #58 has an order with OrderID 11073
+Customer #59 has an order with OrderID 10353
+Customer #59 has an order with OrderID 10392
+Customer #59 has an order with OrderID 10427
+Customer #59 has an order with OrderID 10489
+Customer #59 has an order with OrderID 10530
+Customer #59 has an order with OrderID 10597
+Customer #59 has an order with OrderID 10686
+Customer #59 has an order with OrderID 10747
+Customer #59 has an order with OrderID 10844
+Customer #59 has an order with OrderID 11053
+Customer #60 has an order with OrderID 10336
+Customer #60 has an order with OrderID 10397
+Customer #60 has an order with OrderID 10433
+Customer #60 has an order with OrderID 10477
+Customer #60 has an order with OrderID 10808
+Customer #60 has an order with OrderID 11007
+Customer #61 has an order with OrderID 10261
+Customer #61 has an order with OrderID 10291
+Customer #61 has an order with OrderID 10379
+Customer #61 has an order with OrderID 10421
+Customer #61 has an order with OrderID 10587
+Customer #61 has an order with OrderID 10647
+Customer #61 has an order with OrderID 10720
+Customer #61 has an order with OrderID 10794
+Customer #61 has an order with OrderID 10989
+Customer #62 has an order with OrderID 10372
+Customer #62 has an order with OrderID 10406
+Customer #62 has an order with OrderID 10487
+Customer #62 has an order with OrderID 10637
+Customer #62 has an order with OrderID 10659
+Customer #62 has an order with OrderID 10704
+Customer #62 has an order with OrderID 10728
+Customer #62 has an order with OrderID 10786
+Customer #62 has an order with OrderID 10868
+Customer #62 has an order with OrderID 10913
+Customer #62 has an order with OrderID 10914
+Customer #62 has an order with OrderID 10961
+Customer #62 has an order with OrderID 11068
+Customer #63 has an order with OrderID 10273
+Customer #63 has an order with OrderID 10285
+Customer #63 has an order with OrderID 10286
+Customer #63 has an order with OrderID 10313
+Customer #63 has an order with OrderID 10345
+Customer #63 has an order with OrderID 10361
+Customer #63 has an order with OrderID 10418
+Customer #63 has an order with OrderID 10451
+Customer #63 has an order with OrderID 10515
+Customer #63 has an order with OrderID 10527
+Customer #63 has an order with OrderID 10540
+Customer #63 has an order with OrderID 10549
+Customer #63 has an order with OrderID 10588
+Customer #63 has an order with OrderID 10658
+Customer #63 has an order with OrderID 10691
+Customer #63 has an order with OrderID 10694
+Customer #63 has an order with OrderID 10721
+Customer #63 has an order with OrderID 10745
+Customer #63 has an order with OrderID 10765
+Customer #63 has an order with OrderID 10788
+Customer #63 has an order with OrderID 10845
+Customer #63 has an order with OrderID 10865
+Customer #63 has an order with OrderID 10878
+Customer #63 has an order with OrderID 10938
+Customer #63 has an order with OrderID 10962
+Customer #63 has an order with OrderID 10991
+Customer #63 has an order with OrderID 10996
+Customer #63 has an order with OrderID 11021
+Customer #64 has an order with OrderID 10448
+Customer #64 has an order with OrderID 10716
+Customer #64 has an order with OrderID 10828
+Customer #64 has an order with OrderID 10916
+Customer #64 has an order with OrderID 11019
+Customer #65 has an order with OrderID 10262
+Customer #65 has an order with OrderID 10272
+Customer #65 has an order with OrderID 10294
+Customer #65 has an order with OrderID 10314
+Customer #65 has an order with OrderID 10316
+Customer #65 has an order with OrderID 10346
+Customer #65 has an order with OrderID 10401
+Customer #65 has an order with OrderID 10479
+Customer #65 has an order with OrderID 10564
+Customer #65 has an order with OrderID 10569
+Customer #65 has an order with OrderID 10598
+Customer #65 has an order with OrderID 10761
+Customer #65 has an order with OrderID 10820
+Customer #65 has an order with OrderID 10852
+Customer #65 has an order with OrderID 10889
+Customer #65 has an order with OrderID 10988
+Customer #65 has an order with OrderID 11000
+Customer #65 has an order with OrderID 11077
+Customer #66 has an order with OrderID 10288
+Customer #66 has an order with OrderID 10428
+Customer #66 has an order with OrderID 10443
+Customer #66 has an order with OrderID 10562
+Customer #66 has an order with OrderID 10586
+Customer #66 has an order with OrderID 10655
+Customer #66 has an order with OrderID 10727
+Customer #66 has an order with OrderID 10812
+Customer #66 has an order with OrderID 10908
+Customer #66 has an order with OrderID 10942
+Customer #66 has an order with OrderID 11010
+Customer #66 has an order with OrderID 11062
+Customer #67 has an order with OrderID 10287
+Customer #67 has an order with OrderID 10299
+Customer #67 has an order with OrderID 10447
+Customer #67 has an order with OrderID 10481
+Customer #67 has an order with OrderID 10563
+Customer #67 has an order with OrderID 10622
+Customer #67 has an order with OrderID 10648
+Customer #67 has an order with OrderID 10813
+Customer #67 has an order with OrderID 10851
+Customer #67 has an order with OrderID 10877
+Customer #67 has an order with OrderID 11059
+Customer #68 has an order with OrderID 10255
+Customer #68 has an order with OrderID 10419
+Customer #68 has an order with OrderID 10537
+Customer #68 has an order with OrderID 10666
+Customer #68 has an order with OrderID 10751
+Customer #68 has an order with OrderID 10758
+Customer #68 has an order with OrderID 10931
+Customer #68 has an order with OrderID 10951
+Customer #68 has an order with OrderID 11033
+Customer #68 has an order with OrderID 11075
+Customer #69 has an order with OrderID 10281
+Customer #69 has an order with OrderID 10282
+Customer #69 has an order with OrderID 10306
+Customer #69 has an order with OrderID 10917
+Customer #69 has an order with OrderID 11013
+Customer #70 has an order with OrderID 10387
+Customer #70 has an order with OrderID 10520
+Customer #70 has an order with OrderID 10639
+Customer #70 has an order with OrderID 10831
+Customer #70 has an order with OrderID 10909
+Customer #70 has an order with OrderID 11015
+Customer #71 has an order with OrderID 10324
+Customer #71 has an order with OrderID 10393
+Customer #71 has an order with OrderID 10398
+Customer #71 has an order with OrderID 10440
+Customer #71 has an order with OrderID 10452
+Customer #71 has an order with OrderID 10510
+Customer #71 has an order with OrderID 10555
+Customer #71 has an order with OrderID 10603
+Customer #71 has an order with OrderID 10607
+Customer #71 has an order with OrderID 10612
+Customer #71 has an order with OrderID 10627
+Customer #71 has an order with OrderID 10657
+Customer #71 has an order with OrderID 10678
+Customer #71 has an order with OrderID 10700
+Customer #71 has an order with OrderID 10711
+Customer #71 has an order with OrderID 10713
+Customer #71 has an order with OrderID 10714
+Customer #71 has an order with OrderID 10722
+Customer #71 has an order with OrderID 10748
+Customer #71 has an order with OrderID 10757
+Customer #71 has an order with OrderID 10815
+Customer #71 has an order with OrderID 10847
+Customer #71 has an order with OrderID 10882
+Customer #71 has an order with OrderID 10894
+Customer #71 has an order with OrderID 10941
+Customer #71 has an order with OrderID 10983
+Customer #71 has an order with OrderID 10984
+Customer #71 has an order with OrderID 11002
+Customer #71 has an order with OrderID 11030
+Customer #71 has an order with OrderID 11031
+Customer #71 has an order with OrderID 11064
+Customer #72 has an order with OrderID 10359
+Customer #72 has an order with OrderID 10377
+Customer #72 has an order with OrderID 10388
+Customer #72 has an order with OrderID 10472
+Customer #72 has an order with OrderID 10523
+Customer #72 has an order with OrderID 10547
+Customer #72 has an order with OrderID 10800
+Customer #72 has an order with OrderID 10804
+Customer #72 has an order with OrderID 10869
+Customer #73 has an order with OrderID 10341
+Customer #73 has an order with OrderID 10417
+Customer #73 has an order with OrderID 10556
+Customer #73 has an order with OrderID 10642
+Customer #73 has an order with OrderID 10669
+Customer #73 has an order with OrderID 10802
+Customer #73 has an order with OrderID 11074
+Customer #74 has an order with OrderID 10738
+Customer #74 has an order with OrderID 10907
+Customer #74 has an order with OrderID 10964
+Customer #74 has an order with OrderID 11043
+Customer #75 has an order with OrderID 10271
+Customer #75 has an order with OrderID 10329
+Customer #75 has an order with OrderID 10349
+Customer #75 has an order with OrderID 10369
+Customer #75 has an order with OrderID 10385
+Customer #75 has an order with OrderID 10432
+Customer #75 has an order with OrderID 10756
+Customer #75 has an order with OrderID 10821
+Customer #75 has an order with OrderID 10974
+Customer #76 has an order with OrderID 10252
+Customer #76 has an order with OrderID 10302
+Customer #76 has an order with OrderID 10458
+Customer #76 has an order with OrderID 10463
+Customer #76 has an order with OrderID 10475
+Customer #76 has an order with OrderID 10767
+Customer #76 has an order with OrderID 10841
+Customer #76 has an order with OrderID 10846
+Customer #76 has an order with OrderID 10885
+Customer #76 has an order with OrderID 10930
+Customer #76 has an order with OrderID 11035
+Customer #76 has an order with OrderID 11038
+Customer #77 has an order with OrderID 10310
+Customer #77 has an order with OrderID 10708
+Customer #77 has an order with OrderID 10805
+Customer #77 has an order with OrderID 10992
+Customer #78 has an order with OrderID 10624
+Customer #78 has an order with OrderID 10775
+Customer #78 has an order with OrderID 11003
+Customer #79 has an order with OrderID 10438
+Customer #79 has an order with OrderID 10446
+Customer #79 has an order with OrderID 10548
+Customer #79 has an order with OrderID 10608
+Customer #79 has an order with OrderID 10967
+Customer #80 has an order with OrderID 10276
+Customer #80 has an order with OrderID 10293
+Customer #80 has an order with OrderID 10304
+Customer #80 has an order with OrderID 10319
+Customer #80 has an order with OrderID 10518
+Customer #80 has an order with OrderID 10576
+Customer #80 has an order with OrderID 10676
+Customer #80 has an order with OrderID 10842
+Customer #80 has an order with OrderID 10915
+Customer #80 has an order with OrderID 11069
+Customer #81 has an order with OrderID 10249
+Customer #81 has an order with OrderID 10292
+Customer #81 has an order with OrderID 10496
+Customer #81 has an order with OrderID 10606
+Customer #81 has an order with OrderID 10830
+Customer #81 has an order with OrderID 10834
+Customer #81 has an order with OrderID 10839
+Customer #82 has an order with OrderID 10574
+Customer #82 has an order with OrderID 10577
+Customer #82 has an order with OrderID 10822
+Customer #83 has an order with OrderID 10367
+Customer #83 has an order with OrderID 10399
+Customer #83 has an order with OrderID 10465
+Customer #83 has an order with OrderID 10591
+Customer #83 has an order with OrderID 10602
+Customer #83 has an order with OrderID 10688
+Customer #83 has an order with OrderID 10744
+Customer #83 has an order with OrderID 10769
+Customer #83 has an order with OrderID 10921
+Customer #83 has an order with OrderID 10946
+Customer #83 has an order with OrderID 10994
+Customer #84 has an order with OrderID 10251
+Customer #84 has an order with OrderID 10334
+Customer #84 has an order with OrderID 10450
+Customer #84 has an order with OrderID 10459
+Customer #84 has an order with OrderID 10478
+Customer #84 has an order with OrderID 10546
+Customer #84 has an order with OrderID 10806
+Customer #84 has an order with OrderID 10814
+Customer #84 has an order with OrderID 10843
+Customer #84 has an order with OrderID 10850
+Customer #85 has an order with OrderID 10274
+Customer #85 has an order with OrderID 10295
+Customer #85 has an order with OrderID 10737
+Customer #85 has an order with OrderID 10739
+Customer #86 has an order with OrderID 10301
+Customer #86 has an order with OrderID 10312
+Customer #86 has an order with OrderID 10348
+Customer #86 has an order with OrderID 10356
+Customer #86 has an order with OrderID 10513
+Customer #86 has an order with OrderID 10632
+Customer #86 has an order with OrderID 10640
+Customer #86 has an order with OrderID 10651
+Customer #86 has an order with OrderID 10668
+Customer #86 has an order with OrderID 11046
+Customer #87 has an order with OrderID 10266
+Customer #87 has an order with OrderID 10270
+Customer #87 has an order with OrderID 10320
+Customer #87 has an order with OrderID 10333
+Customer #87 has an order with OrderID 10412
+Customer #87 has an order with OrderID 10416
+Customer #87 has an order with OrderID 10437
+Customer #87 has an order with OrderID 10455
+Customer #87 has an order with OrderID 10526
+Customer #87 has an order with OrderID 10553
+Customer #87 has an order with OrderID 10583
+Customer #87 has an order with OrderID 10636
+Customer #87 has an order with OrderID 10750
+Customer #87 has an order with OrderID 10781
+Customer #87 has an order with OrderID 11025
+Customer #88 has an order with OrderID 10256
+Customer #88 has an order with OrderID 10420
+Customer #88 has an order with OrderID 10585
+Customer #88 has an order with OrderID 10644
+Customer #88 has an order with OrderID 10803
+Customer #88 has an order with OrderID 10809
+Customer #88 has an order with OrderID 10900
+Customer #88 has an order with OrderID 10905
+Customer #88 has an order with OrderID 10935
+Customer #89 has an order with OrderID 10269
+Customer #89 has an order with OrderID 10344
+Customer #89 has an order with OrderID 10469
+Customer #89 has an order with OrderID 10483
+Customer #89 has an order with OrderID 10504
+Customer #89 has an order with OrderID 10596
+Customer #89 has an order with OrderID 10693
+Customer #89 has an order with OrderID 10696
+Customer #89 has an order with OrderID 10723
+Customer #89 has an order with OrderID 10740
+Customer #89 has an order with OrderID 10861
+Customer #89 has an order with OrderID 10904
+Customer #89 has an order with OrderID 11032
+Customer #89 has an order with OrderID 11066
+Customer #90 has an order with OrderID 10248
+Customer #90 has an order with OrderID 10615
+Customer #90 has an order with OrderID 10673
+Customer #90 has an order with OrderID 10695
+Customer #90 has an order with OrderID 10873
+Customer #90 has an order with OrderID 10879
+Customer #90 has an order with OrderID 10910
+Customer #90 has an order with OrderID 11005
+Customer #91 has an order with OrderID 10374
+Customer #91 has an order with OrderID 10611
+Customer #91 has an order with OrderID 10792
+Customer #91 has an order with OrderID 10870
+Customer #91 has an order with OrderID 10906
+Customer #91 has an order with OrderID 10998
+Customer #91 has an order with OrderID 11044
+
+# LINQ20
+First 3 numbers:
+5
+4
+1
+
+# LINQ21
+First 3 orders in WA:
+(LAZYK, 10482, Fri Mar 21 00:00:00 PST 1997)
+(LAZYK, 10545, Thu May 22 00:00:00 PDT 1997)
+(TRAIH, 10574, Thu Jun 19 00:00:00 PDT 1997)
+
+# LINQ22
+All but first 4 numbers:
+9
+8
+6
+7
+2
+0
+
+# LINQ23
+All but first 2 orders in WA:
+(TRAIH, 10574, Thu Jun 19 00:00:00 PDT 1997)
+(TRAIH, 10577, Mon Jun 23 00:00:00 PDT 1997)
+(TRAIH, 10822, Thu Jan 08 00:00:00 PST 1998)
+(WHITC, 10269, Wed Jul 31 00:00:00 PDT 1996)
+(WHITC, 10344, Fri Nov 01 00:00:00 PST 1996)
+(WHITC, 10469, Mon Mar 10 00:00:00 PST 1997)
+(WHITC, 10483, Mon Mar 24 00:00:00 PST 1997)
+(WHITC, 10504, Fri Apr 11 00:00:00 PDT 1997)
+(WHITC, 10596, Fri Jul 11 00:00:00 PDT 1997)
+(WHITC, 10693, Mon Oct 06 00:00:00 PDT 1997)
+(WHITC, 10696, Wed Oct 08 00:00:00 PDT 1997)
+(WHITC, 10723, Thu Oct 30 00:00:00 PST 1997)
+(WHITC, 10740, Thu Nov 13 00:00:00 PST 1997)
+(WHITC, 10861, Fri Jan 30 00:00:00 PST 1998)
+(WHITC, 10904, Tue Feb 24 00:00:00 PST 1998)
+(WHITC, 11032, Fri Apr 17 00:00:00 PDT 1998)
+(WHITC, 11066, Fri May 01 00:00:00 PDT 1998)
+
+# LINQ24
+First numbers less than 6:
+5
+4
+1
+3
+
+# LINQ25
+First numbers not less than their position:
+5
+4
+
+# LINQ26
+All elements starting from first element divisible by 3:
+3
+9
+8
+6
+7
+2
+0
+
+# LINQ27
+All elements starting from first element less than its position:
+1
+3
+9
+8
+6
+7
+2
+0
+
+# LINQ28
+The sorted list of words:
+apple
+blueberry
+cherry
+
+# LINQ29
+The sorted list of words (by length):
+apple
+cherry
+blueberry
+
+# LINQ30
+(Product id=17, name=Alice Mutton, cat=Meat/Poultry, price=39.0, inStock=0)
+(Product id=3, name=Aniseed Syrup, cat=Condiments, price=10.0, inStock=13)
+(Product id=40, name=Boston Crab Meat, cat=Seafood, price=18.4, inStock=123)
+(Product id=60, name=Camembert Pierrot, cat=Dairy Products, price=34.0, inStock=19)
+(Product id=18, name=Carnarvon Tigers, cat=Seafood, price=62.5, inStock=42)
+(Product id=1, name=Chai, cat=Beverages, price=18.0, inStock=39)
+(Product id=2, name=Chang, cat=Beverages, price=19.0, inStock=17)
+(Product id=39, name=Chartreuse verte, cat=Beverages, price=18.0, inStock=69)
+(Product id=4, name=Chef Anton's Cajun Seasoning, cat=Condiments, price=22.0, inStock=53)
+(Product id=5, name=Chef Anton's Gumbo Mix, cat=Condiments, price=21.35, inStock=0)
+(Product id=48, name=Chocolade, cat=Confections, price=12.75, inStock=15)
+(Product id=38, name=Côte de Blaye, cat=Beverages, price=263.5, inStock=17)
+(Product id=58, name=Escargots de Bourgogne, cat=Seafood, price=13.25, inStock=62)
+(Product id=52, name=Filo Mix, cat=Grains/Cereals, price=7.0, inStock=38)
+(Product id=71, name=Flotemysost, cat=Dairy Products, price=21.5, inStock=26)
+(Product id=33, name=Geitost, cat=Dairy Products, price=2.5, inStock=112)
+(Product id=15, name=Genen Shouyu, cat=Condiments, price=15.5, inStock=39)
+(Product id=56, name=Gnocchi di nonna Alice, cat=Grains/Cereals, price=38.0, inStock=21)
+(Product id=31, name=Gorgonzola Telino, cat=Dairy Products, price=12.5, inStock=0)
+(Product id=6, name=Grandma's Boysenberry Spread, cat=Condiments, price=25.0, inStock=120)
+(Product id=37, name=Gravad lax, cat=Seafood, price=26.0, inStock=11)
+(Product id=24, name=Guaraná Fantástica, cat=Beverages, price=4.5, inStock=20)
+(Product id=69, name=Gudbrandsdalsost, cat=Dairy Products, price=36.0, inStock=26)
+(Product id=44, name=Gula Malacca, cat=Condiments, price=19.45, inStock=27)
+(Product id=26, name=Gumbär Gummibärchen, cat=Confections, price=31.23, inStock=15)
+(Product id=22, name=Gustaf's Knäckebröd, cat=Grains/Cereals, price=21.0, inStock=104)
+(Product id=10, name=Ikura, cat=Seafood, price=31.0, inStock=31)
+(Product id=36, name=Inlagd Sill, cat=Seafood, price=19.0, inStock=112)
+(Product id=43, name=Ipoh Coffee, cat=Beverages, price=46.0, inStock=17)
+(Product id=41, name=Jack's New England Clam Chowder, cat=Seafood, price=9.65, inStock=85)
+(Product id=13, name=Konbu, cat=Seafood, price=6.0, inStock=24)
+(Product id=76, name=Lakkalikööri, cat=Beverages, price=18.0, inStock=57)
+(Product id=67, name=Laughing Lumberjack Lager, cat=Beverages, price=14.0, inStock=52)
+(Product id=74, name=Longlife Tofu, cat=Produce, price=10.0, inStock=4)
+(Product id=65, name=Louisiana Fiery Hot Pepper Sauce, cat=Condiments, price=21.05, inStock=76)
+(Product id=66, name=Louisiana Hot Spiced Okra, cat=Condiments, price=17.0, inStock=4)
+(Product id=51, name=Manjimup Dried Apples, cat=Produce, price=53.0, inStock=20)
+(Product id=32, name=Mascarpone Fabioli, cat=Dairy Products, price=32.0, inStock=9)
+(Product id=49, name=Maxilaku, cat=Confections, price=20.0, inStock=10)
+(Product id=9, name=Mishi Kobe Niku, cat=Meat/Poultry, price=97.0, inStock=29)
+(Product id=72, name=Mozzarella di Giovanni, cat=Dairy Products, price=34.8, inStock=14)
+(Product id=30, name=Nord-Ost Matjeshering, cat=Seafood, price=25.89, inStock=10)
+(Product id=8, name=Northwoods Cranberry Sauce, cat=Condiments, price=40.0, inStock=6)
+(Product id=25, name=NuNuCa Nuß-Nougat-Creme, cat=Confections, price=14.0, inStock=76)
+(Product id=77, name=Original Frankfurter grüne Soße, cat=Condiments, price=13.0, inStock=32)
+(Product id=70, name=Outback Lager, cat=Beverages, price=15.0, inStock=15)
+(Product id=16, name=Pavlova, cat=Confections, price=17.45, inStock=29)
+(Product id=53, name=Perth Pasties, cat=Meat/Poultry, price=32.8, inStock=0)
+(Product id=55, name=Pâté chinois, cat=Meat/Poultry, price=24.0, inStock=115)
+(Product id=11, name=Queso Cabrales, cat=Dairy Products, price=21.0, inStock=22)
+(Product id=12, name=Queso Manchego La Pastora, cat=Dairy Products, price=38.0, inStock=86)
+(Product id=59, name=Raclette Courdavault, cat=Dairy Products, price=55.0, inStock=79)
+(Product id=57, name=Ravioli Angelo, cat=Grains/Cereals, price=19.5, inStock=36)
+(Product id=75, name=Rhönbräu Klosterbier, cat=Beverages, price=7.75, inStock=125)
+(Product id=45, name=Rogede sild, cat=Seafood, price=9.5, inStock=5)
+(Product id=73, name=Röd Kaviar, cat=Seafood, price=15.0, inStock=101)
+(Product id=28, name=Rössle Sauerkraut, cat=Produce, price=45.6, inStock=26)
+(Product id=34, name=Sasquatch Ale, cat=Beverages, price=14.0, inStock=111)
+(Product id=27, name=Schoggi Schokolade, cat=Confections, price=43.9, inStock=49)
+(Product id=68, name=Scottish Longbreads, cat=Confections, price=12.5, inStock=6)
+(Product id=42, name=Singaporean Hokkien Fried Mee, cat=Grains/Cereals, price=14.0, inStock=26)
+(Product id=20, name=Sir Rodney's Marmalade, cat=Confections, price=81.0, inStock=40)
+(Product id=21, name=Sir Rodney's Scones, cat=Confections, price=10.0, inStock=3)
+(Product id=61, name=Sirop d'érable, cat=Condiments, price=28.5, inStock=113)
+(Product id=46, name=Spegesild, cat=Seafood, price=12.0, inStock=95)
+(Product id=35, name=Steeleye Stout, cat=Beverages, price=18.0, inStock=20)
+(Product id=62, name=Tarte au sucre, cat=Confections, price=49.3, inStock=17)
+(Product id=19, name=Teatime Chocolate Biscuits, cat=Confections, price=9.2, inStock=25)
+(Product id=29, name=Thüringer Rostbratwurst, cat=Meat/Poultry, price=123.79, inStock=0)
+(Product id=14, name=Tofu, cat=Produce, price=23.25, inStock=35)
+(Product id=54, name=Tourtière, cat=Meat/Poultry, price=7.45, inStock=21)
+(Product id=23, name=Tunnbröd, cat=Grains/Cereals, price=9.0, inStock=61)
+(Product id=7, name=Uncle Bob's Organic Dried Pears, cat=Produce, price=30.0, inStock=15)
+(Product id=50, name=Valkoinen suklaa, cat=Confections, price=16.25, inStock=65)
+(Product id=63, name=Vegie-spread, cat=Condiments, price=43.9, inStock=24)
+(Product id=64, name=Wimmers gute Semmelknödel, cat=Grains/Cereals, price=33.25, inStock=22)
+(Product id=47, name=Zaanse koeken, cat=Confections, price=9.5, inStock=36)
+
+# LINQ31
+AbAcUs
+aPPLE
+BlUeBeRrY
+bRaNcH
+cHeRry
+ClOvEr
+
+# LINQ32
+The doubles from highest to lowest:
+4.1
+2.9
+2.3
+1.9
+1.7
+
+# LINQ33
+(Product id=75, name=Rhönbräu Klosterbier, cat=Beverages, price=7.75, inStock=125)
+(Product id=40, name=Boston Crab Meat, cat=Seafood, price=18.4, inStock=123)
+(Product id=6, name=Grandma's Boysenberry Spread, cat=Condiments, price=25.0, inStock=120)
+(Product id=55, name=Pâté chinois, cat=Meat/Poultry, price=24.0, inStock=115)
+(Product id=61, name=Sirop d'érable, cat=Condiments, price=28.5, inStock=113)
+(Product id=33, name=Geitost, cat=Dairy Products, price=2.5, inStock=112)
+(Product id=36, name=Inlagd Sill, cat=Seafood, price=19.0, inStock=112)
+(Product id=34, name=Sasquatch Ale, cat=Beverages, price=14.0, inStock=111)
+(Product id=22, name=Gustaf's Knäckebröd, cat=Grains/Cereals, price=21.0, inStock=104)
+(Product id=73, name=Röd Kaviar, cat=Seafood, price=15.0, inStock=101)
+(Product id=46, name=Spegesild, cat=Seafood, price=12.0, inStock=95)
+(Product id=12, name=Queso Manchego La Pastora, cat=Dairy Products, price=38.0, inStock=86)
+(Product id=41, name=Jack's New England Clam Chowder, cat=Seafood, price=9.65, inStock=85)
+(Product id=59, name=Raclette Courdavault, cat=Dairy Products, price=55.0, inStock=79)
+(Product id=25, name=NuNuCa Nuß-Nougat-Creme, cat=Confections, price=14.0, inStock=76)
+(Product id=65, name=Louisiana Fiery Hot Pepper Sauce, cat=Condiments, price=21.05, inStock=76)
+(Product id=39, name=Chartreuse verte, cat=Beverages, price=18.0, inStock=69)
+(Product id=50, name=Valkoinen suklaa, cat=Confections, price=16.25, inStock=65)
+(Product id=58, name=Escargots de Bourgogne, cat=Seafood, price=13.25, inStock=62)
+(Product id=23, name=Tunnbröd, cat=Grains/Cereals, price=9.0, inStock=61)
+(Product id=76, name=Lakkalikööri, cat=Beverages, price=18.0, inStock=57)
+(Product id=4, name=Chef Anton's Cajun Seasoning, cat=Condiments, price=22.0, inStock=53)
+(Product id=67, name=Laughing Lumberjack Lager, cat=Beverages, price=14.0, inStock=52)
+(Product id=27, name=Schoggi Schokolade, cat=Confections, price=43.9, inStock=49)
+(Product id=18, name=Carnarvon Tigers, cat=Seafood, price=62.5, inStock=42)
+(Product id=20, name=Sir Rodney's Marmalade, cat=Confections, price=81.0, inStock=40)
+(Product id=1, name=Chai, cat=Beverages, price=18.0, inStock=39)
+(Product id=15, name=Genen Shouyu, cat=Condiments, price=15.5, inStock=39)
+(Product id=52, name=Filo Mix, cat=Grains/Cereals, price=7.0, inStock=38)
+(Product id=47, name=Zaanse koeken, cat=Confections, price=9.5, inStock=36)
+(Product id=57, name=Ravioli Angelo, cat=Grains/Cereals, price=19.5, inStock=36)
+(Product id=14, name=Tofu, cat=Produce, price=23.25, inStock=35)
+(Product id=77, name=Original Frankfurter grüne Soße, cat=Condiments, price=13.0, inStock=32)
+(Product id=10, name=Ikura, cat=Seafood, price=31.0, inStock=31)
+(Product id=9, name=Mishi Kobe Niku, cat=Meat/Poultry, price=97.0, inStock=29)
+(Product id=16, name=Pavlova, cat=Confections, price=17.45, inStock=29)
+(Product id=44, name=Gula Malacca, cat=Condiments, price=19.45, inStock=27)
+(Product id=28, name=Rössle Sauerkraut, cat=Produce, price=45.6, inStock=26)
+(Product id=42, name=Singaporean Hokkien Fried Mee, cat=Grains/Cereals, price=14.0, inStock=26)
+(Product id=69, name=Gudbrandsdalsost, cat=Dairy Products, price=36.0, inStock=26)
+(Product id=71, name=Flotemysost, cat=Dairy Products, price=21.5, inStock=26)
+(Product id=19, name=Teatime Chocolate Biscuits, cat=Confections, price=9.2, inStock=25)
+(Product id=13, name=Konbu, cat=Seafood, price=6.0, inStock=24)
+(Product id=63, name=Vegie-spread, cat=Condiments, price=43.9, inStock=24)
+(Product id=11, name=Queso Cabrales, cat=Dairy Products, price=21.0, inStock=22)
+(Product id=64, name=Wimmers gute Semmelknödel, cat=Grains/Cereals, price=33.25, inStock=22)
+(Product id=54, name=Tourtière, cat=Meat/Poultry, price=7.45, inStock=21)
+(Product id=56, name=Gnocchi di nonna Alice, cat=Grains/Cereals, price=38.0, inStock=21)
+(Product id=24, name=Guaraná Fantástica, cat=Beverages, price=4.5, inStock=20)
+(Product id=35, name=Steeleye Stout, cat=Beverages, price=18.0, inStock=20)
+(Product id=51, name=Manjimup Dried Apples, cat=Produce, price=53.0, inStock=20)
+(Product id=60, name=Camembert Pierrot, cat=Dairy Products, price=34.0, inStock=19)
+(Product id=2, name=Chang, cat=Beverages, price=19.0, inStock=17)
+(Product id=38, name=Côte de Blaye, cat=Beverages, price=263.5, inStock=17)
+(Product id=43, name=Ipoh Coffee, cat=Beverages, price=46.0, inStock=17)
+(Product id=62, name=Tarte au sucre, cat=Confections, price=49.3, inStock=17)
+(Product id=7, name=Uncle Bob's Organic Dried Pears, cat=Produce, price=30.0, inStock=15)
+(Product id=26, name=Gumbär Gummibärchen, cat=Confections, price=31.23, inStock=15)
+(Product id=48, name=Chocolade, cat=Confections, price=12.75, inStock=15)
+(Product id=70, name=Outback Lager, cat=Beverages, price=15.0, inStock=15)
+(Product id=72, name=Mozzarella di Giovanni, cat=Dairy Products, price=34.8, inStock=14)
+(Product id=3, name=Aniseed Syrup, cat=Condiments, price=10.0, inStock=13)
+(Product id=37, name=Gravad lax, cat=Seafood, price=26.0, inStock=11)
+(Product id=30, name=Nord-Ost Matjeshering, cat=Seafood, price=25.89, inStock=10)
+(Product id=49, name=Maxilaku, cat=Confections, price=20.0, inStock=10)
+(Product id=32, name=Mascarpone Fabioli, cat=Dairy Products, price=32.0, inStock=9)
+(Product id=8, name=Northwoods Cranberry Sauce, cat=Condiments, price=40.0, inStock=6)
+(Product id=68, name=Scottish Longbreads, cat=Confections, price=12.5, inStock=6)
+(Product id=45, name=Rogede sild, cat=Seafood, price=9.5, inStock=5)
+(Product id=66, name=Louisiana Hot Spiced Okra, cat=Condiments, price=17.0, inStock=4)
+(Product id=74, name=Longlife Tofu, cat=Produce, price=10.0, inStock=4)
+(Product id=21, name=Sir Rodney's Scones, cat=Confections, price=10.0, inStock=3)
+(Product id=5, name=Chef Anton's Gumbo Mix, cat=Condiments, price=21.35, inStock=0)
+(Product id=17, name=Alice Mutton, cat=Meat/Poultry, price=39.0, inStock=0)
+(Product id=29, name=Thüringer Rostbratwurst, cat=Meat/Poultry, price=123.79, inStock=0)
+(Product id=31, name=Gorgonzola Telino, cat=Dairy Products, price=12.5, inStock=0)
+(Product id=53, name=Perth Pasties, cat=Meat/Poultry, price=32.8, inStock=0)
+
+# LINQ34
+ClOvEr
+cHeRry
+bRaNcH
+BlUeBeRrY
+aPPLE
+AbAcUs
+
+# LINQ35
+Sorted digits:
+one
+six
+two
+five
+four
+nine
+zero
+eight
+seven
+three
+
+# LINQ36
+aPPLE
+AbAcUs
+bRaNcH
+cHeRry
+ClOvEr
+BlUeBeRrY
+
+# LINQ37
+(Product id=38, name=Côte de Blaye, cat=Beverages, price=263.5, inStock=17)
+(Product id=43, name=Ipoh Coffee, cat=Beverages, price=46.0, inStock=17)
+(Product id=2, name=Chang, cat=Beverages, price=19.0, inStock=17)
+(Product id=1, name=Chai, cat=Beverages, price=18.0, inStock=39)
+(Product id=35, name=Steeleye Stout, cat=Beverages, price=18.0, inStock=20)
+(Product id=39, name=Chartreuse verte, cat=Beverages, price=18.0, inStock=69)
+(Product id=76, name=Lakkalikööri, cat=Beverages, price=18.0, inStock=57)
+(Product id=70, name=Outback Lager, cat=Beverages, price=15.0, inStock=15)
+(Product id=34, name=Sasquatch Ale, cat=Beverages, price=14.0, inStock=111)
+(Product id=67, name=Laughing Lumberjack Lager, cat=Beverages, price=14.0, inStock=52)
+(Product id=75, name=Rhönbräu Klosterbier, cat=Beverages, price=7.75, inStock=125)
+(Product id=24, name=Guaraná Fantástica, cat=Beverages, price=4.5, inStock=20)
+(Product id=63, name=Vegie-spread, cat=Condiments, price=43.9, inStock=24)
+(Product id=8, name=Northwoods Cranberry Sauce, cat=Condiments, price=40.0, inStock=6)
+(Product id=61, name=Sirop d'érable, cat=Condiments, price=28.5, inStock=113)
+(Product id=6, name=Grandma's Boysenberry Spread, cat=Condiments, price=25.0, inStock=120)
+(Product id=4, name=Chef Anton's Cajun Seasoning, cat=Condiments, price=22.0, inStock=53)
+(Product id=5, name=Chef Anton's Gumbo Mix, cat=Condiments, price=21.35, inStock=0)
+(Product id=65, name=Louisiana Fiery Hot Pepper Sauce, cat=Condiments, price=21.05, inStock=76)
+(Product id=44, name=Gula Malacca, cat=Condiments, price=19.45, inStock=27)
+(Product id=66, name=Louisiana Hot Spiced Okra, cat=Condiments, price=17.0, inStock=4)
+(Product id=15, name=Genen Shouyu, cat=Condiments, price=15.5, inStock=39)
+(Product id=77, name=Original Frankfurter grüne Soße, cat=Condiments, price=13.0, inStock=32)
+(Product id=3, name=Aniseed Syrup, cat=Condiments, price=10.0, inStock=13)
+(Product id=20, name=Sir Rodney's Marmalade, cat=Confections, price=81.0, inStock=40)
+(Product id=62, name=Tarte au sucre, cat=Confections, price=49.3, inStock=17)
+(Product id=27, name=Schoggi Schokolade, cat=Confections, price=43.9, inStock=49)
+(Product id=26, name=Gumbär Gummibärchen, cat=Confections, price=31.23, inStock=15)
+(Product id=49, name=Maxilaku, cat=Confections, price=20.0, inStock=10)
+(Product id=16, name=Pavlova, cat=Confections, price=17.45, inStock=29)
+(Product id=50, name=Valkoinen suklaa, cat=Confections, price=16.25, inStock=65)
+(Product id=25, name=NuNuCa Nuß-Nougat-Creme, cat=Confections, price=14.0, inStock=76)
+(Product id=48, name=Chocolade, cat=Confections, price=12.75, inStock=15)
+(Product id=68, name=Scottish Longbreads, cat=Confections, price=12.5, inStock=6)
+(Product id=21, name=Sir Rodney's Scones, cat=Confections, price=10.0, inStock=3)
+(Product id=47, name=Zaanse koeken, cat=Confections, price=9.5, inStock=36)
+(Product id=19, name=Teatime Chocolate Biscuits, cat=Confections, price=9.2, inStock=25)
+(Product id=59, name=Raclette Courdavault, cat=Dairy Products, price=55.0, inStock=79)
+(Product id=12, name=Queso Manchego La Pastora, cat=Dairy Products, price=38.0, inStock=86)
+(Product id=69, name=Gudbrandsdalsost, cat=Dairy Products, price=36.0, inStock=26)
+(Product id=72, name=Mozzarella di Giovanni, cat=Dairy Products, price=34.8, inStock=14)
+(Product id=60, name=Camembert Pierrot, cat=Dairy Products, price=34.0, inStock=19)
+(Product id=32, name=Mascarpone Fabioli, cat=Dairy Products, price=32.0, inStock=9)
+(Product id=71, name=Flotemysost, cat=Dairy Products, price=21.5, inStock=26)
+(Product id=11, name=Queso Cabrales, cat=Dairy Products, price=21.0, inStock=22)
+(Product id=31, name=Gorgonzola Telino, cat=Dairy Products, price=12.5, inStock=0)
+(Product id=33, name=Geitost, cat=Dairy Products, price=2.5, inStock=112)
+(Product id=56, name=Gnocchi di nonna Alice, cat=Grains/Cereals, price=38.0, inStock=21)
+(Product id=64, name=Wimmers gute Semmelknödel, cat=Grains/Cereals, price=33.25, inStock=22)
+(Product id=22, name=Gustaf's Knäckebröd, cat=Grains/Cereals, price=21.0, inStock=104)
+(Product id=57, name=Ravioli Angelo, cat=Grains/Cereals, price=19.5, inStock=36)
+(Product id=42, name=Singaporean Hokkien Fried Mee, cat=Grains/Cereals, price=14.0, inStock=26)
+(Product id=23, name=Tunnbröd, cat=Grains/Cereals, price=9.0, inStock=61)
+(Product id=52, name=Filo Mix, cat=Grains/Cereals, price=7.0, inStock=38)
+(Product id=29, name=Thüringer Rostbratwurst, cat=Meat/Poultry, price=123.79, inStock=0)
+(Product id=9, name=Mishi Kobe Niku, cat=Meat/Poultry, price=97.0, inStock=29)
+(Product id=17, name=Alice Mutton, cat=Meat/Poultry, price=39.0, inStock=0)
+(Product id=53, name=Perth Pasties, cat=Meat/Poultry, price=32.8, inStock=0)
+(Product id=55, name=Pâté chinois, cat=Meat/Poultry, price=24.0, inStock=115)
+(Product id=54, name=Tourtière, cat=Meat/Poultry, price=7.45, inStock=21)
+(Product id=51, name=Manjimup Dried Apples, cat=Produce, price=53.0, inStock=20)
+(Product id=28, name=Rössle Sauerkraut, cat=Produce, price=45.6, inStock=26)
+(Product id=7, name=Uncle Bob's Organic Dried Pears, cat=Produce, price=30.0, inStock=15)
+(Product id=14, name=Tofu, cat=Produce, price=23.25, inStock=35)
+(Product id=74, name=Longlife Tofu, cat=Produce, price=10.0, inStock=4)
+(Product id=18, name=Carnarvon Tigers, cat=Seafood, price=62.5, inStock=42)
+(Product id=10, name=Ikura, cat=Seafood, price=31.0, inStock=31)
+(Product id=37, name=Gravad lax, cat=Seafood, price=26.0, inStock=11)
+(Product id=30, name=Nord-Ost Matjeshering, cat=Seafood, price=25.89, inStock=10)
+(Product id=36, name=Inlagd Sill, cat=Seafood, price=19.0, inStock=112)
+(Product id=40, name=Boston Crab Meat, cat=Seafood, price=18.4, inStock=123)
+(Product id=73, name=Röd Kaviar, cat=Seafood, price=15.0, inStock=101)
+(Product id=58, name=Escargots de Bourgogne, cat=Seafood, price=13.25, inStock=62)
+(Product id=46, name=Spegesild, cat=Seafood, price=12.0, inStock=95)
+(Product id=41, name=Jack's New England Clam Chowder, cat=Seafood, price=9.65, inStock=85)
+(Product id=45, name=Rogede sild, cat=Seafood, price=9.5, inStock=5)
+(Product id=13, name=Konbu, cat=Seafood, price=6.0, inStock=24)
+
+# LINQ38
+aPPLE
+ClOvEr
+cHeRry
+bRaNcH
+AbAcUs
+BlUeBeRrY
+
+# LINQ39
+A backwards list of the digits with a second character of 'i':
+nine
+eight
+six
+five
+
+# LINQ40
+Numbers with a remainder of 0 when divided by 5:
+5
+0
+Numbers with a remainder of 4 when divided by 5:
+4
+9
+Numbers with a remainder of 1 when divided by 5:
+1
+6
+Numbers with a remainder of 3 when divided by 5:
+3
+8
+Numbers with a remainder of 2 when divided by 5:
+7
+2
+
+# LINQ41
+Words that start with the letter 'b':
+blueberry
+banana
+Words that start with the letter 'c':
+chimpanzee
+cheese
+Words that start with the letter 'a':
+abacus
+apple
+
+# LINQ42
+Beverages:
+(Product id=1, name=Chai, cat=Beverages, price=18.0, inStock=39)
+(Product id=2, name=Chang, cat=Beverages, price=19.0, inStock=17)
+(Product id=24, name=Guaraná Fantástica, cat=Beverages, price=4.5, inStock=20)
+(Product id=34, name=Sasquatch Ale, cat=Beverages, price=14.0, inStock=111)
+(Product id=35, name=Steeleye Stout, cat=Beverages, price=18.0, inStock=20)
+(Product id=38, name=Côte de Blaye, cat=Beverages, price=263.5, inStock=17)
+(Product id=39, name=Chartreuse verte, cat=Beverages, price=18.0, inStock=69)
+(Product id=43, name=Ipoh Coffee, cat=Beverages, price=46.0, inStock=17)
+(Product id=67, name=Laughing Lumberjack Lager, cat=Beverages, price=14.0, inStock=52)
+(Product id=70, name=Outback Lager, cat=Beverages, price=15.0, inStock=15)
+(Product id=75, name=Rhönbräu Klosterbier, cat=Beverages, price=7.75, inStock=125)
+(Product id=76, name=Lakkalikööri, cat=Beverages, price=18.0, inStock=57)
+Condiments:
+(Product id=3, name=Aniseed Syrup, cat=Condiments, price=10.0, inStock=13)
+(Product id=4, name=Chef Anton's Cajun Seasoning, cat=Condiments, price=22.0, inStock=53)
+(Product id=5, name=Chef Anton's Gumbo Mix, cat=Condiments, price=21.35, inStock=0)
+(Product id=6, name=Grandma's Boysenberry Spread, cat=Condiments, price=25.0, inStock=120)
+(Product id=8, name=Northwoods Cranberry Sauce, cat=Condiments, price=40.0, inStock=6)
+(Product id=15, name=Genen Shouyu, cat=Condiments, price=15.5, inStock=39)
+(Product id=44, name=Gula Malacca, cat=Condiments, price=19.45, inStock=27)
+(Product id=61, name=Sirop d'érable, cat=Condiments, price=28.5, inStock=113)
+(Product id=63, name=Vegie-spread, cat=Condiments, price=43.9, inStock=24)
+(Product id=65, name=Louisiana Fiery Hot Pepper Sauce, cat=Condiments, price=21.05, inStock=76)
+(Product id=66, name=Louisiana Hot Spiced Okra, cat=Condiments, price=17.0, inStock=4)
+(Product id=77, name=Original Frankfurter grüne Soße, cat=Condiments, price=13.0, inStock=32)
+Produce:
+(Product id=7, name=Uncle Bob's Organic Dried Pears, cat=Produce, price=30.0, inStock=15)
+(Product id=14, name=Tofu, cat=Produce, price=23.25, inStock=35)
+(Product id=28, name=Rössle Sauerkraut, cat=Produce, price=45.6, inStock=26)
+(Product id=51, name=Manjimup Dried Apples, cat=Produce, price=53.0, inStock=20)
+(Product id=74, name=Longlife Tofu, cat=Produce, price=10.0, inStock=4)
+Meat/Poultry:
+(Product id=9, name=Mishi Kobe Niku, cat=Meat/Poultry, price=97.0, inStock=29)
+(Product id=17, name=Alice Mutton, cat=Meat/Poultry, price=39.0, inStock=0)
+(Product id=29, name=Thüringer Rostbratwurst, cat=Meat/Poultry, price=123.79, inStock=0)
+(Product id=53, name=Perth Pasties, cat=Meat/Poultry, price=32.8, inStock=0)
+(Product id=54, name=Tourtière, cat=Meat/Poultry, price=7.45, inStock=21)
+(Product id=55, name=Pâté chinois, cat=Meat/Poultry, price=24.0, inStock=115)
+Seafood:
+(Product id=10, name=Ikura, cat=Seafood, price=31.0, inStock=31)
+(Product id=13, name=Konbu, cat=Seafood, price=6.0, inStock=24)
+(Product id=18, name=Carnarvon Tigers, cat=Seafood, price=62.5, inStock=42)
+(Product id=30, name=Nord-Ost Matjeshering, cat=Seafood, price=25.89, inStock=10)
+(Product id=36, name=Inlagd Sill, cat=Seafood, price=19.0, inStock=112)
+(Product id=37, name=Gravad lax, cat=Seafood, price=26.0, inStock=11)
+(Product id=40, name=Boston Crab Meat, cat=Seafood, price=18.4, inStock=123)
+(Product id=41, name=Jack's New England Clam Chowder, cat=Seafood, price=9.65, inStock=85)
+(Product id=45, name=Rogede sild, cat=Seafood, price=9.5, inStock=5)
+(Product id=46, name=Spegesild, cat=Seafood, price=12.0, inStock=95)
+(Product id=58, name=Escargots de Bourgogne, cat=Seafood, price=13.25, inStock=62)
+(Product id=73, name=Röd Kaviar, cat=Seafood, price=15.0, inStock=101)
+Dairy Products:
+(Product id=11, name=Queso Cabrales, cat=Dairy Products, price=21.0, inStock=22)
+(Product id=12, name=Queso Manchego La Pastora, cat=Dairy Products, price=38.0, inStock=86)
+(Product id=31, name=Gorgonzola Telino, cat=Dairy Products, price=12.5, inStock=0)
+(Product id=32, name=Mascarpone Fabioli, cat=Dairy Products, price=32.0, inStock=9)
+(Product id=33, name=Geitost, cat=Dairy Products, price=2.5, inStock=112)
+(Product id=59, name=Raclette Courdavault, cat=Dairy Products, price=55.0, inStock=79)
+(Product id=60, name=Camembert Pierrot, cat=Dairy Products, price=34.0, inStock=19)
+(Product id=69, name=Gudbrandsdalsost, cat=Dairy Products, price=36.0, inStock=26)
+(Product id=71, name=Flotemysost, cat=Dairy Products, price=21.5, inStock=26)
+(Product id=72, name=Mozzarella di Giovanni, cat=Dairy Products, price=34.8, inStock=14)
+Confections:
+(Product id=16, name=Pavlova, cat=Confections, price=17.45, inStock=29)
+(Product id=19, name=Teatime Chocolate Biscuits, cat=Confections, price=9.2, inStock=25)
+(Product id=20, name=Sir Rodney's Marmalade, cat=Confections, price=81.0, inStock=40)
+(Product id=21, name=Sir Rodney's Scones, cat=Confections, price=10.0, inStock=3)
+(Product id=25, name=NuNuCa Nuß-Nougat-Creme, cat=Confections, price=14.0, inStock=76)
+(Product id=26, name=Gumbär Gummibärchen, cat=Confections, price=31.23, inStock=15)
+(Product id=27, name=Schoggi Schokolade, cat=Confections, price=43.9, inStock=49)
+(Product id=47, name=Zaanse koeken, cat=Confections, price=9.5, inStock=36)
+(Product id=48, name=Chocolade, cat=Confections, price=12.75, inStock=15)
+(Product id=49, name=Maxilaku, cat=Confections, price=20.0, inStock=10)
+(Product id=50, name=Valkoinen suklaa, cat=Confections, price=16.25, inStock=65)
+(Product id=62, name=Tarte au sucre, cat=Confections, price=49.3, inStock=17)
+(Product id=68, name=Scottish Longbreads, cat=Confections, price=12.5, inStock=6)
+Grains/Cereals:
+(Product id=22, name=Gustaf's Knäckebröd, cat=Grains/Cereals, price=21.0, inStock=104)
+(Product id=23, name=Tunnbröd, cat=Grains/Cereals, price=9.0, inStock=61)
+(Product id=42, name=Singaporean Hokkien Fried Mee, cat=Grains/Cereals, price=14.0, inStock=26)
+(Product id=52, name=Filo Mix, cat=Grains/Cereals, price=7.0, inStock=38)
+(Product id=56, name=Gnocchi di nonna Alice, cat=Grains/Cereals, price=38.0, inStock=21)
+(Product id=57, name=Ravioli Angelo, cat=Grains/Cereals, price=19.5, inStock=36)
+(Product id=64, name=Wimmers gute Semmelknödel, cat=Grains/Cereals, price=33.25, inStock=22)
+
+# LINQ43
+
+# Alfreds Futterkiste
+1997: 
+    8=[(Order id=10643, total=814.5)]
+    10=[(Order id=10692, total=878.0), (Order id=10702, total=330.0)]
+1998: 
+    1=[(Order id=10835, total=845.8)]
+    3=[(Order id=10952, total=471.2)]
+    4=[(Order id=11011, total=933.5)]
+
+# Ana Trujillo Emparedados y helados
+1996: 
+    9=[(Order id=10308, total=88.8)]
+1997: 
+    8=[(Order id=10625, total=479.75)]
+    11=[(Order id=10759, total=320.0)]
+1998: 
+    3=[(Order id=10926, total=514.4)]
+
+# Antonio Moreno Taquería
+1996: 
+    11=[(Order id=10365, total=403.2)]
+1997: 
+    4=[(Order id=10507, total=749.06)]
+    5=[(Order id=10535, total=1940.85)]
+    6=[(Order id=10573, total=2082.0)]
+    9=[(Order id=10677, total=813.36), (Order id=10682, total=375.5)]
+1998: 
+    1=[(Order id=10856, total=660.0)]
+
+# Around the Horn
+1996: 
+    11=[(Order id=10355, total=480.0)]
+    12=[(Order id=10383, total=899.0)]
+1997: 
+    2=[(Order id=10453, total=407.7)]
+    6=[(Order id=10558, total=2142.9)]
+    10=[(Order id=10707, total=1641.0)]
+    11=[(Order id=10741, total=228.0), (Order id=10743, total=319.2)]
+    12=[(Order id=10768, total=1477.0), (Order id=10793, total=191.1)]
+1998: 
+    2=[(Order id=10864, total=282.0)]
+    3=[(Order id=10920, total=390.0), (Order id=10953, total=4441.25)]
+    4=[(Order id=11016, total=491.5)]
+
+# Berglunds snabbköp
+1996: 
+    8=[(Order id=10278, total=1488.8), (Order id=10280, total=613.2)]
+    12=[(Order id=10384, total=2222.4)]
+1997: 
+    2=[(Order id=10444, total=1031.7), (Order id=10445, total=174.9)]
+    5=[(Order id=10524, total=3192.65)]
+    6=[(Order id=10572, total=1501.08)]
+    8=[(Order id=10626, total=1503.6)]
+    9=[(Order id=10654, total=601.83), (Order id=10672, total=3815.25)]
+    10=[(Order id=10689, total=472.5)]
+    11=[(Order id=10733, total=1459.0)]
+    12=[(Order id=10778, total=96.5)]
+1998: 
+    1=[(Order id=10837, total=1064.5), (Order id=10857, total=2048.21)]
+    2=[(Order id=10866, total=1096.2), (Order id=10875, total=709.55)]
+    3=[(Order id=10924, total=1835.7)]
+
+# Blauer See Delikatessen
+1997: 
+    4=[(Order id=10501, total=149.0), (Order id=10509, total=136.8)]
+    6=[(Order id=10582, total=330.0)]
+    7=[(Order id=10614, total=464.0)]
+1998: 
+    1=[(Order id=10853, total=625.0)]
+    3=[(Order id=10956, total=677.0)]
+    4=[(Order id=11058, total=858.0)]
+
+# Blondel père et fils
+1996: 
+    7=[(Order id=10265, total=1176.0)]
+    9=[(Order id=10297, total=1420.0)]
+    11=[(Order id=10360, total=7390.2)]
+1997: 
+    2=[(Order id=10436, total=1994.52), (Order id=10449, total=1838.2)]
+    6=[(Order id=10559, total=520.41), (Order id=10566, total=1761.0), (Order id=10584, total=593.75)]
+    8=[(Order id=10628, total=450.0)]
+    9=[(Order id=10679, total=660.0)]
+1998: 
+    1=[(Order id=10826, total=730.0)]
+
+# Bólido Comidas preparadas
+1996: 
+    10=[(Order id=10326, total=982.0)]
+1997: 
+    12=[(Order id=10801, total=3026.85)]
+1998: 
+    3=[(Order id=10970, total=224.0)]
+
+# Bon app'
+1996: 
+    10=[(Order id=10331, total=88.5), (Order id=10340, total=2436.18)]
+    11=[(Order id=10362, total=1549.6)]
+1997: 
+    3=[(Order id=10470, total=1820.8)]
+    4=[(Order id=10511, total=2550.0)]
+    5=[(Order id=10525, total=818.4)]
+    9=[(Order id=10663, total=1930.4)]
+    10=[(Order id=10715, total=1296.0)]
+    11=[(Order id=10730, total=484.26), (Order id=10732, total=360.0), (Order id=10755, total=1948.5)]
+1998: 
+    1=[(Order id=10827, total=843.0)]
+    2=[(Order id=10871, total=1979.23), (Order id=10876, total=917.0)]
+    3=[(Order id=10932, total=1788.63), (Order id=10940, total=360.0)]
+    5=[(Order id=11076, total=792.75)]
+
+# Bottom-Dollar Markets
+1996: 
+    12=[(Order id=10389, total=1832.8)]
+1997: 
+    1=[(Order id=10410, total=802.0), (Order id=10411, total=966.8), (Order id=10431, total=1892.25)]
+    4=[(Order id=10492, total=851.2)]
+    11=[(Order id=10742, total=3118.0)]
+1998: 
+    3=[(Order id=10918, total=1447.5), (Order id=10944, total=1025.32), (Order id=10949, total=4422.0), (Order id=10975, total=717.5), (Order id=10982, total=1014.0)]
+    4=[(Order id=11027, total=877.72), (Order id=11045, total=1309.5), (Order id=11048, total=525.0)]
+
+# B's Beverages
+1996: 
+    8=[(Order id=10289, total=479.4)]
+1997: 
+    3=[(Order id=10471, total=1328.0), (Order id=10484, total=386.2)]
+    5=[(Order id=10538, total=139.8), (Order id=10539, total=355.5)]
+    6=[(Order id=10578, total=477.0)]
+    7=[(Order id=10599, total=493.0)]
+1998: 
+    3=[(Order id=10943, total=711.0), (Order id=10947, total=220.0)]
+    4=[(Order id=11023, total=1500.0)]
+
+# Cactus Comidas para llevar
+1997: 
+    4=[(Order id=10521, total=225.5)]
+    12=[(Order id=10782, total=12.5)]
+1998: 
+    1=[(Order id=10819, total=477.0)]
+    2=[(Order id=10881, total=150.0)]
+    3=[(Order id=10937, total=644.8)]
+    4=[(Order id=11054, total=305.0)]
+
+# Centro comercial Moctezuma
+1996: 
+    7=[(Order id=10259, total=100.8)]
+
+# Chop-suey Chinese
+1996: 
+    7=[(Order id=10254, total=556.62)]
+    12=[(Order id=10370, total=1117.6)]
+1997: 
+    4=[(Order id=10519, total=2314.2)]
+    11=[(Order id=10731, total=1890.5), (Order id=10746, total=2311.7)]
+1998: 
+    3=[(Order id=10966, total=1098.46)]
+    4=[(Order id=11029, total=1286.8), (Order id=11041, total=1773.0)]
+
+# Comércio Mineiro
+1996: 
+    8=[(Order id=10290, total=2169.0)]
+1997: 
+    3=[(Order id=10466, total=216.0)]
+    4=[(Order id=10494, total=912.0)]
+1998: 
+    3=[(Order id=10969, total=108.0)]
+    4=[(Order id=11042, total=405.75)]
+
+# Consolidated Holdings
+1997: 
+    2=[(Order id=10435, total=631.6)]
+    3=[(Order id=10462, total=156.0)]
+1998: 
+    1=[(Order id=10848, total=931.5)]
+
+# Drachenblut Delikatessen
+1996: 
+    11=[(Order id=10363, total=447.2)]
+    12=[(Order id=10391, total=86.4)]
+1997: 
+    12=[(Order id=10797, total=420.0)]
+1998: 
+    1=[(Order id=10825, total=1030.76)]
+    4=[(Order id=11036, total=1692.0)]
+    5=[(Order id=11067, total=86.85)]
+
+# Du monde entier
+1996: 
+    9=[(Order id=10311, total=268.8)]
+1997: 
+    7=[(Order id=10609, total=424.0)]
+    9=[(Order id=10683, total=63.0)]
+1998: 
+    2=[(Order id=10890, total=860.1)]
+
+# Eastern Connection
+1996: 
+    11=[(Order id=10364, total=950.0)]
+1997: 
+    1=[(Order id=10400, total=3063.0)]
+    5=[(Order id=10532, total=796.35)]
+    11=[(Order id=10726, total=655.0)]
+1998: 
+    3=[(Order id=10987, total=2772.0)]
+    4=[(Order id=11024, total=1966.81), (Order id=11047, total=817.88), (Order id=11056, total=3740.0)]
+
+# Ernst Handel
+1996: 
+    7=[(Order id=10258, total=1614.88), (Order id=10263, total=1873.8)]
+    11=[(Order id=10351, total=5398.72), (Order id=10368, total=1689.78)]
+    12=[(Order id=10382, total=2900.0), (Order id=10390, total=2090.88)]
+1997: 
+    1=[(Order id=10402, total=2713.5), (Order id=10403, total=855.02), (Order id=10430, total=4899.2)]
+    2=[(Order id=10442, total=1792.0)]
+    4=[(Order id=10514, total=8623.45)]
+    6=[(Order id=10571, total=550.59)]
+    7=[(Order id=10595, total=4725.0)]
+    8=[(Order id=10633, total=5510.59)]
+    9=[(Order id=10667, total=1536.8)]
+    10=[(Order id=10698, total=3436.44)]
+    12=[(Order id=10764, total=2286.0), (Order id=10771, total=344.0), (Order id=10773, total=2030.4), (Order id=10776, total=6635.28), (Order id=10795, total=2158.0)]
+1998: 
+    1=[(Order id=10836, total=4705.5), (Order id=10854, total=2966.5)]
+    2=[(Order id=10895, total=6379.4)]
+    3=[(Order id=10968, total=1408.0), (Order id=10979, total=4813.5)]
+    4=[(Order id=10990, total=4288.85), (Order id=11008, total=4680.9), (Order id=11017, total=6750.0)]
+    5=[(Order id=11072, total=5218.0)]
+
+# Familia Arquibaldo
+1996: 
+    11=[(Order id=10347, total=814.42)]
+    12=[(Order id=10386, total=166.0)]
+1997: 
+    1=[(Order id=10414, total=224.83)]
+    4=[(Order id=10512, total=525.3)]
+    6=[(Order id=10581, total=310.0)]
+    8=[(Order id=10650, total=1779.2)]
+    10=[(Order id=10725, total=287.8)]
+
+# FISSA Fabrica Inter. Salchichas S.A.
+
+# Folies gourmandes
+1997: 
+    1=[(Order id=10408, total=1622.4)]
+    3=[(Order id=10480, total=756.0)]
+    8=[(Order id=10634, total=4985.5)]
+    12=[(Order id=10763, total=616.0), (Order id=10789, total=3687.0)]
+
+# Folk och fä HB
+1996: 
+    7=[(Order id=10264, total=695.62)]
+    10=[(Order id=10327, total=1810.0)]
+    12=[(Order id=10378, total=103.2)]
+1997: 
+    2=[(Order id=10434, total=321.12), (Order id=10460, total=176.1)]
+    5=[(Order id=10533, total=2222.2)]
+    6=[(Order id=10561, total=2844.5)]
+    10=[(Order id=10703, total=2545.0)]
+    12=[(Order id=10762, total=4337.0), (Order id=10774, total=868.75)]
+1998: 
+    1=[(Order id=10824, total=250.8)]
+    2=[(Order id=10880, total=1500.0), (Order id=10902, total=863.43)]
+    3=[(Order id=10955, total=74.4), (Order id=10977, total=2233.0), (Order id=10980, total=248.0)]
+    4=[(Order id=10993, total=4895.44), (Order id=11001, total=2769.0), (Order id=11050, total=810.0)]
+
+# Frankenversand
+1996: 
+    7=[(Order id=10267, total=3536.6)]
+    10=[(Order id=10337, total=2467.0), (Order id=10342, total=1840.64)]
+    12=[(Order id=10396, total=1903.8)]
+1997: 
+    3=[(Order id=10488, total=1512.0)]
+    6=[(Order id=10560, total=1072.42)]
+    8=[(Order id=10623, total=1336.95)]
+    9=[(Order id=10653, total=1083.15), (Order id=10670, total=2301.75), (Order id=10675, total=1423.0)]
+    10=[(Order id=10717, total=1270.75)]
+    12=[(Order id=10791, total=1829.76)]
+1998: 
+    1=[(Order id=10859, total=1078.69)]
+    3=[(Order id=10929, total=1174.75)]
+    4=[(Order id=11012, total=2825.3)]
+
+# France restauration
+1997: 
+    9=[(Order id=10671, total=920.1)]
+1998: 
+    1=[(Order id=10860, total=519.0)]
+    3=[(Order id=10971, total=1733.06)]
+
+# Franchi S.p.A.
+1997: 
+    1=[(Order id=10422, total=49.8)]
+    10=[(Order id=10710, total=93.5)]
+    11=[(Order id=10753, total=88.0)]
+    12=[(Order id=10807, total=18.4)]
+1998: 
+    4=[(Order id=11026, total=1030.0), (Order id=11060, total=266.0)]
+
+# Furia Bacalhau e Frutos do Mar
+1996: 
+    10=[(Order id=10328, total=1168.0)]
+    11=[(Order id=10352, total=136.3)]
+1997: 
+    3=[(Order id=10464, total=1609.28), (Order id=10491, total=259.5)]
+    5=[(Order id=10551, total=1677.3)]
+    7=[(Order id=10604, total=230.85)]
+    9=[(Order id=10664, total=1288.39)]
+1998: 
+    3=[(Order id=10963, total=57.8)]
+
+# Galería del gastrónomo
+1996: 
+    11=[(Order id=10366, total=136.0)]
+1997: 
+    1=[(Order id=10426, total=338.2)]
+    6=[(Order id=10568, total=155.0)]
+1998: 
+    2=[(Order id=10887, total=70.0)]
+    3=[(Order id=10928, total=137.5)]
+
+# Godos Cocina Típica
+1996: 
+    9=[(Order id=10303, total=1117.8)]
+1997: 
+    5=[(Order id=10550, total=683.3)]
+    8=[(Order id=10629, total=2775.05)]
+1998: 
+    2=[(Order id=10872, total=2058.46), (Order id=10874, total=310.0), (Order id=10888, total=605.0), (Order id=10911, total=858.0)]
+    3=[(Order id=10948, total=2362.25)]
+    4=[(Order id=11009, total=616.5), (Order id=11037, total=60.0)]
+
+# Gourmet Lanchonetes
+1997: 
+    1=[(Order id=10423, total=1020.0)]
+    9=[(Order id=10652, total=318.84), (Order id=10685, total=801.1)]
+    10=[(Order id=10709, total=3424.0)]
+    11=[(Order id=10734, total=1498.35)]
+    12=[(Order id=10777, total=224.0), (Order id=10790, total=722.5)]
+1998: 
+    3=[(Order id=10959, total=131.75)]
+    4=[(Order id=11049, total=273.6)]
+
+# Great Lakes Food Market
+1997: 
+    5=[(Order id=10528, total=392.2)]
+    7=[(Order id=10589, total=72.0), (Order id=10616, total=4807.0), (Order id=10617, total=1402.5)]
+    9=[(Order id=10656, total=604.22), (Order id=10681, total=1287.4)]
+1998: 
+    1=[(Order id=10816, total=8446.45)]
+    3=[(Order id=10936, total=456.0)]
+    4=[(Order id=11006, total=329.68), (Order id=11040, total=200.0), (Order id=11061, total=510.0)]
+
+# GROSELLA-Restaurante
+1996: 
+    7=[(Order id=10268, total=1101.2)]
+1997: 
+    12=[(Order id=10785, total=387.5)]
+
+# Hanari Carnes
+1996: 
+    7=[(Order id=10250, total=1552.6), (Order id=10253, total=1444.8)]
+1997: 
+    5=[(Order id=10541, total=1946.52)]
+    8=[(Order id=10645, total=1535.0)]
+    10=[(Order id=10690, total=862.5)]
+    12=[(Order id=10770, total=236.25), (Order id=10783, total=1442.5)]
+1998: 
+    2=[(Order id=10886, total=3127.5), (Order id=10903, total=932.05)]
+    3=[(Order id=10922, total=742.5), (Order id=10925, total=475.15), (Order id=10981, total=15810.0)]
+    4=[(Order id=11022, total=1402.0), (Order id=11052, total=1332.0)]
+
+# HILARIÓN-Abastos
+1996: 
+    7=[(Order id=10257, total=1119.9)]
+    12=[(Order id=10395, total=2122.92)]
+1997: 
+    3=[(Order id=10476, total=180.48), (Order id=10486, total=1272.0), (Order id=10490, total=3163.2)]
+    4=[(Order id=10498, total=575.0)]
+    5=[(Order id=10552, total=880.5)]
+    7=[(Order id=10601, total=2285.0), (Order id=10613, total=353.2)]
+    8=[(Order id=10641, total=2054.0)]
+    10=[(Order id=10705, total=378.0)]
+    12=[(Order id=10796, total=2341.36)]
+1998: 
+    2=[(Order id=10863, total=441.15), (Order id=10901, total=934.5)]
+    3=[(Order id=10957, total=1762.7), (Order id=10960, total=265.35), (Order id=10976, total=912.0)]
+    4=[(Order id=11055, total=1727.5)]
+
+# Hungry Coyote Import Store
+1996: 
+    12=[(Order id=10375, total=338.0), (Order id=10394, total=442.0)]
+1997: 
+    1=[(Order id=10415, total=102.4)]
+    7=[(Order id=10600, total=479.8)]
+    9=[(Order id=10660, total=1701.0)]
+
+# Hungry Owl All-Night Grocers
+1996: 
+    9=[(Order id=10298, total=2645.0), (Order id=10309, total=1762.0)]
+    10=[(Order id=10335, total=2036.16)]
+    12=[(Order id=10373, total=1366.4), (Order id=10380, total=1313.82)]
+1997: 
+    1=[(Order id=10429, total=1441.38)]
+    4=[(Order id=10503, total=2048.5), (Order id=10516, total=2381.05)]
+    6=[(Order id=10567, total=2519.0)]
+    8=[(Order id=10646, total=1446.0)]
+    9=[(Order id=10661, total=562.6), (Order id=10687, total=4960.9)]
+    10=[(Order id=10701, total=2864.5), (Order id=10712, total=1233.48)]
+    11=[(Order id=10736, total=997.0)]
+1998: 
+    2=[(Order id=10897, total=10835.24), (Order id=10912, total=6200.55)]
+    3=[(Order id=10985, total=2023.38)]
+    4=[(Order id=11063, total=1342.95)]
+
+# Island Trading
+1996: 
+    9=[(Order id=10315, total=516.8)]
+    10=[(Order id=10318, total=240.4), (Order id=10321, total=144.0)]
+1997: 
+    3=[(Order id=10473, total=230.4)]
+    8=[(Order id=10621, total=758.5)]
+    9=[(Order id=10674, total=45.0)]
+    11=[(Order id=10749, total=1080.0)]
+    12=[(Order id=10798, total=446.6)]
+1998: 
+    1=[(Order id=10829, total=1764.0)]
+    3=[(Order id=10933, total=920.6)]
+
+# Königlich Essen
+1996: 
+    10=[(Order id=10323, total=164.4), (Order id=10325, total=1497.0)]
+1997: 
+    2=[(Order id=10456, total=557.6), (Order id=10457, total=1584.0)]
+    3=[(Order id=10468, total=717.6)]
+    4=[(Order id=10506, total=415.8)]
+    5=[(Order id=10542, total=469.11)]
+    8=[(Order id=10630, total=903.6)]
+    10=[(Order id=10718, total=3463.0)]
+    12=[(Order id=10799, total=1553.5)]
+1998: 
+    1=[(Order id=10817, total=10952.84), (Order id=10849, total=967.82)]
+    2=[(Order id=10893, total=5502.11)]
+    4=[(Order id=11028, total=2160.0)]
+
+# La corne d'abondance
+1998: 
+    1=[(Order id=10858, total=649.0)]
+    3=[(Order id=10927, total=800.0), (Order id=10972, total=251.5), (Order id=10973, total=291.55)]
+
+# La maison d'Asie
+1996: 
+    11=[(Order id=10350, total=642.06), (Order id=10358, total=429.4)]
+    12=[(Order id=10371, total=72.96)]
+1997: 
+    1=[(Order id=10413, total=2123.2), (Order id=10425, total=360.0)]
+    2=[(Order id=10454, total=331.2)]
+    4=[(Order id=10493, total=608.4), (Order id=10500, total=523.26)]
+    7=[(Order id=10610, total=299.25)]
+    8=[(Order id=10631, total=55.8)]
+    12=[(Order id=10787, total=2622.76)]
+1998: 
+    1=[(Order id=10832, total=475.11)]
+    3=[(Order id=10923, total=748.8)]
+    4=[(Order id=11051, total=36.0)]
+
+# Laughing Bacchus Wine Cellars
+1997: 
+    4=[(Order id=10495, total=278.0)]
+    8=[(Order id=10620, total=57.5)]
+1998: 
+    1=[(Order id=10810, total=187.0)]
+
+# Lazy K Kountry Store
+1997: 
+    3=[(Order id=10482, total=147.0)]
+    5=[(Order id=10545, total=210.0)]
+
+# Lehmanns Marktstand
+1996: 
+    8=[(Order id=10279, total=351.0), (Order id=10284, total=1170.38)]
+    10=[(Order id=10343, total=1584.0)]
+1997: 
+    4=[(Order id=10497, total=1380.6), (Order id=10522, total=2318.24)]
+    5=[(Order id=10534, total=465.7), (Order id=10536, total=1645.0)]
+    6=[(Order id=10557, total=1152.5)]
+    7=[(Order id=10592, total=516.47), (Order id=10593, total=1994.4)]
+    12=[(Order id=10772, total=3603.22)]
+1998: 
+    1=[(Order id=10862, total=581.0)]
+    2=[(Order id=10891, total=368.93)]
+    3=[(Order id=10934, total=500.0)]
+    5=[(Order id=11070, total=1629.98)]
+
+# Let's Stop N Shop
+1997: 
+    6=[(Order id=10579, total=317.75)]
+    10=[(Order id=10719, total=844.25)]
+    11=[(Order id=10735, total=536.4)]
+1998: 
+    2=[(Order id=10884, total=1378.07)]
+
+# LILA-Supermercado
+1996: 
+    8=[(Order id=10283, total=1414.8)]
+    9=[(Order id=10296, total=1050.6)]
+    10=[(Order id=10330, total=1649.0)]
+    11=[(Order id=10357, total=1167.68)]
+    12=[(Order id=10381, total=112.0)]
+1997: 
+    2=[(Order id=10461, total=1538.7)]
+    4=[(Order id=10499, total=1412.0)]
+    5=[(Order id=10543, total=1504.5)]
+    12=[(Order id=10780, total=720.0)]
+1998: 
+    1=[(Order id=10823, total=2826.0)]
+    2=[(Order id=10899, total=122.4)]
+    4=[(Order id=10997, total=1885.0)]
+    5=[(Order id=11065, total=189.42), (Order id=11071, total=484.5)]
+
+# LINO-Delicateses
+1997: 
+    1=[(Order id=10405, total=400.0)]
+    3=[(Order id=10485, total=1584.0)]
+    8=[(Order id=10638, total=2720.05)]
+    10=[(Order id=10697, total=805.42)]
+    11=[(Order id=10729, total=1850.0)]
+1998: 
+    1=[(Order id=10811, total=852.0), (Order id=10838, total=1938.38), (Order id=10840, total=211.2)]
+    3=[(Order id=10919, total=1122.8), (Order id=10954, total=1659.54)]
+    4=[(Order id=11014, total=243.18), (Order id=11039, total=3090.0)]
+
+# Lonesome Pine Restaurant
+1996: 
+    9=[(Order id=10307, total=424.0), (Order id=10317, total=288.0)]
+1997: 
+    5=[(Order id=10544, total=417.2)]
+    9=[(Order id=10662, total=125.0), (Order id=10665, total=1295.0)]
+1998: 
+    2=[(Order id=10867, total=98.4), (Order id=10883, total=36.0)]
+    4=[(Order id=11018, total=1575.0)]
+
+# Magazzini Alimentari Riuniti
+1996: 
+    8=[(Order id=10275, total=291.84)]
+    9=[(Order id=10300, total=608.0)]
+1997: 
+    1=[(Order id=10404, total=1591.25)]
+    3=[(Order id=10467, total=235.2)]
+    8=[(Order id=10635, total=1326.22)]
+    11=[(Order id=10754, total=55.2)]
+    12=[(Order id=10784, total=1488.0)]
+1998: 
+    1=[(Order id=10818, total=833.0)]
+    3=[(Order id=10939, total=637.5), (Order id=10950, total=110.0)]
+
+# Maison Dewey
+1997: 
+    5=[(Order id=10529, total=946.0)]
+    8=[(Order id=10649, total=1434.0)]
+    12=[(Order id=10760, total=2917.0)]
+1998: 
+    2=[(Order id=10892, total=2090.0), (Order id=10896, total=750.5)]
+    3=[(Order id=10978, total=1303.2)]
+    4=[(Order id=11004, total=295.38)]
+
+# Mère Paillarde
+1996: 
+    10=[(Order id=10332, total=1786.88), (Order id=10339, total=3354.0)]
+    12=[(Order id=10376, total=399.0)]
+1997: 
+    1=[(Order id=10424, total=9194.56)]
+    2=[(Order id=10439, total=1078.0)]
+    4=[(Order id=10505, total=147.9)]
+    6=[(Order id=10565, total=639.9), (Order id=10570, total=2465.25)]
+    7=[(Order id=10590, total=1101.0), (Order id=10605, total=4109.7)]
+    8=[(Order id=10618, total=2697.5), (Order id=10619, total=1260.0)]
+    10=[(Order id=10724, total=638.5)]
+
+# Morgenstern Gesundkost
+1996: 
+    8=[(Order id=10277, total=1200.8)]
+1997: 
+    6=[(Order id=10575, total=2147.4)]
+    10=[(Order id=10699, total=114.0)]
+    12=[(Order id=10779, total=1335.0)]
+1998: 
+    3=[(Order id=10945, total=245.0)]
+
+# North/South
+1997: 
+    4=[(Order id=10517, total=352.0)]
+    11=[(Order id=10752, total=252.0)]
+1998: 
+    4=[(Order id=11057, total=45.0)]
+
+# Océano Atlántico Ltda.
+1997: 
+    1=[(Order id=10409, total=319.2)]
+    5=[(Order id=10531, total=110.0)]
+1998: 
+    2=[(Order id=10898, total=30.0)]
+    3=[(Order id=10958, total=781.0), (Order id=10986, total=2220.0)]
+
+# Old World Delicatessen
+1996: 
+    7=[(Order id=10260, total=1504.65)]
+    9=[(Order id=10305, total=3741.3)]
+    10=[(Order id=10338, total=934.5)]
+1997: 
+    2=[(Order id=10441, total=1755.0)]
+    7=[(Order id=10594, total=565.5)]
+    9=[(Order id=10680, total=1261.88)]
+    10=[(Order id=10706, total=1893.0)]
+1998: 
+    1=[(Order id=10855, total=2227.89)]
+    3=[(Order id=10965, total=848.0)]
+    4=[(Order id=11034, total=539.4)]
+
+# Ottilies Käseladen
+1997: 
+    1=[(Order id=10407, total=1194.0)]
+    4=[(Order id=10508, total=240.0)]
+    5=[(Order id=10554, total=1728.52)]
+    6=[(Order id=10580, total=1013.74)]
+    9=[(Order id=10684, total=1768.0)]
+    12=[(Order id=10766, total=2310.0)]
+1998: 
+    1=[(Order id=10833, total=906.93)]
+    4=[(Order id=10999, total=1197.95), (Order id=11020, total=632.4)]
+
+# Paris spécialités
+
+# Pericles Comidas clásicas
+1996: 
+    10=[(Order id=10322, total=112.0)]
+    11=[(Order id=10354, total=568.8)]
+1997: 
+    3=[(Order id=10474, total=1249.1)]
+    4=[(Order id=10502, total=816.3)]
+1998: 
+    4=[(Order id=10995, total=1196.0)]
+    5=[(Order id=11073, total=300.0)]
+
+# Piccolo und mehr
+1996: 
+    11=[(Order id=10353, total=8593.28)]
+    12=[(Order id=10392, total=1440.0)]
+1997: 
+    1=[(Order id=10427, total=651.0)]
+    3=[(Order id=10489, total=439.2)]
+    5=[(Order id=10530, total=4180.0)]
+    7=[(Order id=10597, total=718.08)]
+    9=[(Order id=10686, total=1404.45)]
+    11=[(Order id=10747, total=1912.85)]
+1998: 
+    1=[(Order id=10844, total=735.0)]
+    4=[(Order id=11053, total=3055.0)]
+
+# Princesa Isabel Vinhos
+1996: 
+    10=[(Order id=10336, total=285.12)]
+    12=[(Order id=10397, total=716.72)]
+1997: 
+    2=[(Order id=10433, total=851.2)]
+    3=[(Order id=10477, total=558.0)]
+1998: 
+    1=[(Order id=10808, total=1411.0)]
+    4=[(Order id=11007, total=2633.9)]
+
+# Que Delícia
+1996: 
+    7=[(Order id=10261, total=448.0)]
+    8=[(Order id=10291, total=497.52)]
+    12=[(Order id=10379, total=863.28)]
+1997: 
+    1=[(Order id=10421, total=1194.27)]
+    7=[(Order id=10587, total=807.38)]
+    8=[(Order id=10647, total=636.0)]
+    10=[(Order id=10720, total=550.0)]
+    12=[(Order id=10794, total=314.76)]
+1998: 
+    3=[(Order id=10989, total=1353.6)]
+
+# Queen Cozinha
+1996: 
+    12=[(Order id=10372, total=9210.9)]
+1997: 
+    1=[(Order id=10406, total=1830.78)]
+    3=[(Order id=10487, total=889.7)]
+    8=[(Order id=10637, total=2761.94)]
+    9=[(Order id=10659, total=1227.02)]
+    10=[(Order id=10704, total=595.5)]
+    11=[(Order id=10728, total=1296.75)]
+    12=[(Order id=10786, total=1531.08)]
+1998: 
+    2=[(Order id=10868, total=1920.6), (Order id=10913, total=768.75), (Order id=10914, total=537.5)]
+    3=[(Order id=10961, total=1119.9)]
+    5=[(Order id=11068, total=2027.08)]
+
+# QUICK-Stop
+1996: 
+    8=[(Order id=10273, total=2037.28), (Order id=10285, total=1743.36), (Order id=10286, total=3016.0)]
+    9=[(Order id=10313, total=182.4)]
+    11=[(Order id=10345, total=2924.8), (Order id=10361, total=2046.24)]
+1997: 
+    1=[(Order id=10418, total=1814.8)]
+    2=[(Order id=10451, total=3849.66)]
+    4=[(Order id=10515, total=9921.3)]
+    5=[(Order id=10527, total=1503.0), (Order id=10540, total=10191.7), (Order id=10549, total=3554.28)]
+    7=[(Order id=10588, total=3120.0)]
+    9=[(Order id=10658, total=4464.6)]
+    10=[(Order id=10691, total=10164.8), (Order id=10694, total=4825.0), (Order id=10721, total=923.88)]
+    11=[(Order id=10745, total=4529.8)]
+    12=[(Order id=10765, total=1515.6), (Order id=10788, total=731.5)]
+1998: 
+    1=[(Order id=10845, total=3812.7)]
+    2=[(Order id=10865, total=16387.5), (Order id=10878, total=1539.0)]
+    3=[(Order id=10938, total=2731.88), (Order id=10962, total=3584.0)]
+    4=[(Order id=10991, total=2296.0), (Order id=10996, total=560.0), (Order id=11021, total=6306.24)]
+
+# Rancho grande
+1997: 
+    2=[(Order id=10448, total=443.4)]
+    10=[(Order id=10716, total=706.0)]
+1998: 
+    1=[(Order id=10828, total=932.0)]
+    2=[(Order id=10916, total=686.7)]
+    4=[(Order id=11019, total=76.0)]
+
+# Rattlesnake Canyon Grocery
+1996: 
+    7=[(Order id=10262, total=584.0)]
+    8=[(Order id=10272, total=1456.0), (Order id=10294, total=1887.6)]
+    9=[(Order id=10314, total=2094.3), (Order id=10316, total=2835.0)]
+    11=[(Order id=10346, total=1618.88)]
+1997: 
+    1=[(Order id=10401, total=3868.6)]
+    3=[(Order id=10479, total=10495.6)]
+    6=[(Order id=10564, total=1234.05), (Order id=10569, total=890.0)]
+    7=[(Order id=10598, total=2388.5)]
+    12=[(Order id=10761, total=507.0)]
+1998: 
+    1=[(Order id=10820, total=1140.0), (Order id=10852, total=2984.0)]
+    2=[(Order id=10889, total=11380.0)]
+    3=[(Order id=10988, total=3574.8)]
+    4=[(Order id=11000, total=903.75)]
+    5=[(Order id=11077, total=1255.72)]
+
+# Reggiani Caseifici
+1996: 
+    8=[(Order id=10288, total=80.1)]
+1997: 
+    1=[(Order id=10428, total=192.0)]
+    2=[(Order id=10443, total=517.44)]
+    6=[(Order id=10562, total=488.7)]
+    7=[(Order id=10586, total=23.8)]
+    9=[(Order id=10655, total=154.4)]
+    11=[(Order id=10727, total=1624.5)]
+1998: 
+    1=[(Order id=10812, total=1692.8)]
+    2=[(Order id=10908, total=663.1)]
+    3=[(Order id=10942, total=560.0)]
+    4=[(Order id=11010, total=645.0), (Order id=11062, total=406.4)]
+
+# Ricardo Adocicados
+1996: 
+    8=[(Order id=10287, total=819.0)]
+    9=[(Order id=10299, total=349.5)]
+1997: 
+    2=[(Order id=10447, total=914.4)]
+    3=[(Order id=10481, total=1472.0)]
+    6=[(Order id=10563, total=965.0)]
+    8=[(Order id=10622, total=560.0), (Order id=10648, total=372.38)]
+1998: 
+    1=[(Order id=10813, total=602.4), (Order id=10851, total=2603.0)]
+    2=[(Order id=10877, total=1955.12)]
+    4=[(Order id=11059, total=1838.0)]
+
+# Richter Supermarkt
+1996: 
+    7=[(Order id=10255, total=2490.5)]
+1997: 
+    1=[(Order id=10419, total=2097.6)]
+    5=[(Order id=10537, total=1823.8)]
+    9=[(Order id=10666, total=4666.94)]
+    11=[(Order id=10751, total=1631.48), (Order id=10758, total=1644.6)]
+1998: 
+    3=[(Order id=10931, total=799.2), (Order id=10951, total=458.76)]
+    4=[(Order id=11033, total=3232.8)]
+    5=[(Order id=11075, total=498.1)]
+
+# Romero y tomillo
+1996: 
+    8=[(Order id=10281, total=86.5), (Order id=10282, total=155.4)]
+    9=[(Order id=10306, total=498.5)]
+1998: 
+    3=[(Order id=10917, total=365.89)]
+    4=[(Order id=11013, total=361.0)]
+
+# Santé Gourmet
+1996: 
+    12=[(Order id=10387, total=1058.4)]
+1997: 
+    4=[(Order id=10520, total=200.0)]
+    8=[(Order id=10639, total=500.0)]
+1998: 
+    1=[(Order id=10831, total=2684.4)]
+    2=[(Order id=10909, total=670.0)]
+    4=[(Order id=11015, total=622.35)]
+
+# Save-a-lot Markets
+1996: 
+    10=[(Order id=10324, total=5275.72)]
+    12=[(Order id=10393, total=2556.95), (Order id=10398, total=2505.6)]
+1997: 
+    2=[(Order id=10440, total=4924.14), (Order id=10452, total=2018.5)]
+    4=[(Order id=10510, total=4707.54)]
+    6=[(Order id=10555, total=2944.4)]
+    7=[(Order id=10603, total=1483.0), (Order id=10607, total=6475.4), (Order id=10612, total=6375.0)]
+    8=[(Order id=10627, total=1185.75)]
+    9=[(Order id=10657, total=4371.6), (Order id=10678, total=5256.5)]
+    10=[(Order id=10700, total=1638.4), (Order id=10711, total=4451.7), (Order id=10713, total=2827.9), (Order id=10714, total=2205.75), (Order id=10722, total=1570.0)]
+    11=[(Order id=10748, total=2196.0), (Order id=10757, total=3082.0)]
+1998: 
+    1=[(Order id=10815, total=40.0), (Order id=10847, total=4931.92)]
+    2=[(Order id=10882, total=892.64), (Order id=10894, total=2753.1)]
+    3=[(Order id=10941, total=4011.75), (Order id=10983, total=720.9), (Order id=10984, total=1809.75)]
+    4=[(Order id=11002, total=1811.1), (Order id=11030, total=12615.05), (Order id=11031, total=2393.5)]
+    5=[(Order id=11064, total=4330.4)]
+
+# Seven Seas Imports
+1996: 
+    11=[(Order id=10359, total=3471.68)]
+    12=[(Order id=10377, total=863.6), (Order id=10388, total=1228.8)]
+1997: 
+    3=[(Order id=10472, total=1036.8)]
+    5=[(Order id=10523, total=2444.31), (Order id=10547, total=1792.8)]
+    12=[(Order id=10800, total=1468.94), (Order id=10804, total=2278.4)]
+1998: 
+    2=[(Order id=10869, total=1630.0)]
+
+# Simons bistro
+1996: 
+    10=[(Order id=10341, total=352.6)]
+1997: 
+    1=[(Order id=10417, total=11188.4)]
+    6=[(Order id=10556, total=835.2)]
+    8=[(Order id=10642, total=696.0)]
+    9=[(Order id=10669, total=570.0)]
+    12=[(Order id=10802, total=2942.81)]
+1998: 
+    5=[(Order id=11074, total=232.08)]
+
+# Spécialités du monde
+1997: 
+    11=[(Order id=10738, total=52.35)]
+1998: 
+    2=[(Order id=10907, total=108.5)]
+    3=[(Order id=10964, total=2052.5)]
+    4=[(Order id=11043, total=210.0)]
+
+# Split Rail Beer & Ale
+1996: 
+    8=[(Order id=10271, total=48.0)]
+    10=[(Order id=10329, total=4578.43)]
+    11=[(Order id=10349, total=141.6)]
+    12=[(Order id=10369, total=2390.4), (Order id=10385, total=691.2)]
+1997: 
+    1=[(Order id=10432, total=485.0)]
+    11=[(Order id=10756, total=1990.0)]
+1998: 
+    1=[(Order id=10821, total=678.0)]
+    3=[(Order id=10974, total=439.0)]
+
+# Suprêmes délices
+1996: 
+    7=[(Order id=10252, total=3597.9)]
+    9=[(Order id=10302, total=2708.8)]
+1997: 
+    2=[(Order id=10458, total=3891.0)]
+    3=[(Order id=10463, total=713.3), (Order id=10475, total=1505.18)]
+    12=[(Order id=10767, total=28.0)]
+1998: 
+    1=[(Order id=10841, total=4581.0), (Order id=10846, total=1112.0)]
+    2=[(Order id=10885, total=1209.0)]
+    3=[(Order id=10930, total=2255.5)]
+    4=[(Order id=11035, total=1754.5), (Order id=11038, total=732.6)]
+
+# The Big Cheese
+1996: 
+    9=[(Order id=10310, total=336.0)]
+1997: 
+    10=[(Order id=10708, total=180.4)]
+    12=[(Order id=10805, total=2775.0)]
+1998: 
+    4=[(Order id=10992, total=69.6)]
+
+# The Cracker Box
+1997: 
+    8=[(Order id=10624, total=1393.24)]
+    12=[(Order id=10775, total=228.0)]
+1998: 
+    4=[(Order id=11003, total=326.0)]
+
+# Toms Spezialitäten
+1997: 
+    2=[(Order id=10438, total=454.0), (Order id=10446, total=246.24)]
+    5=[(Order id=10548, total=240.1)]
+    7=[(Order id=10608, total=1064.0)]
+1998: 
+    3=[(Order id=10967, total=910.4)]
+
+# Tortuga Restaurante
+1996: 
+    8=[(Order id=10276, total=420.0), (Order id=10293, total=848.7)]
+    9=[(Order id=10304, total=954.4)]
+    10=[(Order id=10319, total=1191.2)]
+1997: 
+    4=[(Order id=10518, total=4150.05)]
+    6=[(Order id=10576, total=838.45)]
+    9=[(Order id=10676, total=534.85)]
+1998: 
+    1=[(Order id=10842, total=975.0)]
+    2=[(Order id=10915, total=539.5)]
+    5=[(Order id=11069, total=360.0)]
+
+# Tradição Hipermercados
+1996: 
+    7=[(Order id=10249, total=1863.4)]
+    8=[(Order id=10292, total=1296.0)]
+1997: 
+    4=[(Order id=10496, total=190.0)]
+    7=[(Order id=10606, total=1130.4)]
+1998: 
+    1=[(Order id=10830, total=1974.0), (Order id=10834, total=1432.71), (Order id=10839, total=827.55)]
+
+# Trail's Head Gourmet Provisioners
+1997: 
+    6=[(Order id=10574, total=764.3), (Order id=10577, total=569.0)]
+1998: 
+    1=[(Order id=10822, total=237.9)]
+
+# Vaffeljernet
+1996: 
+    11=[(Order id=10367, total=834.2)]
+    12=[(Order id=10399, total=1765.6)]
+1997: 
+    3=[(Order id=10465, total=2518.0)]
+    7=[(Order id=10591, total=812.5), (Order id=10602, total=48.75)]
+    10=[(Order id=10688, total=3160.6)]
+    11=[(Order id=10744, total=736.0)]
+    12=[(Order id=10769, total=1684.28)]
+1998: 
+    3=[(Order id=10921, total=1936.0), (Order id=10946, total=1407.5)]
+    4=[(Order id=10994, total=940.5)]
+
+# Victuailles en stock
+1996: 
+    7=[(Order id=10251, total=654.06)]
+    10=[(Order id=10334, total=144.8)]
+1997: 
+    2=[(Order id=10450, total=425.12), (Order id=10459, total=1659.2)]
+    3=[(Order id=10478, total=471.2)]
+    5=[(Order id=10546, total=2812.0)]
+    12=[(Order id=10806, total=439.6)]
+1998: 
+    1=[(Order id=10814, total=1788.45), (Order id=10843, total=159.0), (Order id=10850, total=629.0)]
+
+# Vins et alcools Chevalier
+1996: 
+    8=[(Order id=10274, total=538.6)]
+    9=[(Order id=10295, total=121.6)]
+1997: 
+    11=[(Order id=10737, total=139.8), (Order id=10739, total=240.0)]
+
+# Die Wandernde Kuh
+1996: 
+    9=[(Order id=10301, total=755.0), (Order id=10312, total=1614.8)]
+    11=[(Order id=10348, total=363.6), (Order id=10356, total=1106.4)]
+1997: 
+    4=[(Order id=10513, total=1942.0)]
+    8=[(Order id=10632, total=589.0), (Order id=10640, total=708.75)]
+    9=[(Order id=10651, total=397.8), (Order id=10668, total=625.28)]
+1998: 
+    4=[(Order id=11046, total=1485.8)]
+
+# Wartian Herkku
+1996: 
+    7=[(Order id=10266, total=346.56)]
+    8=[(Order id=10270, total=1376.0)]
+    10=[(Order id=10320, total=516.0), (Order id=10333, total=877.2)]
+1997: 
+    1=[(Order id=10412, total=334.8), (Order id=10416, total=720.0)]
+    2=[(Order id=10437, total=393.0), (Order id=10455, total=2684.0)]
+    5=[(Order id=10526, total=1151.4), (Order id=10553, total=1546.3)]
+    6=[(Order id=10583, total=2237.5)]
+    8=[(Order id=10636, total=629.5)]
+    11=[(Order id=10750, total=1590.56)]
+    12=[(Order id=10781, total=975.88)]
+1998: 
+    4=[(Order id=11025, total=270.0)]
+
+# Wellington Importadora
+1996: 
+    7=[(Order id=10256, total=517.8)]
+1997: 
+    1=[(Order id=10420, total=1707.84)]
+    7=[(Order id=10585, total=142.5)]
+    8=[(Order id=10644, total=1371.8)]
+    12=[(Order id=10803, total=1193.01)]
+1998: 
+    1=[(Order id=10809, total=140.0)]
+    2=[(Order id=10900, total=33.75), (Order id=10905, total=342.0)]
+    3=[(Order id=10935, total=619.5)]
+
+# White Clover Markets
+1996: 
+    7=[(Order id=10269, total=642.2)]
+    11=[(Order id=10344, total=2296.0)]
+1997: 
+    3=[(Order id=10469, total=956.68), (Order id=10483, total=668.8)]
+    4=[(Order id=10504, total=1388.5)]
+    7=[(Order id=10596, total=1180.88)]
+    10=[(Order id=10693, total=2071.2), (Order id=10696, total=996.0), (Order id=10723, total=468.45)]
+    11=[(Order id=10740, total=1416.0)]
+1998: 
+    1=[(Order id=10861, total=3523.4)]
+    2=[(Order id=10904, total=1924.25)]
+    4=[(Order id=11032, total=8902.5)]
+    5=[(Order id=11066, total=928.75)]
+
+# Wilman Kala
+1996: 
+    7=[(Order id=10248, total=440.0)]
+1997: 
+    7=[(Order id=10615, total=120.0)]
+    9=[(Order id=10673, total=412.35)]
+    10=[(Order id=10695, total=642.0)]
+1998: 
+    2=[(Order id=10873, total=336.8), (Order id=10879, total=611.3), (Order id=10910, total=452.9)]
+    4=[(Order id=11005, total=586.0)]
+
+# Wolski  Zajazd
+1996: 
+    12=[(Order id=10374, total=459.0)]
+1997: 
+    7=[(Order id=10611, total=808.0)]
+    12=[(Order id=10792, total=399.85)]
+1998: 
+    2=[(Order id=10870, total=160.0), (Order id=10906, total=427.5)]
+    4=[(Order id=10998, total=686.0), (Order id=11044, total=591.6)]
+
+# LINQ44
+[ ' earn ', ' near ' ]
+[ ' salt', '  last   ' ]
+[ 'from   ', ' form  ' ]
+
+# LINQ45
+[ ' EARN ', ' NEAR ' ]
+[ ' SALT', '  LAST   ' ]
+[ 'FROM   ', ' FORM  ' ]
+
+# LINQ46
+Prime factors of 300:
+2
+3
+5
+
+# LINQ47
+Category names:
+Beverages
+Condiments
+Produce
+Meat/Poultry
+Seafood
+Dairy Products
+Confections
+Grains/Cereals
+
+# LINQ48
+Unique numbers from both arrays:
+0
+2
+4
+5
+6
+8
+9
+1
+3
+7
+
+# LINQ49
+Unique first letters from Product names and Customer names:
+C
+A
+G
+U
+N
+M
+I
+Q
+K
+T
+P
+S
+R
+B
+J
+Z
+V
+F
+E
+W
+L
+O
+D
+H
+
+# LINQ50
+Common numbers shared by both arrays:
+5
+8
+
+# LINQ51
+Common first letters from Product names and Customer names:
+C
+A
+G
+N
+M
+I
+Q
+K
+T
+P
+S
+R
+B
+V
+F
+E
+W
+L
+O
+
+# LINQ52
+Numbers in first array but not second array:
+0
+2
+4
+6
+9
+
+# LINQ53
+First letters from Product names, but not from Customer names:
+U
+J
+Z
+
+# LINQ54
+Every other double from highest to lowest:
+4.1
+2.3
+1.7
+
+# LINQ55
+The sorted word list:
+apple
+blueberry
+cherry
+
+# LINQ56
+Bob's score: 40
+
+# LINQ57
+Numbers stored as doubles:
+1.0
+7.0
+
+# LINQ58
+(Product id=12, name=Queso Manchego La Pastora, cat=Dairy Products, price=38.0, inStock=86)
+
+# LINQ59
+A string starting with 'o': one
+
+# LINQ61
+0
+
+# LINQ62
+Product 789 exists: false
+
+# LINQ64
+Second number > 5: 8
+
+# LINQ65
+The number 100 is even
+The number 101 is odd
+The number 102 is even
+The number 103 is odd
+The number 104 is even
+The number 105 is odd
+The number 106 is even
+The number 107 is odd
+The number 108 is even
+The number 109 is odd
+The number 110 is even
+The number 111 is odd
+The number 112 is even
+The number 113 is odd
+The number 114 is even
+The number 115 is odd
+The number 116 is even
+The number 117 is odd
+The number 118 is even
+The number 119 is odd
+The number 120 is even
+The number 121 is odd
+The number 122 is even
+The number 123 is odd
+The number 124 is even
+The number 125 is odd
+The number 126 is even
+The number 127 is odd
+The number 128 is even
+The number 129 is odd
+The number 130 is even
+The number 131 is odd
+The number 132 is even
+The number 133 is odd
+The number 134 is even
+The number 135 is odd
+The number 136 is even
+The number 137 is odd
+The number 138 is even
+The number 139 is odd
+The number 140 is even
+The number 141 is odd
+The number 142 is even
+The number 143 is odd
+The number 144 is even
+The number 145 is odd
+The number 146 is even
+The number 147 is odd
+The number 148 is even
+The number 149 is odd
+The number 150 is even
+
+# LINQ66
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+
+# LINQ67
+There is a word that contains in the list that contains 'ei': true
+
+# LINQ69
+Condiments=[(Product id=3, name=Aniseed Syrup, cat=Condiments, price=10.0, inStock=13), (Product id=4, name=Chef Anton's Cajun Seasoning, cat=Condiments, price=22.0, inStock=53), (Product id=5, name=Chef Anton's Gumbo Mix, cat=Condiments, price=21.35, inStock=0), (Product id=6, name=Grandma's Boysenberry Spread, cat=Condiments, price=25.0, inStock=120), (Product id=8, name=Northwoods Cranberry Sauce, cat=Condiments, price=40.0, inStock=6), (Product id=15, name=Genen Shouyu, cat=Condiments, price=15.5, inStock=39), (Product id=44, name=Gula Malacca, cat=Condiments, price=19.45, inStock=27), (Product id=61, name=Sirop d'érable, cat=Condiments, price=28.5, inStock=113), (Product id=63, name=Vegie-spread, cat=Condiments, price=43.9, inStock=24), (Product id=65, name=Louisiana Fiery Hot Pepper Sauce, cat=Condiments, price=21.05, inStock=76), (Product id=66, name=Louisiana Hot Spiced Okra, cat=Condiments, price=17.0, inStock=4), (Product id=77, name=Original Frankfurter grüne Soße, cat=Condiments, price=13.0, inStock=32)]
+Meat/Poultry=[(Product id=9, name=Mishi Kobe Niku, cat=Meat/Poultry, price=97.0, inStock=29), (Product id=17, name=Alice Mutton, cat=Meat/Poultry, price=39.0, inStock=0), (Product id=29, name=Thüringer Rostbratwurst, cat=Meat/Poultry, price=123.79, inStock=0), (Product id=53, name=Perth Pasties, cat=Meat/Poultry, price=32.8, inStock=0), (Product id=54, name=Tourtière, cat=Meat/Poultry, price=7.45, inStock=21), (Product id=55, name=Pâté chinois, cat=Meat/Poultry, price=24.0, inStock=115)]
+Dairy Products=[(Product id=11, name=Queso Cabrales, cat=Dairy Products, price=21.0, inStock=22), (Product id=12, name=Queso Manchego La Pastora, cat=Dairy Products, price=38.0, inStock=86), (Product id=31, name=Gorgonzola Telino, cat=Dairy Products, price=12.5, inStock=0), (Product id=32, name=Mascarpone Fabioli, cat=Dairy Products, price=32.0, inStock=9), (Product id=33, name=Geitost, cat=Dairy Products, price=2.5, inStock=112), (Product id=59, name=Raclette Courdavault, cat=Dairy Products, price=55.0, inStock=79), (Product id=60, name=Camembert Pierrot, cat=Dairy Products, price=34.0, inStock=19), (Product id=69, name=Gudbrandsdalsost, cat=Dairy Products, price=36.0, inStock=26), (Product id=71, name=Flotemysost, cat=Dairy Products, price=21.5, inStock=26), (Product id=72, name=Mozzarella di Giovanni, cat=Dairy Products, price=34.8, inStock=14)]
+
+# LINQ70
+The list contains only odd numbers: true
+
+# LINQ72
+Beverages=[(Product id=1, name=Chai, cat=Beverages, price=18.0, inStock=39), (Product id=2, name=Chang, cat=Beverages, price=19.0, inStock=17), (Product id=24, name=Guaraná Fantástica, cat=Beverages, price=4.5, inStock=20), (Product id=34, name=Sasquatch Ale, cat=Beverages, price=14.0, inStock=111), (Product id=35, name=Steeleye Stout, cat=Beverages, price=18.0, inStock=20), (Product id=38, name=Côte de Blaye, cat=Beverages, price=263.5, inStock=17), (Product id=39, name=Chartreuse verte, cat=Beverages, price=18.0, inStock=69), (Product id=43, name=Ipoh Coffee, cat=Beverages, price=46.0, inStock=17), (Product id=67, name=Laughing Lumberjack Lager, cat=Beverages, price=14.0, inStock=52), (Product id=70, name=Outback Lager, cat=Beverages, price=15.0, inStock=15), (Product id=75, name=Rhönbräu Klosterbier, cat=Beverages, price=7.75, inStock=125), (Product id=76, name=Lakkalikööri, cat=Beverages, price=18.0, inStock=57)]
+Produce=[(Product id=7, name=Uncle Bob's Organic Dried Pears, cat=Produce, price=30.0, inStock=15), (Product id=14, name=Tofu, cat=Produce, price=23.25, inStock=35), (Product id=28, name=Rössle Sauerkraut, cat=Produce, price=45.6, inStock=26), (Product id=51, name=Manjimup Dried Apples, cat=Produce, price=53.0, inStock=20), (Product id=74, name=Longlife Tofu, cat=Produce, price=10.0, inStock=4)]
+Seafood=[(Product id=10, name=Ikura, cat=Seafood, price=31.0, inStock=31), (Product id=13, name=Konbu, cat=Seafood, price=6.0, inStock=24), (Product id=18, name=Carnarvon Tigers, cat=Seafood, price=62.5, inStock=42), (Product id=30, name=Nord-Ost Matjeshering, cat=Seafood, price=25.89, inStock=10), (Product id=36, name=Inlagd Sill, cat=Seafood, price=19.0, inStock=112), (Product id=37, name=Gravad lax, cat=Seafood, price=26.0, inStock=11), (Product id=40, name=Boston Crab Meat, cat=Seafood, price=18.4, inStock=123), (Product id=41, name=Jack's New England Clam Chowder, cat=Seafood, price=9.65, inStock=85), (Product id=45, name=Rogede sild, cat=Seafood, price=9.5, inStock=5), (Product id=46, name=Spegesild, cat=Seafood, price=12.0, inStock=95), (Product id=58, name=Escargots de Bourgogne, cat=Seafood, price=13.25, inStock=62), (Product id=73, name=Röd Kaviar, cat=Seafood, price=15.0, inStock=101)]
+Confections=[(Product id=16, name=Pavlova, cat=Confections, price=17.45, inStock=29), (Product id=19, name=Teatime Chocolate Biscuits, cat=Confections, price=9.2, inStock=25), (Product id=20, name=Sir Rodney's Marmalade, cat=Confections, price=81.0, inStock=40), (Product id=21, name=Sir Rodney's Scones, cat=Confections, price=10.0, inStock=3), (Product id=25, name=NuNuCa Nuß-Nougat-Creme, cat=Confections, price=14.0, inStock=76), (Product id=26, name=Gumbär Gummibärchen, cat=Confections, price=31.23, inStock=15), (Product id=27, name=Schoggi Schokolade, cat=Confections, price=43.9, inStock=49), (Product id=47, name=Zaanse koeken, cat=Confections, price=9.5, inStock=36), (Product id=48, name=Chocolade, cat=Confections, price=12.75, inStock=15), (Product id=49, name=Maxilaku, cat=Confections, price=20.0, inStock=10), (Product id=50, name=Valkoinen suklaa, cat=Confections, price=16.25, inStock=65), (Product id=62, name=Tarte au sucre, cat=Confections, price=49.3, inStock=17), (Product id=68, name=Scottish Longbreads, cat=Confections, price=12.5, inStock=6)]
+Grains/Cereals=[(Product id=22, name=Gustaf's Knäckebröd, cat=Grains/Cereals, price=21.0, inStock=104), (Product id=23, name=Tunnbröd, cat=Grains/Cereals, price=9.0, inStock=61), (Product id=42, name=Singaporean Hokkien Fried Mee, cat=Grains/Cereals, price=14.0, inStock=26), (Product id=52, name=Filo Mix, cat=Grains/Cereals, price=7.0, inStock=38), (Product id=56, name=Gnocchi di nonna Alice, cat=Grains/Cereals, price=38.0, inStock=21), (Product id=57, name=Ravioli Angelo, cat=Grains/Cereals, price=19.5, inStock=36), (Product id=64, name=Wimmers gute Semmelknödel, cat=Grains/Cereals, price=33.25, inStock=22)]
+
+# LINQ73
+There are 3 unique factors of 300.
+
+# LINQ74
+There are 5 odd numbers in the list.
+
+# LINQ76
+(ALFKI, 6)
+(ANATR, 4)
+(ANTON, 7)
+(AROUT, 13)
+(BERGS, 18)
+(BLAUS, 7)
+(BLONP, 11)
+(BOLID, 3)
+(BONAP, 17)
+(BOTTM, 14)
+(BSBEV, 10)
+(CACTU, 6)
+(CENTC, 1)
+(CHOPS, 8)
+(COMMI, 5)
+(CONSH, 3)
+(DRACD, 6)
+(DUMON, 4)
+(EASTC, 8)
+(ERNSH, 30)
+(FAMIA, 7)
+(FISSA, 0)
+(FOLIG, 5)
+(FOLKO, 19)
+(FRANK, 15)
+(FRANR, 3)
+(FRANS, 6)
+(FURIB, 8)
+(GALED, 5)
+(GODOS, 10)
+(GOURL, 9)
+(GREAL, 11)
+(GROSR, 2)
+(HANAR, 14)
+(HILAA, 18)
+(HUNGC, 5)
+(HUNGO, 19)
+(ISLAT, 10)
+(KOENE, 14)
+(LACOR, 4)
+(LAMAI, 14)
+(LAUGB, 3)
+(LAZYK, 2)
+(LEHMS, 15)
+(LETSS, 4)
+(LILAS, 14)
+(LINOD, 12)
+(LONEP, 8)
+(MAGAA, 10)
+(MAISD, 7)
+(MEREP, 13)
+(MORGK, 5)
+(NORTS, 3)
+(OCEAN, 5)
+(OLDWO, 10)
+(OTTIK, 9)
+(PARIS, 0)
+(PERIC, 6)
+(PICCO, 10)
+(PRINI, 6)
+(QUEDE, 9)
+(QUEEN, 13)
+(QUICK, 28)
+(RANCH, 5)
+(RATTC, 18)
+(REGGC, 12)
+(RICAR, 11)
+(RICSU, 10)
+(ROMEY, 5)
+(SANTG, 6)
+(SAVEA, 31)
+(SEVES, 9)
+(SIMOB, 7)
+(SPECD, 4)
+(SPLIR, 9)
+(SUPRD, 12)
+(THEBI, 4)
+(THECR, 3)
+(TOMSP, 5)
+(TORTU, 10)
+(TRADH, 7)
+(TRAIH, 3)
+(VAFFE, 11)
+(VICTE, 10)
+(VINET, 4)
+(WANDK, 10)
+(WARTH, 15)
+(WELLI, 9)
+(WHITC, 14)
+(WILMK, 8)
+(WOLZA, 7)
+
+# LINQ77
+(Beverages, 12)
+(Condiments, 12)
+(Produce, 5)
+(Meat/Poultry, 6)
+(Seafood, 12)
+(Dairy Products, 10)
+(Confections, 13)
+(Grains/Cereals, 7)
+
+# LINQ78
+The sum of the numbers is 45.0
+
+# LINQ79
+There are a total of 20 characters in these words.
+
+# LINQ80
+(Beverages, 559)
+(Condiments, 507)
+(Produce, 100)
+(Meat/Poultry, 165)
+(Seafood, 701)
+(Dairy Products, 393)
+(Confections, 386)
+(Grains/Cereals, 308)
+
+# LINQ81
+The minimum number is 0
+
+# LINQ82
+The shortest word is 5 characters long.
+
+# LINQ83
+(Beverages, 4.5)
+(Condiments, 10.0)
+(Produce, 10.0)
+(Meat/Poultry, 7.45)
+(Seafood, 6.0)
+(Dairy Products, 2.5)
+(Confections, 9.2)
+(Grains/Cereals, 7.0)
+
+# LINQ84
+Beverages: 
+(Product id=24, name=Guaraná Fantástica, cat=Beverages, price=4.5, inStock=20)
+Condiments: 
+(Product id=3, name=Aniseed Syrup, cat=Condiments, price=10.0, inStock=13)
+Produce: 
+(Product id=74, name=Longlife Tofu, cat=Produce, price=10.0, inStock=4)
+Meat/Poultry: 
+(Product id=54, name=Tourtière, cat=Meat/Poultry, price=7.45, inStock=21)
+Seafood: 
+(Product id=13, name=Konbu, cat=Seafood, price=6.0, inStock=24)
+Dairy Products: 
+(Product id=33, name=Geitost, cat=Dairy Products, price=2.5, inStock=112)
+Confections: 
+(Product id=19, name=Teatime Chocolate Biscuits, cat=Confections, price=9.2, inStock=25)
+Grains/Cereals: 
+(Product id=52, name=Filo Mix, cat=Grains/Cereals, price=7.0, inStock=38)
+
+# LINQ85
+The maximum number is 9
+
+# LINQ86
+The longest word is 9 characters long.
+
+# LINQ87
+(Beverages, 263.5)
+(Condiments, 43.9)
+(Produce, 53.0)
+(Meat/Poultry, 123.79)
+(Seafood, 62.5)
+(Dairy Products, 55.0)
+(Confections, 81.0)
+(Grains/Cereals, 38.0)
+
+# LINQ88
+Beverages: 
+(Product id=38, name=Côte de Blaye, cat=Beverages, price=263.5, inStock=17)
+Condiments: 
+(Product id=63, name=Vegie-spread, cat=Condiments, price=43.9, inStock=24)
+Produce: 
+(Product id=51, name=Manjimup Dried Apples, cat=Produce, price=53.0, inStock=20)
+Meat/Poultry: 
+(Product id=29, name=Thüringer Rostbratwurst, cat=Meat/Poultry, price=123.79, inStock=0)
+Seafood: 
+(Product id=18, name=Carnarvon Tigers, cat=Seafood, price=62.5, inStock=42)
+Dairy Products: 
+(Product id=59, name=Raclette Courdavault, cat=Dairy Products, price=55.0, inStock=79)
+Confections: 
+(Product id=20, name=Sir Rodney's Marmalade, cat=Confections, price=81.0, inStock=40)
+Grains/Cereals: 
+(Product id=56, name=Gnocchi di nonna Alice, cat=Grains/Cereals, price=38.0, inStock=21)
+
+# LINQ89
+The average number is 4.5
+
+# LINQ90
+The average word length is 6.666666666666667 characters.
+
+# LINQ91
+Category: Beverages, AveragePrice: 37.979166666666664
+Category: Condiments, AveragePrice: 23.0625
+Category: Produce, AveragePrice: 32.37
+Category: Meat/Poultry, AveragePrice: 54.00666666666667
+Category: Seafood, AveragePrice: 20.6825
+Category: Dairy Products, AveragePrice: 28.73
+Category: Confections, AveragePrice: 25.16
+Category: Grains/Cereals, AveragePrice: 20.25
+
+# LINQ92
+Total product of all numbers: 88.33080999999999
+
+# LINQ93
+Ending balance: 20
+
+# LINQ94
+All numbers from both arrays:
+0
+2
+4
+5
+6
+8
+9
+1
+3
+5
+7
+8
+
+# LINQ95
+Customer and product names:
+Alfreds Futterkiste
+Ana Trujillo Emparedados y helados
+Antonio Moreno Taquería
+Around the Horn
+Berglunds snabbköp
+Blauer See Delikatessen
+Blondel père et fils
+Bólido Comidas preparadas
+Bon app'
+Bottom-Dollar Markets
+B's Beverages
+Cactus Comidas para llevar
+Centro comercial Moctezuma
+Chop-suey Chinese
+Comércio Mineiro
+Consolidated Holdings
+Drachenblut Delikatessen
+Du monde entier
+Eastern Connection
+Ernst Handel
+Familia Arquibaldo
+FISSA Fabrica Inter. Salchichas S.A.
+Folies gourmandes
+Folk och fä HB
+Frankenversand
+France restauration
+Franchi S.p.A.
+Furia Bacalhau e Frutos do Mar
+Galería del gastrónomo
+Godos Cocina Típica
+Gourmet Lanchonetes
+Great Lakes Food Market
+GROSELLA-Restaurante
+Hanari Carnes
+HILARIÓN-Abastos
+Hungry Coyote Import Store
+Hungry Owl All-Night Grocers
+Island Trading
+Königlich Essen
+La corne d'abondance
+La maison d'Asie
+Laughing Bacchus Wine Cellars
+Lazy K Kountry Store
+Lehmanns Marktstand
+Let's Stop N Shop
+LILA-Supermercado
+LINO-Delicateses
+Lonesome Pine Restaurant
+Magazzini Alimentari Riuniti
+Maison Dewey
+Mère Paillarde
+Morgenstern Gesundkost
+North/South
+Océano Atlántico Ltda.
+Old World Delicatessen
+Ottilies Käseladen
+Paris spécialités
+Pericles Comidas clásicas
+Piccolo und mehr
+Princesa Isabel Vinhos
+Que Delícia
+Queen Cozinha
+QUICK-Stop
+Rancho grande
+Rattlesnake Canyon Grocery
+Reggiani Caseifici
+Ricardo Adocicados
+Richter Supermarkt
+Romero y tomillo
+Santé Gourmet
+Save-a-lot Markets
+Seven Seas Imports
+Simons bistro
+Spécialités du monde
+Split Rail Beer & Ale
+Suprêmes délices
+The Big Cheese
+The Cracker Box
+Toms Spezialitäten
+Tortuga Restaurante
+Tradição Hipermercados
+Trail's Head Gourmet Provisioners
+Vaffeljernet
+Victuailles en stock
+Vins et alcools Chevalier
+Die Wandernde Kuh
+Wartian Herkku
+Wellington Importadora
+White Clover Markets
+Wilman Kala
+Wolski  Zajazd
+Chai
+Chang
+Aniseed Syrup
+Chef Anton's Cajun Seasoning
+Chef Anton's Gumbo Mix
+Grandma's Boysenberry Spread
+Uncle Bob's Organic Dried Pears
+Northwoods Cranberry Sauce
+Mishi Kobe Niku
+Ikura
+Queso Cabrales
+Queso Manchego La Pastora
+Konbu
+Tofu
+Genen Shouyu
+Pavlova
+Alice Mutton
+Carnarvon Tigers
+Teatime Chocolate Biscuits
+Sir Rodney's Marmalade
+Sir Rodney's Scones
+Gustaf's Knäckebröd
+Tunnbröd
+Guaraná Fantástica
+NuNuCa Nuß-Nougat-Creme
+Gumbär Gummibärchen
+Schoggi Schokolade
+Rössle Sauerkraut
+Thüringer Rostbratwurst
+Nord-Ost Matjeshering
+Gorgonzola Telino
+Mascarpone Fabioli
+Geitost
+Sasquatch Ale
+Steeleye Stout
+Inlagd Sill
+Gravad lax
+Côte de Blaye
+Chartreuse verte
+Boston Crab Meat
+Jack's New England Clam Chowder
+Singaporean Hokkien Fried Mee
+Ipoh Coffee
+Gula Malacca
+Rogede sild
+Spegesild
+Zaanse koeken
+Chocolade
+Maxilaku
+Valkoinen suklaa
+Manjimup Dried Apples
+Filo Mix
+Perth Pasties
+Tourtière
+Pâté chinois
+Gnocchi di nonna Alice
+Ravioli Angelo
+Escargots de Bourgogne
+Raclette Courdavault
+Camembert Pierrot
+Sirop d'érable
+Tarte au sucre
+Vegie-spread
+Wimmers gute Semmelknödel
+Louisiana Fiery Hot Pepper Sauce
+Louisiana Hot Spiced Okra
+Laughing Lumberjack Lager
+Scottish Longbreads
+Gudbrandsdalsost
+Outback Lager
+Flotemysost
+Mozzarella di Giovanni
+Röd Kaviar
+Longlife Tofu
+Rhönbräu Klosterbier
+Lakkalikööri
+Original Frankfurter grüne Soße
+
+# LINQ96
+The sequences match: true
+
+# LINQ97
+The sequences match: false
+
+# LINQ099
+v = 1, i = 1
+v = 2, i = 2
+v = 3, i = 3
+v = 4, i = 4
+v = 5, i = 5
+v = 6, i = 6
+v = 7, i = 7
+v = 8, i = 8
+v = 9, i = 9
+v = 10, i = 10
+
+# LINQ100
+v = 1, i = 10
+v = 2, i = 10
+v = 3, i = 10
+v = 4, i = 10
+v = 5, i = 10
+v = 6, i = 10
+v = 7, i = 10
+v = 8, i = 10
+v = 9, i = 10
+v = 10, i = 10
+
+# LINQ101
+First run numbers <= 3:
+1
+3
+2
+0
+Second run numbers <= 3:
+-5
+-4
+-1
+-3
+-9
+-8
+-6
+-7
+-2
+0
+
+# LINQ102
+Beverages: Chai
+Beverages: Chang
+Beverages: Guaraná Fantástica
+Beverages: Sasquatch Ale
+Beverages: Steeleye Stout
+Beverages: Côte de Blaye
+Beverages: Chartreuse verte
+Beverages: Ipoh Coffee
+Beverages: Laughing Lumberjack Lager
+Beverages: Outback Lager
+Beverages: Rhönbräu Klosterbier
+Beverages: Lakkalikööri
+Condiments: Aniseed Syrup
+Condiments: Chef Anton's Cajun Seasoning
+Condiments: Chef Anton's Gumbo Mix
+Condiments: Grandma's Boysenberry Spread
+Condiments: Northwoods Cranberry Sauce
+Condiments: Genen Shouyu
+Condiments: Gula Malacca
+Condiments: Sirop d'érable
+Condiments: Vegie-spread
+Condiments: Louisiana Fiery Hot Pepper Sauce
+Condiments: Louisiana Hot Spiced Okra
+Condiments: Original Frankfurter grüne Soße
+Dairy Products: Queso Cabrales
+Dairy Products: Queso Manchego La Pastora
+Dairy Products: Gorgonzola Telino
+Dairy Products: Mascarpone Fabioli
+Dairy Products: Geitost
+Dairy Products: Raclette Courdavault
+Dairy Products: Camembert Pierrot
+Dairy Products: Gudbrandsdalsost
+Dairy Products: Flotemysost
+Dairy Products: Mozzarella di Giovanni
+Seafood: Ikura
+Seafood: Konbu
+Seafood: Carnarvon Tigers
+Seafood: Nord-Ost Matjeshering
+Seafood: Inlagd Sill
+Seafood: Gravad lax
+Seafood: Boston Crab Meat
+Seafood: Jack's New England Clam Chowder
+Seafood: Rogede sild
+Seafood: Spegesild
+Seafood: Escargots de Bourgogne
+Seafood: Röd Kaviar
+
+# LINQ103
+Beverages:
+   Chai
+   Chang
+   Guaraná Fantástica
+   Sasquatch Ale
+   Steeleye Stout
+   Côte de Blaye
+   Chartreuse verte
+   Ipoh Coffee
+   Laughing Lumberjack Lager
+   Outback Lager
+   Rhönbräu Klosterbier
+   Lakkalikööri
+Seafood:
+   Ikura
+   Konbu
+   Carnarvon Tigers
+   Nord-Ost Matjeshering
+   Inlagd Sill
+   Gravad lax
+   Boston Crab Meat
+   Jack's New England Clam Chowder
+   Rogede sild
+   Spegesild
+   Escargots de Bourgogne
+   Röd Kaviar
+Condiments:
+   Aniseed Syrup
+   Chef Anton's Cajun Seasoning
+   Chef Anton's Gumbo Mix
+   Grandma's Boysenberry Spread
+   Northwoods Cranberry Sauce
+   Genen Shouyu
+   Gula Malacca
+   Sirop d'érable
+   Vegie-spread
+   Louisiana Fiery Hot Pepper Sauce
+   Louisiana Hot Spiced Okra
+   Original Frankfurter grüne Soße
+Dairy Products:
+   Queso Cabrales
+   Queso Manchego La Pastora
+   Gorgonzola Telino
+   Mascarpone Fabioli
+   Geitost
+   Raclette Courdavault
+   Camembert Pierrot
+   Gudbrandsdalsost
+   Flotemysost
+   Mozzarella di Giovanni
+
+# LINQ104
+Chai: Beverages
+Chang: Beverages
+Guaraná Fantástica: Beverages
+Sasquatch Ale: Beverages
+Steeleye Stout: Beverages
+Côte de Blaye: Beverages
+Chartreuse verte: Beverages
+Ipoh Coffee: Beverages
+Laughing Lumberjack Lager: Beverages
+Outback Lager: Beverages
+Rhönbräu Klosterbier: Beverages
+Lakkalikööri: Beverages
+Ikura: Seafood
+Konbu: Seafood
+Carnarvon Tigers: Seafood
+Nord-Ost Matjeshering: Seafood
+Inlagd Sill: Seafood
+Gravad lax: Seafood
+Boston Crab Meat: Seafood
+Jack's New England Clam Chowder: Seafood
+Rogede sild: Seafood
+Spegesild: Seafood
+Escargots de Bourgogne: Seafood
+Röd Kaviar: Seafood
+Aniseed Syrup: Condiments
+Chef Anton's Cajun Seasoning: Condiments
+Chef Anton's Gumbo Mix: Condiments
+Grandma's Boysenberry Spread: Condiments
+Northwoods Cranberry Sauce: Condiments
+Genen Shouyu: Condiments
+Gula Malacca: Condiments
+Sirop d'érable: Condiments
+Vegie-spread: Condiments
+Louisiana Fiery Hot Pepper Sauce: Condiments
+Louisiana Hot Spiced Okra: Condiments
+Original Frankfurter grüne Soße: Condiments
+Queso Cabrales: Dairy Products
+Queso Manchego La Pastora: Dairy Products
+Gorgonzola Telino: Dairy Products
+Mascarpone Fabioli: Dairy Products
+Geitost: Dairy Products
+Raclette Courdavault: Dairy Products
+Camembert Pierrot: Dairy Products
+Gudbrandsdalsost: Dairy Products
+Flotemysost: Dairy Products
+Mozzarella di Giovanni: Dairy Products
+
+# LINQ105
+Chai: Beverages
+Chang: Beverages
+Guaraná Fantástica: Beverages
+Sasquatch Ale: Beverages
+Steeleye Stout: Beverages
+Côte de Blaye: Beverages
+Chartreuse verte: Beverages
+Ipoh Coffee: Beverages
+Laughing Lumberjack Lager: Beverages
+Outback Lager: Beverages
+Rhönbräu Klosterbier: Beverages
+Lakkalikööri: Beverages
+Aniseed Syrup: Condiments
+Chef Anton's Cajun Seasoning: Condiments
+Chef Anton's Gumbo Mix: Condiments
+Grandma's Boysenberry Spread: Condiments
+Northwoods Cranberry Sauce: Condiments
+Genen Shouyu: Condiments
+Gula Malacca: Condiments
+Sirop d'érable: Condiments
+Vegie-spread: Condiments
+Louisiana Fiery Hot Pepper Sauce: Condiments
+Louisiana Hot Spiced Okra: Condiments
+Original Frankfurter grüne Soße: Condiments
+(No products): Vegetables
+Queso Cabrales: Dairy Products
+Queso Manchego La Pastora: Dairy Products
+Gorgonzola Telino: Dairy Products
+Mascarpone Fabioli: Dairy Products
+Geitost: Dairy Products
+Raclette Courdavault: Dairy Products
+Camembert Pierrot: Dairy Products
+Gudbrandsdalsost: Dairy Products
+Flotemysost: Dairy Products
+Mozzarella di Giovanni: Dairy Products
+Ikura: Seafood
+Konbu: Seafood
+Carnarvon Tigers: Seafood
+Nord-Ost Matjeshering: Seafood
+Inlagd Sill: Seafood
+Gravad lax: Seafood
+Boston Crab Meat: Seafood
+Jack's New England Clam Chowder: Seafood
+Rogede sild: Seafood
+Spegesild: Seafood
+Escargots de Bourgogne: Seafood
+Röd Kaviar: Seafood
