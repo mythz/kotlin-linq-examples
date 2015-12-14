@@ -3,14 +3,12 @@ package servicestack.net.kotlinlinqexamples
 import net.servicestack.client.Log
 import net.servicestack.func.Func.join
 import net.servicestack.func.Func.joinGroup
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
+import servicestack.net.kotlinlinqexamples.support.products
 
 class JoinOperators {
 
     fun linq102() {
         val categories = listOf("Beverages", "Condiments", "Vegetables", "Dairy Products", "Seafood")
-
-        val products = getProductList()
 
         val q = join(categories, products) { c, p -> c == p.category }
                 .map { Pair(it.A, it.B.productName) }
@@ -20,8 +18,6 @@ class JoinOperators {
 
     fun linq103() {
         val categories = listOf("Beverages", "Condiments", "Vegetables", "Dairy Products", "Seafood")
-
-        val products = getProductList()
 
         val q = joinGroup(categories, products) { c, p -> c == p.category }
             .map { Pair(it.key, it.items.map { it.B }) }
@@ -35,8 +31,6 @@ class JoinOperators {
     fun linq104() {
         val categories = listOf("Beverages", "Condiments", "Vegetables", "Dairy Products", "Seafood")
 
-        val products = getProductList()
-
         val q = joinGroup(categories, products) { c, p -> c == p.category }
             .flatMap { j -> j.items.map { it.B }.map {  Pair(j.key, it.productName) } }
 
@@ -45,8 +39,6 @@ class JoinOperators {
 
     fun linq105() {
         val categories = listOf("Beverages", "Condiments", "Vegetables", "Dairy Products", "Seafood")
-
-        val products = getProductList()
 
         val q = categories.flatMap { c ->
             val catProducts = products.filter { c == it.category }

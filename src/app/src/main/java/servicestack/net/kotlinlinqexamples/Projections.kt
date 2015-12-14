@@ -1,8 +1,8 @@
 package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
-import servicestack.net.kotlinlinqexamples.support.Data.getCustomerList
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
+import servicestack.net.kotlinlinqexamples.support.customers
+import servicestack.net.kotlinlinqexamples.support.products
 import java.util.*
 
 class Projections {
@@ -17,8 +17,6 @@ class Projections {
     }
 
     fun linq07() {
-        val products = getProductList()
-
         val productNames = products.map { it.productName }
 
         Log.d("Product Names:")
@@ -56,8 +54,6 @@ class Projections {
     }
 
     fun linq11() {
-        val products = getProductList()
-
         val productInfos = products.map { p -> Triple(p.productName, p.category, p.unitPrice) }
 
         Log.d("Product Info:")
@@ -101,8 +97,6 @@ class Projections {
     }
 
     fun linq15() {
-        val customers = getCustomerList()
-
         val orders = customers.flatMap { c ->
             c.orders.filter { it.total < 500 }
                     .map { o -> Triple(c.customerId, o.orderId, o.total) }
@@ -112,8 +106,6 @@ class Projections {
     }
 
     fun linq16() {
-        val customers = getCustomerList()
-
         val date = Date(98, 0, 1) //= 1998-01-01
         val orders = customers.flatMap { c ->
             c.orders.filter { it.orderDate >= date }
@@ -124,8 +116,6 @@ class Projections {
     }
 
     fun linq17() {
-        val customers = getCustomerList()
-
         val orders = customers.flatMap { c ->
             c.orders.filter { it.total >= 2000 }
                     .map { o -> Triple(c.customerId, o.orderId, o.total) }
@@ -135,8 +125,6 @@ class Projections {
     }
 
     fun linq18() {
-        val customers = getCustomerList()
-
         val cutoffDate = Date(97, 0, 1) //1997-01-01
 
         val orders = customers
@@ -149,8 +137,6 @@ class Projections {
     }
 
     fun linq19() {
-        val customers = getCustomerList()
-
         var custIndex = 0
         val customerOrders = customers.flatMap { c ->
             custIndex++

@@ -1,7 +1,7 @@
 package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
-import servicestack.net.kotlinlinqexamples.support.Data.getCustomerList
+import servicestack.net.kotlinlinqexamples.support.customers
 
 class Partitioning {
 
@@ -15,8 +15,6 @@ class Partitioning {
     }
 
     fun linq21() {
-        val customers = getCustomerList()
-
         val first3WAOrders = customers
             .filter {  it.region == "WA" }
             .flatMap { c ->
@@ -38,8 +36,6 @@ class Partitioning {
     }
 
     fun linq23() {
-        val customers = getCustomerList()
-
         val waOrders = customers
             .filter { it.region == "WA" }
             .flatMap { c ->

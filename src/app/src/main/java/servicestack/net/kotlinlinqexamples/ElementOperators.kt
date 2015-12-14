@@ -1,13 +1,11 @@
 package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
+import servicestack.net.kotlinlinqexamples.support.products
 
 class ElementOperators {
 
     fun linq58() {
-        val products = getProductList()
-
         val product12 = products.filter { it.productId == 12 }.first()
 
         Log.d(product12)
@@ -30,8 +28,6 @@ class ElementOperators {
     }
 
     fun linq62() {
-        val products = getProductList()
-
         val product789 = products.firstOrNull { it.productId == 789 }
 
         Log.d("Product 789 exists: ${product789 != null}")

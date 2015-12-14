@@ -1,8 +1,8 @@
 package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
-import servicestack.net.kotlinlinqexamples.support.Data.getCustomerList
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
+import servicestack.net.kotlinlinqexamples.support.customers
+import servicestack.net.kotlinlinqexamples.support.products
 
 class SetOperators {
 
@@ -16,8 +16,6 @@ class SetOperators {
     }
 
     fun linq47() {
-        val products = getProductList()
-
         val categoryNames = products.map { it.category}.distinct()
 
         Log.d("Category names:")
@@ -35,9 +33,6 @@ class SetOperators {
     }
 
     fun linq49() {
-        val products = getProductList()
-        val customers = getCustomerList()
-
         val productFirstChars = products.map { it.productName[0] }
 
         val customerFirstChars = customers.map { it.companyName[0] }
@@ -59,9 +54,6 @@ class SetOperators {
     }
 
     fun linq51() {
-        val products = getProductList()
-        val customers = getCustomerList()
-
         val productFirstChars = products.map { it.productName[0] }
 
         val customerFirstChars = customers.map { it.companyName[0] }
@@ -83,9 +75,6 @@ class SetOperators {
     }
 
     fun linq53() {
-        val products = getProductList()
-        val customers = getCustomerList()
-
         val productFirstChars = products.map { it.productName[0] }
 
         val customerFirstChars = customers.map { it.companyName[0] }

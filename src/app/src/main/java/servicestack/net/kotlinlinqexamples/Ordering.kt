@@ -2,8 +2,8 @@ package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
 import net.servicestack.func.Func.orderByAll
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
 import servicestack.net.kotlinlinqexamples.support.Product
+import servicestack.net.kotlinlinqexamples.support.products
 import java.util.*
 
 class Ordering {
@@ -27,8 +27,6 @@ class Ordering {
     }
 
     fun linq30() {
-        val products = getProductList()
-
         val sortedProducts = products.sortedBy { it.productName }
 
         sortedProducts.forEach { Log.d(it) }
@@ -52,8 +50,6 @@ class Ordering {
     }
 
     fun linq33() {
-        val products = getProductList()
-
         val sortedProducts = products.sortedByDescending { it.unitsInStock }
 
         sortedProducts.forEach { Log.d(it) }
@@ -85,8 +81,6 @@ class Ordering {
     }
 
     fun linq37() {
-        val products = getProductList()
-
         val sortedProducts = orderByAll(products,
             Comparator<Product> { a, b -> a.category.compareTo(b.category) },
             Comparator<Product> { a, b -> b.unitPrice.compareTo(a.unitPrice) })

@@ -16,8 +16,7 @@ import net.servicestack.client.LogType;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import servicestack.net.kotlinlinqexamples.support.Data;
-
+import servicestack.net.kotlinlinqexamples.support.DataKt;
 
 public class MainActivity extends Activity {
 
@@ -48,7 +47,7 @@ public class MainActivity extends Activity {
 
         sb = new StringBuilder();
         Log.Instance = new StringBuilderLogProvider(sb);
-        Data.init(getResources());
+        DataKt.init(getResources());
 
         Log.i("101 Kotlin LINQ Examples");
         Log.i("======================\n");

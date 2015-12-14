@@ -1,7 +1,9 @@
 package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
-import servicestack.net.kotlinlinqexamples.support.Data.*
+import servicestack.net.kotlinlinqexamples.support.customers
+import servicestack.net.kotlinlinqexamples.support.dateFmt
+import servicestack.net.kotlinlinqexamples.support.products
 
 class Restrictions {
 
@@ -15,8 +17,6 @@ class Restrictions {
     }
 
     fun linq2() {
-        val products = getProductList()
-
         val soldOutProducts = products.filter { it.unitsInStock == 0 }
 
         Log.d("Sold out products:")
@@ -24,8 +24,6 @@ class Restrictions {
     }
 
     fun linq3() {
-        val products = getProductList()
-
         val expensiveInStockProducts = products.filter { it.unitsInStock > 0 && it.unitPrice > 3.00 }
 
         Log.d("In-stock products that cost more than 3.00:")
@@ -33,8 +31,6 @@ class Restrictions {
     }
 
     fun linq4() {
-        val customers = getCustomerList()
-
         val waCustomers = customers.filter { "WA" == it.region }
 
         Log.d("Customers from Washington and their orders:")

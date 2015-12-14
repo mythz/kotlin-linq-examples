@@ -2,8 +2,8 @@ package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
 import net.servicestack.func.Func.groupBy
-import servicestack.net.kotlinlinqexamples.support.Data.getCustomerList
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
+import servicestack.net.kotlinlinqexamples.support.customers
+import servicestack.net.kotlinlinqexamples.support.products
 import java.util.*
 
 class Grouping {
@@ -35,8 +35,6 @@ class Grouping {
     }
 
     fun linq42() {
-        val products = getProductList()
-
         val orderGroups = products.groupBy { it.category }
             .map { Pair(it.key, it) }
 
@@ -48,8 +46,6 @@ class Grouping {
     }
 
     fun linq43() {
-        val customers = getCustomerList()
-
         val customerOrderGroups = customers.map { c ->
             Pair(c.companyName,
                  c.orders.groupBy { it.orderDate.year + 1900 }

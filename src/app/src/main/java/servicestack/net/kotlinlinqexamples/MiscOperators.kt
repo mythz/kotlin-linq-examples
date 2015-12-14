@@ -1,8 +1,8 @@
 package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
-import servicestack.net.kotlinlinqexamples.support.Data.getCustomerList
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
+import servicestack.net.kotlinlinqexamples.support.customers
+import servicestack.net.kotlinlinqexamples.support.products
 import java.util.*
 
 class MiscOperators {
@@ -18,9 +18,6 @@ class MiscOperators {
     }
 
     fun linq95() {
-        val customers = getCustomerList()
-        val products = getProductList()
-
         val customerNames = customers.map { it.companyName }
 
         val productNames = products.map { it.productName }

@@ -1,7 +1,7 @@
 package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
+import servicestack.net.kotlinlinqexamples.support.products
 
 class Quantifiers {
 
@@ -14,8 +14,6 @@ class Quantifiers {
     }
 
     fun linq69() {
-        val products = getProductList()
-
         val productGroups = products
             .groupBy { it.category }
             .filter { it.value.any { it.unitsInStock == 0 } }
@@ -33,8 +31,6 @@ class Quantifiers {
     }
 
     fun linq72() {
-        val products = getProductList()
-
         val productGroups = products
             .groupBy { it.category }
             .filter { it.value.all { it.unitsInStock > 0 } }

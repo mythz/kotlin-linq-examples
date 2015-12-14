@@ -1,8 +1,8 @@
 package servicestack.net.kotlinlinqexamples
 
 import net.servicestack.client.Log
-import servicestack.net.kotlinlinqexamples.support.Data.getCustomerList
-import servicestack.net.kotlinlinqexamples.support.Data.getProductList
+import servicestack.net.kotlinlinqexamples.support.customers
+import servicestack.net.kotlinlinqexamples.support.products
 
 class AggregateOperators {
 
@@ -23,16 +23,12 @@ class AggregateOperators {
     }
 
     fun linq76() {
-        val customers = getCustomerList()
-
         val orderCounts = customers.map { Pair(it.customerId, it.orders.size) }
 
         orderCounts.forEach { Log.d(it) }
     }
 
     fun linq77() {
-        val products = getProductList()
-
         val categoryCounts = products.groupBy { it.category }
             .map { Pair(it.key, it.value.size) }
 
@@ -56,8 +52,6 @@ class AggregateOperators {
     }
 
     fun linq80() {
-        val products = getProductList()
-
         val categories = products.groupBy { it.category }
             .map { Pair(it.key, it.value.sumBy { it.unitsInStock }) }
 
@@ -81,8 +75,6 @@ class AggregateOperators {
     }
 
     fun linq83() {
-        val products = getProductList()
-
         val categories = products.groupBy { it.category }
             .map { Pair(it.key, it.value.minBy { it.unitPrice }?.unitPrice) }
 
@@ -90,8 +82,6 @@ class AggregateOperators {
     }
 
     fun linq84() {
-        val products = getProductList()
-
         val categories = products.groupBy { it.category }
             .map {
                 val minPrice = it.value.minBy { it.unitPrice }!!.unitPrice
@@ -122,8 +112,6 @@ class AggregateOperators {
     }
 
     fun linq87() {
-        val products = getProductList()
-
         val categories = products.groupBy { it.category }
             .map { Pair(it.key, it.value.maxBy { it.unitPrice }?.unitPrice) }
 
@@ -131,8 +119,6 @@ class AggregateOperators {
     }
 
     fun linq88() {
-        val products = getProductList()
-
         val categories = products.groupBy { it.category }
             .map {
                 val maxPrice = it.value.maxBy { p -> p.unitPrice }?.unitPrice
@@ -163,8 +149,6 @@ class AggregateOperators {
     }
 
     fun linq91() {
-        val products = getProductList()
-
         val categories = products.groupBy { it.category }
             .map { Pair(it.key, it.value.map{it.unitPrice }.average() ) }
 
