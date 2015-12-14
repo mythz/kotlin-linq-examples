@@ -1,5 +1,5 @@
-101 C# LINQ Samples in Java
-===========================
+101 C# LINQ Samples in Kotlin
+=============================
 
 Port of the [C# 101 LINQ Samples](http://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b) rewritten into Kotlin.
 Like the [Java LINQ Examples](https://github.com/mythz/java-linq-examples), Kotlin examples are written to be run 
@@ -24,7 +24,7 @@ Each of the LINQ Examples can be run from the included Android App with its resu
 
 ![](https://raw.githubusercontent.com/ServiceStack/Assets/master/img/wikis/kotlin/kotlin-linq-examples.png)
 
-Run the included [Android Studio project](https://github.com/mythz/kotlin-linq-examples/tree/master/src) to execute all the examples. You can also choose to only run specific examples by commenting out any of the sections you're not interested in [MainActivity.java](https://github.com/mythz/kotlin-linq-examples/blob/99f557e2a3a43fecf5e851150b4326e3ef3c4489/src/app/src/main/java/servicestack/net/kotlinlinqexamples/MainActivity.java#L54-L67).
+Run the included [Android Studio project](https://github.com/mythz/kotlin-linq-examples/tree/master/src) to execute all the examples. You can also choose to only run specific examples by commenting out any of the sections you're not interested in [MainActivity.kt](https://github.com/mythz/kotlin-linq-examples/blob/c5cd7a28ffd4efd5d715c6107d9a6076fbb27227/src/app/src/main/java/servicestack/net/kotlinlinqexamples/MainActivity.kt#L41-L54).
 
 A copy of the LINQ examples output is also available in [linq-log.txt](https://raw.githubusercontent.com/mythz/kotlin-linq-examples/master/linq-log.txt).
 
