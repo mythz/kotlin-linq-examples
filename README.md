@@ -239,7 +239,7 @@ fun linq4() {
 
     Log.d("Customers from Washington and their orders:")
     waCustomers.forEach { c ->
-        Log.d("Customer " + c.customerId + " " + c.companyName)
+        Log.d("Customer ${c.customerId} ${c.companyName}")
         c.orders.forEach { Log.d("  Order ${it.orderId}: ${dateFmt(it.orderDate)}") }
     }
 }
@@ -3258,7 +3258,7 @@ fun linq88() {
 
     categories.forEach {
         val (category, mostExpensiveProducts) = it
-        Log.d(category + ": ")
+        Log.d("$category: ")
         mostExpensiveProducts.forEach { Log.d(it) }
     }
 }

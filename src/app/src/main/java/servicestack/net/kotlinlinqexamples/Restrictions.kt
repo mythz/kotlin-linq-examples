@@ -35,7 +35,7 @@ class Restrictions {
 
         Log.d("Customers from Washington and their orders:")
         waCustomers.forEach { c ->
-            Log.d("Customer " + c.customerId + " " + c.companyName)
+            Log.d("Customer ${c.customerId} ${c.companyName}")
             c.orders.forEach { Log.d("  Order ${it.orderId}: ${dateFmt(it.orderDate)}") }
         }
     }

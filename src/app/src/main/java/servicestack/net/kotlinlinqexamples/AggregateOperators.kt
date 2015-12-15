@@ -127,7 +127,7 @@ class AggregateOperators {
 
         categories.forEach {
             val (category, mostExpensiveProducts) = it
-            Log.d(category + ": ")
+            Log.d("$category: ")
             mostExpensiveProducts.forEach { Log.d(it) }
         }
     }
