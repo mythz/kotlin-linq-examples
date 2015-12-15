@@ -14,12 +14,10 @@ Compare Kotlin to other LINQ examples written in:
  - [Dart](https://github.com/mythz/dart-linq-examples)
  - [Elixir](https://github.com/omnibs/elixir-linq-examples)
 
-Comparing Kotlin to its equivalent 
-[Java examples](https://github.com/mythz/java-linq-examples) 
-is particularly illustrative of the power and expressiveness 
-of both languages and their ability for developing native Android Apps where Java is by far the worst 
-language for functional/LINQ-style programming vs Kotlin which is one of the best - requiring less than 
-1/2 the code-base size whilst benefiting from much improved readability and maintainability.
+Comparing against [Java examples](https://github.com/mythz/java-linq-examples) 
+showcases the power and expressiveness of both languages ability for developing native Android Apps 
+where Java 7 is by far the worst language for functional/LINQ-style programming vs Kotlin which is one of 
+the best - resulting in a much more readable and maintainable code-base that's less than 1/2 the size.
 
 ## [Call .NET Web Services from Java](https://github.com/ServiceStack/ServiceStack/wiki/Java-Add-ServiceStack-Reference)
 
