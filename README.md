@@ -1,9 +1,10 @@
 101 C# LINQ Samples in Kotlin
 =============================
 
-Port of the [C# 101 LINQ Samples](http://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b) rewritten into Kotlin.
-Like the [Java LINQ Examples](https://github.com/mythz/java-linq-examples), Kotlin examples are written to be run 
-and display results an Android App courtesy of the [rich support for Kotlin in Android Studio](https://kotlinlang.org/docs/tutorials/kotlin-android.html).
+This project contains the [C# 101 LINQ Samples](http://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b) 
+rewritten to Kotlin. Like the existing [Java LINQ Examples](https://github.com/mythz/java-linq-examples), 
+Kotlin examples run and have their results displayed inside an Android App courtesy of the 
+[rich support for Kotlin in Android Studio](https://kotlinlang.org/docs/tutorials/kotlin-android.html). 
 
 Compare Kotlin to other LINQ examples written in:
 
@@ -12,6 +13,11 @@ Compare Kotlin to other LINQ examples written in:
  - [Clojure](https://github.com/mythz/clojure-linq-examples)
  - [Dart](https://github.com/mythz/dart-linq-examples)
  - [Elixir](https://github.com/omnibs/elixir-linq-examples)
+
+Comparing Kotlin to its equivalent Java examples is particularly illustrative of the power and expressiveness 
+of both languages and their ability for developing native Android Apps where Java is by far the worst 
+language for functional and LINQ-style programming vs Kotlin which is one of the best - requiring less than 
+1/2 the code-base size whilst benefiting from much improved readability and maintainability.
 
 ## [Call .NET Web Services from Java](https://github.com/ServiceStack/ServiceStack/wiki/Java-Add-ServiceStack-Reference)
 
@@ -27,7 +33,6 @@ Each of the LINQ Examples can be run from the included Android App with its resu
 Run the included [Android Studio project](https://github.com/mythz/kotlin-linq-examples/tree/master/src) to execute all the examples. You can also choose to only run specific examples by commenting out any of the sections you're not interested in [MainActivity.kt](https://github.com/mythz/kotlin-linq-examples/blob/c5cd7a28ffd4efd5d715c6107d9a6076fbb27227/src/app/src/main/java/servicestack/net/kotlinlinqexamples/MainActivity.kt#L41-L54).
 
 A copy of the LINQ examples output is also available in [linq-log.txt](https://raw.githubusercontent.com/mythz/kotlin-linq-examples/master/linq-log.txt).
-
 
 ### Contents
 
