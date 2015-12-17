@@ -19,10 +19,10 @@ showcases the power and expressiveness of both languages ability for developing 
 where Java 7 is by far the worst language for functional/LINQ-style programming vs Kotlin which is one of 
 the best - resulting in a much more readable and maintainable code-base that's less than 1/2 the size.
 
-## [Call .NET Web Services from Java](https://github.com/ServiceStack/ServiceStack/wiki/Java-Add-ServiceStack-Reference)
+## [Call .NET Web Services from Kotlin](https://github.com/ServiceStack/ServiceStack/wiki/Kotlin-Add-ServiceStack-Reference)
 
-If you're looking for an effortles typed API for consuming .NET Web Services in pure Java or Android Java Apps checkout ServiceStack's 
-[Java Add ServiceStack Reference](https://github.com/ServiceStack/ServiceStack/wiki/Java-Add-ServiceStack-Reference).
+If you're looking for an effortles typed API for consuming .NET Web Services in pure Kotlin or Android Kotlin Apps checkout ServiceStack's 
+[Kotlin Add ServiceStack Reference](https://github.com/ServiceStack/ServiceStack/wiki/Kotlin-Add-ServiceStack-Reference).
 
 ### Running the examples
 
@@ -66,13 +66,13 @@ To include it in your Android Studio project, add it to your **build.gradle** de
 
     dependencies {
         compile fileTree(dir: 'libs', include: ['*.jar'])
-        compile 'net.servicestack:android:1.0.21'
+        compile 'net.servicestack:android:1.0.22'
     }
 
 Pure Java projects should add the **net.servicestack:client** dependency instead:
 
     dependencies {
-        compile 'net.servicestack:client:1.0.21'
+        compile 'net.servicestack:client:1.0.22'
     }
 
 Alternatively this library is also automatically added when Adding a Typed Remote Service Reference with ServiceStack IDE Plugins for 
