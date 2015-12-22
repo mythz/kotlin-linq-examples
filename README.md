@@ -19,12 +19,21 @@ showcases the power and expressiveness of both languages ability for developing 
 where Java 7 is by far the worst language for functional/LINQ-style programming vs Kotlin which is one of 
 the best - resulting in a much more readable and maintainable code-base that's less than 1/2 the size.
 
-## [Call .NET Web Services from Kotlin](https://github.com/ServiceStack/ServiceStack/wiki/Kotlin-Add-ServiceStack-Reference)
+## Kotlin Android Resources
 
-If you're looking for an effortles typed API for consuming .NET Web Services in pure Kotlin or Android Kotlin Apps checkout ServiceStack's 
+To help getting started with Kotlin, we'll maintain links to useful resources helping to develop Android Apps 
+with Kotlin below:
+
+ - [Getting started with Android and Kotlin](https://kotlinlang.org/docs/tutorials/kotlin-android.html) _(kotlinlang.org)_
+ - [Kotlin for Android Developers](http://www.javaadvent.com/2015/12/kotlin-android.html) _(www.javaadvent.com)_
+ - [Android Development with Kotlin - Jake Wharton](https://www.youtube.com/watch?v=A2LukgT2mKc&feature=youtu.be)
+
+### [Call .NET Web Services from Kotlin](https://github.com/ServiceStack/ServiceStack/wiki/Kotlin-Add-ServiceStack-Reference)
+
+If you're looking to create an effortles typed API for consuming .NET Web Services in JVM or Kotlin Android Apps checkout ServiceStack's 
 [Kotlin Add ServiceStack Reference](https://github.com/ServiceStack/ServiceStack/wiki/Kotlin-Add-ServiceStack-Reference).
 
-### Running the examples
+## Running the examples
 
 Each of the LINQ Examples can be run from the included Android App with its results logged to the screen:
 
