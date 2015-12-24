@@ -24,9 +24,9 @@ the best - resulting in a much more readable and maintainable code-base that's l
 To help getting started with Kotlin, we'll maintain links to useful resources helping to develop Android Apps 
 with Kotlin below:
 
- - [Getting started with Android and Kotlin](https://kotlinlang.org/docs/tutorials/kotlin-android.html) _(kotlinlang.org)_
- - [Kotlin for Android Developers](http://www.javaadvent.com/2015/12/kotlin-android.html) _(www.javaadvent.com)_
- - [Android Development with Kotlin - Jake Wharton](https://www.youtube.com/watch?v=A2LukgT2mKc&feature=youtu.be)
+ - [Getting started with Android and Kotlin](https://kotlinlang.org/docs/tutorials/kotlin-android.html) <small>_(kotlinlang.org)_</small>
+ - [Kotlin for Android Developers](http://www.javaadvent.com/2015/12/kotlin-android.html) <small>_(javaadvent.com)_</small>
+ - [Android Development with Kotlin - Jake Wharton](https://www.youtube.com/watch?v=A2LukgT2mKc&feature=youtu.be) <small>_(youtube.com)_</small>
 
 ### [Call .NET Web Services from Kotlin](https://github.com/ServiceStack/ServiceStack/wiki/Kotlin-Add-ServiceStack-Reference)
 
