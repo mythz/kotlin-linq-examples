@@ -66,8 +66,7 @@ class Projections {
     fun linq12() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        var index = 0
-        val numsInPlace = numbers.map { Pair(it, it == index++) }
+        val numsInPlace = numbers.mapIndexed { index, n -> Pair(n, n == index) }
 
         Log.d("Number: In-place?")
         numsInPlace.forEach { Log.d("${it.first.toString()}: ${it.second}") }
@@ -139,8 +138,7 @@ class Projections {
     fun linq19() {
         var custIndex = 0
         val customerOrders = customers.flatMap { c ->
-            custIndex++
-            c.orders.map { o -> "Customer #${custIndex} has an order with OrderID ${o.orderId}" }
+            c.orders.mapIndexed { index, o -> "Customer #$index has an order with OrderID ${o.orderId}" }
         }
 
         customerOrders.forEach { Log.d(it) }

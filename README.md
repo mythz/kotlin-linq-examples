@@ -75,13 +75,13 @@ To include it in your Android Studio project, add it to your **build.gradle** de
 
     dependencies {
         compile fileTree(dir: 'libs', include: ['*.jar'])
-        compile 'net.servicestack:android:1.0.22'
+        compile 'net.servicestack:android:1.0.24'
     }
 
 Pure Java projects should add the **net.servicestack:client** dependency instead:
 
     dependencies {
-        compile 'net.servicestack:client:1.0.22'
+        compile 'net.servicestack:client:1.0.24'
     }
 
 Alternatively this library is also automatically added when Adding a Typed Remote Service Reference with ServiceStack IDE Plugins for 

@@ -43,8 +43,7 @@ class Restrictions {
     fun linq5() {
         val digits = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 
-        var i = 0
-        val shortDigits = digits.filter { it.length < i++ }
+        val shortDigits = digits.filterIndexed { i, it -> it.length < i }
 
         Log.d("Short digits:")
         shortDigits.forEach { Log.d("The word $it is shorter than its value.") }
