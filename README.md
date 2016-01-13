@@ -286,8 +286,7 @@ public void Linq5()
 fun linq5() {
     val digits = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 
-    var i = 0
-    val shortDigits = digits.filter { it.length < i++ }
+    val shortDigits = digits.filterIndexed { i, it -> it.length < i }
 
     Log.d("Short digits:")
     shortDigits.forEach { Log.d("The word $it is shorter than its value.") }
@@ -567,8 +566,7 @@ public void Linq12()
 fun linq12() {
     val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-    var index = 0
-    val numsInPlace = numbers.map { Pair(it, it == index++) }
+    val numsInPlace = numbers.mapIndexed { index, n -> Pair(n, n == index) }
 
     Log.d("Number: In-place?")
     numsInPlace.forEach { Log.d("${it.first.toString()}: ${it.second}") }
@@ -867,8 +865,7 @@ public void Linq19()
 fun linq19() {
     var custIndex = 0
     val customerOrders = customers.flatMap { c ->
-        custIndex++
-        c.orders.map { o -> "Customer #${custIndex} has an order with OrderID ${o.orderId}" }
+        c.orders.mapIndexed { index, o -> "Customer #$index has an order with OrderID ${o.orderId}" }
     }
 
     customerOrders.forEach { Log.d(it) }
