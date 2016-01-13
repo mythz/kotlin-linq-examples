@@ -2423,10 +2423,10 @@ fun linq56() {
     val scoreRecords = listOf(
         Pair("Alice", 50),
         Pair("Bob", 40),
-        Pair("Cathy", 45))
+        Pair("Cathy", 45)
+    )
 
-    var scoreRecordsDict = HashMap<String,Int>()
-    scoreRecords.forEach { scoreRecordsDict[it.first] = it.second }
+    val scoreRecordsDict = scoreRecords.toMap()
 
     Log.d("Bob's score: ${scoreRecordsDict["Bob"]}")
 }
