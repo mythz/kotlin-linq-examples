@@ -29,7 +29,7 @@ class Partitioning {
     fun linq22() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        val allButFirst4Numbers = numbers.skip(4)
+        val allButFirst4Numbers = numbers.drop(4)
 
         Log.d("All but first 4 numbers:")
         allButFirst4Numbers.forEach { Log.d(it) }
@@ -42,7 +42,7 @@ class Partitioning {
                 c.orders.map { o -> Triple(c.customerId, o.orderId, o.orderDate) }
             }
 
-        val allButFirst2Orders = waOrders.skip(2)
+        val allButFirst2Orders = waOrders.drop(2)
 
         Log.d("All but first 2 orders in WA:")
         allButFirst2Orders.forEach { Log.d(it) }
@@ -70,7 +70,7 @@ class Partitioning {
     fun linq26() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        val allButFirst3Numbers = numbers.skipWhile { it % 3 != 0 }
+        val allButFirst3Numbers = numbers.dropWhile { it % 3 != 0 }
 
         Log.d("All elements starting from first element divisible by 3:")
         allButFirst3Numbers.forEach { Log.d(it) }
@@ -80,7 +80,7 @@ class Partitioning {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
         var index = 0
-        val laterNumbers = numbers.skipWhile { it >= index++ }
+        val laterNumbers = numbers.dropWhile { it >= index++ }
 
         Log.d("All elements starting from first element less than its position:")
         laterNumbers.forEach { Log.d(it) }

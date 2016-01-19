@@ -90,8 +90,8 @@ Alternatively this library is also automatically added when Adding a Typed Remot
 
 ## [Kotlin Extensions](https://github.com/mythz/kotlin-linq-examples/blob/master/src/app/src/main/java/servicestack/net/kotlinlinqexamples/extensions.kt)
 
-Only a [few extensions](https://github.com/mythz/kotlin-linq-examples/blob/master/src/app/src/main/java/servicestack/net/kotlinlinqexamples/extensions.kt) 
-were required to cover Kotlin's missing `skip`, `skipWhile` and `difference` API's. 
+Only a [2 extensions](https://github.com/mythz/kotlin-linq-examples/blob/master/src/app/src/main/java/servicestack/net/kotlinlinqexamples/extensions.kt) 
+were required to cover Kotlin's missing `difference` API. 
 
 ##  Side-by-side - C# LINQ vs Kotlin
 
@@ -987,7 +987,7 @@ public void Linq22()
 fun linq22() {
     val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-    val allButFirst4Numbers = numbers.skip(4)
+    val allButFirst4Numbers = numbers.drop(4)
 
     Log.d("All but first 4 numbers:")
     allButFirst4Numbers.forEach { Log.d(it) }
@@ -1034,7 +1034,7 @@ fun linq23() {
             c.orders.map { o -> Triple(c.customerId, o.orderId, o.orderDate) }
         }
 
-    val allButFirst2Orders = waOrders.skip(2)
+    val allButFirst2Orders = waOrders.drop(2)
 
     Log.d("All but first 2 orders in WA:")
     allButFirst2Orders.forEach { Log.d(it) }
@@ -1151,7 +1151,7 @@ public void Linq26()
 fun linq26() {
     val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-    val allButFirst3Numbers = numbers.skipWhile { it % 3 != 0 }
+    val allButFirst3Numbers = numbers.dropWhile { it % 3 != 0 }
 
     Log.d("All elements starting from first element divisible by 3:")
     allButFirst3Numbers.forEach { Log.d(it) }
@@ -1190,7 +1190,7 @@ fun linq27() {
     val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
     var index = 0
-    val laterNumbers = numbers.skipWhile { it >= index++ }
+    val laterNumbers = numbers.dropWhile { it >= index++ }
 
     Log.d("All elements starting from first element less than its position:")
     laterNumbers.forEach { Log.d(it) }
