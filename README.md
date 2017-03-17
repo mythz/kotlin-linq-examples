@@ -28,10 +28,10 @@ with Kotlin below:
  - [Kotlin for Android Developers](http://www.javaadvent.com/2015/12/kotlin-android.html) <small>_(javaadvent.com)_</small>
  - [Android Development with Kotlin - Jake Wharton](https://www.youtube.com/watch?v=A2LukgT2mKc&feature=youtu.be) <small>_(youtube.com)_</small>
 
-### [Call .NET Web Services from Kotlin](https://github.com/ServiceStack/ServiceStack/wiki/Kotlin-Add-ServiceStack-Reference)
+### [Call .NET Web Services from Kotlin](http://docs.servicestack.net/kotlin-add-servicestack-reference)
 
 If you're looking to create an effortles typed API for consuming .NET Web Services in JVM or Kotlin Android Apps checkout ServiceStack's 
-[Kotlin Add ServiceStack Reference](https://github.com/ServiceStack/ServiceStack/wiki/Kotlin-Add-ServiceStack-Reference).
+[Kotlin Add ServiceStack Reference](http://docs.servicestack.net/kotlin-add-servicestack-reference).
 
 ## Running the examples
 
