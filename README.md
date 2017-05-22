@@ -67,7 +67,7 @@ The samples below mirrors the C# LINQ samples layout with the names of the top-l
 Kotlin has great language and built-in library support to simplify programming in a functional-style where most of the LINQ examples
 are able to use Kotlins built-in utils. Some of the more advanced LINQ examples like JOIN's were missing in Kotlins standard library, for this
 we leverage the existing implementations in
-[ServiceStack's Java and Android Client Library](https://github.com/ServiceStack/ServiceStack/wiki/Java-Add-ServiceStack-Reference): **net.servicestack:android**. 
+[ServiceStack's Java and Android Client Library](http://docs.servicestack.net/java-add-servicestack-reference): **net.servicestack:android**. 
 
 ### Install
 
@@ -85,7 +85,7 @@ Pure Java projects should add the **net.servicestack:client** dependency instead
     }
 
 Alternatively this library is also automatically added when Adding a Typed Remote Service Reference with ServiceStack IDE Plugins for 
-[Intellij IDEA](https://github.com/ServiceStack/ServiceStack/wiki/Java-Add-ServiceStack-Reference#servicestack-idea-android-studio-plugin) and 
+[Intellij IDEA](http://docs.servicestack.net/java-add-servicestack-reference) and 
 [Eclipse Maven projects](https://github.com/ServiceStack/ServiceStack.Java/tree/master/src/ServiceStackEclipse#eclipse-integration-with-servicestack).
 
 ## [Kotlin Extensions](https://github.com/mythz/kotlin-linq-examples/blob/master/src/app/src/main/java/servicestack/net/kotlinlinqexamples/extensions.kt)
