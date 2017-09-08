@@ -13,6 +13,7 @@ Compare Kotlin to other LINQ examples written in:
  - [Clojure](https://github.com/mythz/clojure-linq-examples)
  - [Dart](https://github.com/mythz/dart-linq-examples)
  - [Elixir](https://github.com/omnibs/elixir-linq-examples)
+ - [Templates](http://templates.servicestack.net/linq/restriction-operators)
 
 Comparing against [Java examples](https://github.com/mythz/java-linq-examples) 
 showcases the power and expressiveness of both languages ability for developing native Android Apps 
