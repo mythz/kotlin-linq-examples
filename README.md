@@ -9,6 +9,7 @@ Kotlin examples run and have their results displayed inside an Android App court
 Compare Kotlin to other LINQ examples written in:
 
  - [Java](https://github.com/mythz/java-linq-examples)
+ - [Groovy](https://gitlab.com/svermeulen/groovy-linq-samples)
  - [Swift](https://github.com/mythz/swift-linq-examples)
  - [Clojure](https://github.com/mythz/clojure-linq-examples)
  - [Dart](https://github.com/mythz/dart-linq-examples)
