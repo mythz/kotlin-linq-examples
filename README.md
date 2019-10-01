@@ -15,7 +15,8 @@ Compare Kotlin to other LINQ examples written in:
  - [Dart](https://github.com/mythz/dart-linq-examples)
  - [Elixir](https://github.com/omnibs/elixir-linq-examples)
  - [Python](https://github.com/rogerwcpt/python-linq-samples)
- - [#Script](https://sharpscript.net/linq/restriction-operators)
+ - [#Script code](https://sharpscript.net/linq/restriction-operators?lang=code)
+ - [#Script lisp](https://sharpscript.net/linq/restriction-operators?lang=lisp)
 
 Comparing against [Java examples](https://github.com/mythz/java-linq-examples) 
 showcases the power and expressiveness of both languages ability for developing native Android Apps 
