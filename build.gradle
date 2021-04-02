@@ -2,8 +2,9 @@
 buildscript {
     ext.kotlin_version = '1.4.20'
     repositories {
-        maven { url "http://172.28.2.228:8081/nexus/content/groups/android_public/" }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         google()
         jcenter()
     }
@@ -18,8 +19,9 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url "http://172.28.2.228:8081/nexus/content/groups/android_public/" }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         google()
         jcenter()
         maven {
