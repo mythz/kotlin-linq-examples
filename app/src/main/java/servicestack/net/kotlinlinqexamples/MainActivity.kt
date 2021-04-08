@@ -15,22 +15,23 @@ import java.lang.reflect.InvocationTargetException
 
 class MainActivity : Activity() {
 
-    inner class StringBuilderLogProvider(internal var sb: StringBuilder) : LogProvider(null, true) {
-
+    inner class StringBuilderLogProvider(private var sb: StringBuilder) : LogProvider(null, true) {
         override fun println(type: LogType, message: Any?) {
             sb.append("\n").append(message!!.toString())
         }
     }
 
-    internal var sb: StringBuilder = StringBuilder()
+    private var sb: StringBuilder = StringBuilder()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val bar = actionBar
-        bar?.setDisplayShowHomeEnabled(true)
-        bar?.setLogo(R.drawable.ic_action_android)
-        bar?.setDisplayUseLogoEnabled(true)
+        actionBar?.let {
+            it.setDisplayShowHomeEnabled(true)
+            it.setLogo(R.drawable.ic_action_android)
+            it.setDisplayUseLogoEnabled(true)
+        }
 
         sb = StringBuilder()
         Log.Instance = StringBuilderLogProvider(sb)
@@ -38,47 +39,45 @@ class MainActivity : Activity() {
 
         Log.i("101 Kotlin LINQ Examples")
         Log.i("========================\n")
-        Run(Restrictions())
-        Run(Projections())
-        Run(Partitioning())
-        Run(Ordering())
-        Run(Grouping())
-        Run(SetOperators())
-        Run(Conversion())
-        Run(ElementOperators())
-        Run(GenerationOperators())
-        Run(Quantifiers())
-        Run(AggregateOperators())
-        Run(MiscOperators())
-        Run(QueryExecution())
-        Run(JoinOperators())
+        run(Restrictions())
+        run(Projections())
+        run(Partitioning())
+        run(Ordering())
+        run(Grouping())
+        run(SetOperators())
+        run(Conversion())
+        run(ElementOperators())
+        run(GenerationOperators())
+        run(Quantifiers())
+        run(AggregateOperators())
+        run(MiscOperators())
+        run(QueryExecution())
+        run(JoinOperators())
     }
 
-    internal fun Run(linqExamples: Any) {
+    private fun run(linqExamples: Any) {
         val cls = linqExamples.javaClass
         val methods = cls.methods
         for (method in methods) {
-            if (method.declaringClass != cls || method.parameterTypes.size != 0)
-                continue
+            if (method.declaringClass != cls || method.parameterTypes.isNotEmpty()) continue
 
             Log.i("\n# " + method.name.toUpperCase())
             try {
                 method.invoke(linqExamples)
             } catch (e: IllegalAccessException) {
                 Log.e(e.cause.toString())
-                e.printStackTrace()
             } catch (e: InvocationTargetException) {
                 Log.e(e.cause.toString())
-                e.printStackTrace()
             }
-
         }
 
-        val txtMain = findViewById(R.id.txtMain) as TextView
+        val txtMain = findViewById<TextView>(R.id.txtMain)
         txtMain.text = sb.toString()
 
-        val scrollView = findViewById(R.id.scrollView) as ScrollView
-        scrollView.post { scrollView.fullScroll(View.FOCUS_DOWN) }
+        val scrollView = findViewById<ScrollView>(R.id.scrollView)
+        scrollView.post {
+            scrollView.fullScroll(View.FOCUS_DOWN)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
