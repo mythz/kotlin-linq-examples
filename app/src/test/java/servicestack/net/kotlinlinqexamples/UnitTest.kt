@@ -484,7 +484,7 @@ class UnitTest {
             Log.d("\n# ${it.first}")
             it.second.forEach {
                 Log.d("${it.first}")
-                it.second.entries.forEach{
+                it.second.entries.forEach {
                     Log.d("  ${it.value}")
                 }
             }
@@ -502,7 +502,7 @@ class UnitTest {
     fun linq44() {
         val anagrams = listOf("from   ", " salt", " earn ", "  last   ", " near ", " form  ")
 
-        val orderGroups = Func.groupBy(anagrams,
+        Func.groupBy(anagrams,
                 { w -> w.trim { it <= ' ' } },
                 { a, b ->
                     val aChars = a.toCharArray()
@@ -510,9 +510,8 @@ class UnitTest {
                     Arrays.sort(aChars)
                     Arrays.sort(bChars)
                     Arrays.equals(aChars, bChars)
-                })
-
-        orderGroups.forEach { g ->
+                }
+        ).forEach { g ->
             val sb = StringBuilder()
             g.forEach { w ->
                 if (sb.length > 0)
@@ -527,7 +526,7 @@ class UnitTest {
     fun linq45() {
         val anagrams = listOf("from   ", " salt", " earn ", "  last   ", " near ", " form  ")
 
-        val orderGroups = Func.groupBy(anagrams,
+        Func.groupBy(anagrams,
                 { w -> w.trim { it <= ' ' } },
                 { a, b ->
                     val aChars = a.toCharArray()
@@ -536,9 +535,8 @@ class UnitTest {
                     Arrays.sort(bChars)
                     Arrays.equals(aChars, bChars)
                 },
-                { it.toUpperCase() })
-
-        orderGroups.forEach { g ->
+                { it.toUpperCase() }
+        ).forEach { g ->
             val sb = StringBuilder()
             g.forEach {
                 if (sb.length > 0)
@@ -552,42 +550,37 @@ class UnitTest {
     @Test
     fun linq46() {
         val factorsOf300 = intArrayOf(2, 2, 3, 5, 5)
-
-        val uniqueFactors = factorsOf300.distinct()
-
         Log.d("Prime factors of 300:")
-        uniqueFactors.forEach { Log.d(it) }
+        factorsOf300
+                .distinct()
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq47() {
-        val categoryNames = products.map { it.category }.distinct()
-
         Log.d("Category names:")
-        categoryNames.forEach { Log.d(it) }
+        products.map { it.category }
+                .distinct()
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq48() {
         val numbersA = listOf(0, 2, 4, 5, 6, 8, 9)
         val numbersB = listOf(1, 3, 5, 7, 8)
-
-        val uniqueNumbers = numbersA.union(numbersB)
-
         Log.d("Unique numbers from both arrays:")
-        uniqueNumbers.forEach { Log.d(it) }
+        numbersA.union(numbersB)
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq49() {
-        val productFirstChars = products.map { it.productName[0] }
-
-        val customerFirstChars = customers.map { it.companyName[0] }
-
-        val uniqueFirstChars = productFirstChars.union(customerFirstChars)
-
         Log.d("Unique first letters from Product names and Customer names:")
-        uniqueFirstChars.forEach { Log.d(it) }
+        products.map { it.productName[0] }
+                .union(
+                        customers.map { it.companyName[0] }
+                )
+                .forEach { Log.d(it) }
     }
 
     @Test
@@ -595,45 +588,38 @@ class UnitTest {
         val numbersA = listOf(0, 2, 4, 5, 6, 8, 9)
         val numbersB = listOf(1, 3, 5, 7, 8)
 
-        val commonNumbers = numbersA.intersect(numbersB)
-
         Log.d("Common numbers shared by both arrays:")
-        commonNumbers.forEach { Log.d(it) }
+        numbersA.intersect(numbersB)
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq51() {
-        val productFirstChars = products.map { it.productName[0] }
-
-        val customerFirstChars = customers.map { it.companyName[0] }
-
-        val commonFirstChars = productFirstChars.intersect(customerFirstChars)
-
         Log.d("Common first letters from Product names and Customer names:")
-        commonFirstChars.forEach { Log.d(it) }
+        products.map { it.productName[0] }
+                .intersect(
+                        customers.map { it.companyName[0] }
+                ).forEach { Log.d(it) }
     }
 
     @Test
     fun linq52() {
         val numbersA = listOf(0, 2, 4, 5, 6, 8, 9)
-        val numbersB = listOf(1, 3, 5, 7, 8)
-
-        val aOnlyNumbers = numbersA.difference(numbersB)
+        val numbersB = listOf(1, 3, 5, 7, 8, 10)
 
         Log.d("Numbers in first array but not second array:")
-        aOnlyNumbers.forEach { Log.d(it) }
+        numbersA.difference(numbersB)
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq53() {
-        val productFirstChars = products.map { it.productName[0] }
-
-        val customerFirstChars = customers.map { it.companyName[0] }
-
-        val productOnlyFirstChars = productFirstChars.difference(customerFirstChars)
-
         Log.d("First letters from Product names, but not from Customer names:")
-        productOnlyFirstChars.forEach { Log.d(it) }
+        products.map { it.productName[0] }
+                .difference(
+                        customers.map { it.companyName[0] }
+                )
+                .forEach { Log.d(it) }
     }
 
 
@@ -657,11 +643,10 @@ class UnitTest {
     fun linq55() {
         val words = arrayOf("cherry", "apple", "blueberry")
 
-        val sortedWords = words.sorted()
-        val wordList = sortedWords.toList()
-
         Log.d("The sorted word list:")
-        wordList.forEach { Log.d(it) }
+        words.sorted()
+                .toList()
+                .forEach { Log.d(it) }
     }
 
     @Test
@@ -681,26 +666,24 @@ class UnitTest {
     fun linq57() {
         val numbers = arrayOf(null, 1.0, "two", 3, "four", 5, "six", 7.0)
 
-        val doubles = numbers.filter { it is Double }
-
         Log.d("Numbers stored as doubles:")
-        doubles.forEach { Log.d(it) }
+        numbers.filterIsInstance<Double>()
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq58() {
-        val product12 = products.filter { it.productId == 12 }.first()
-
-        Log.d(product12)
+        products.filter { it.productId == 12 }.first().let { Log.d(it) }
     }
 
     @Test
     fun linq59() {
         val strings = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 
-        val startsWithO = strings.first { it[0] == 'o' }
-
-        Log.d("A string starting with 'o': $startsWithO")
+        strings.first { it[0] == 'o' }
+                .let {
+                    Log.d("A string starting with 'o': $it")
+                }
     }
 
     @Test
@@ -714,51 +697,55 @@ class UnitTest {
 
     @Test
     fun linq62() {
-        val product789 = products.firstOrNull { it.productId == 789 }
-
-        Log.d("Product 789 exists: ${product789 != null}")
+        products.firstOrNull { it.productId == 789 }
+                .let {
+                    Log.d("Product 789 exists: ${it != null}")
+                }
     }
 
     @Test
     fun linq64() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val fourthLowNum = numbers.filter { it > 5 }[1]
-
-        Log.d("Second number > 5: $fourthLowNum")
+        numbers.filter { it > 5 }.let { Log.d("Second number > 5: ${it[1]}") }
     }
 
     @Test
     fun linq65() {
-        val numbers = (100..150).map { n -> Pair(n, if (n % 2 == 1) "odd" else "even") }
-
-        numbers.forEach { Log.d("The number ${it.first} is ${it.second}") }
+        (100..150)
+                .map { n -> Pair(n, if (n % 2 == 1) "odd" else "even") }
+                .forEach { Log.d("The number ${it.first} is ${it.second}") }
     }
 
     @Test
     fun linq66() {
-        val numbers = "7".repeat(10)
-
-        numbers.forEach { Log.d(it) }
+        "7".repeat(10)
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq67() {
-        val words = arrayOf("believe", "relief", "receipt", "field")
-
-        val iAfterE = words.any { it.contains("ei") }
-
-        Log.d("There is a word that contains in the list that contains 'ei': $iAfterE")
+        arrayOf("believe", "relief", "receipt", "field")
+                .any { it.contains("ei") }
+                .let {
+                    Log.d("There is a word that contains in the list that contains 'ei': $it")
+                }
     }
 
     @Test
     fun linq69() {
-        val productGroups = products
-                .groupBy { it.category }
-                .filter { it.value.any { it.unitsInStock == 0 } }
-                .map { Pair(it.key, it) }
-
-        productGroups.forEach { Log.d(it.second) }
+        products
+                .groupBy {
+                    it.category
+                }
+                .filter {
+                    it.value.any {
+                        it.unitsInStock == 0
+                    }
+                }
+                .forEach {
+                    Log.d("\n========================Category is ${it.key} ========================")
+                    Log.d(it.value)
+                }
     }
 
     @Test
