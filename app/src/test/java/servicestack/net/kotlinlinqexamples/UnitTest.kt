@@ -751,120 +751,130 @@ class UnitTest {
     @Test
     fun linq70() {
         val numbers = intArrayOf(1, 11, 3, 19, 41, 65, 19)
-
-        val onlyOdd = numbers.all { it % 2 == 1 }
-
-        Log.d("The list contains only odd numbers: $onlyOdd")
+        numbers.all { it % 2 == 1 }
+                .let {
+                    Log.d("The list contains only odd numbers: $it")
+                }
     }
 
     @Test
     fun linq72() {
-        val productGroups = products
-                .groupBy { it.category }
-                .filter { it.value.all { it.unitsInStock > 0 } }
-                .map { Pair(it.key, it) }
-
-        productGroups.forEach { Log.d(it.second) }
+        products
+                .groupBy {
+                    it.category
+                }
+                .filter {
+                    it.value.all {
+                        it.unitsInStock > 0
+                    }
+                }
+                .forEach {
+                    Log.d(it.value)
+                }
     }
 
     @Test
     fun linq73() {
-        val factorsOf300 = intArrayOf(2, 2, 3, 5, 5)
-
-        val uniqueFactors = factorsOf300.distinct().size
-
-        Log.d("There are $uniqueFactors unique factors of 300.")
+        intArrayOf(2, 2, 3, 5, 5).distinct().size
+                .let {
+                    Log.d("There are $it unique factors")
+                }
     }
 
     @Test
     fun linq74() {
-        val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val oddNumbers = numbers.count { it % 2 == 1 }
-
-        Log.d("There are $oddNumbers odd numbers in the list.")
+        intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
+                .count { it % 2 == 1 }
+                .let {
+                    Log.d("There are $it odd numbers in the list.")
+                }
     }
 
     @Test
     fun linq76() {
-        val orderCounts = customers.map { Pair(it.customerId, it.orders.size) }
-
-        orderCounts.forEach { Log.d(it) }
+        customers.map { Pair(it.customerId, it.orders.size) }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq77() {
-        val categoryCounts = products.groupBy { it.category }
+        products.groupBy { it.category }
                 .map { Pair(it.key, it.value.size) }
-
-        categoryCounts.forEach { Log.d(it) }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq78() {
-        val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val numSum = numbers.sum().toDouble()
-
-        Log.d("The sum of the numbers is $numSum")
+        intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
+                .sum()
+                .toDouble()
+                .let {
+                    Log.d("The sum of the numbers is $it")
+                }
     }
 
     @Test
     fun linq79() {
-        val words = arrayOf("cherry", "apple", "blueberry")
-
-        val totalChars = words.sumBy { it.length }
-
-        Log.d("There are a total of $totalChars characters in these words.")
+        arrayOf("cherry", "apple", "blueberry")
+                .sumBy { it.length }
+                .let {
+                    Log.d("There are a total of $it characters in these words.")
+                }
     }
 
     @Test
     fun linq80() {
-        val categories = products.groupBy { it.category }
-                .map { Pair(it.key, it.value.sumBy { it.unitsInStock }) }
-
-        categories.forEach { Log.d(it) }
+        products.groupBy {
+            it.category
+        }.map {
+            Pair(it.key,
+                    it.value.sumBy {
+                        it.unitsInStock
+                    })
+        }.forEach { Log.d(it) }
     }
 
     @Test
     fun linq81() {
-        val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val minNum = numbers.min()
-
-        Log.d("The minimum number is $minNum")
+        intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
+                .min()
+                .let {
+                    Log.d("The minimum number is $it")
+                }
     }
 
     @Test
     fun linq82() {
-        val words = arrayOf("cherry", "apple", "blueberry")
-
-        val shortestWord = words.minBy { it.length }?.length
-
-        Log.d("The shortest word is $shortestWord characters long.")
+        arrayOf("cherry", "apple", "blueberry")
+                .minByOrNull { it.length }?.length
+                .let {
+                    Log.d("The shortest word is $it characters long.")
+                }
     }
 
     @Test
     fun linq83() {
-        val categories = products.groupBy { it.category }
-                .map { Pair(it.key, it.value.minBy { it.unitPrice }?.unitPrice) }
-
-        categories.forEach { Log.d(it) }
+        products.groupBy { it.category }
+                .map {
+                    Pair(it.key,
+                            it.value.minByOrNull {
+                                it.unitPrice
+                            }?.unitPrice
+                    )
+                }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq84() {
-        val categories = products.groupBy { it.category }
+        products.groupBy { it.category }
                 .map {
-                    val minPrice = it.value.minBy { it.unitPrice }!!.unitPrice
+                    val minPrice = it.value.minByOrNull { it.unitPrice }?.unitPrice
                     Pair(it.key, it.value.filter { p -> p.unitPrice == minPrice })
+                }.forEach { (category, cheapestProducts) ->
+                    Log.d(category + ": ")
+                    cheapestProducts.forEach { Log.d(it) }
                 }
-
-        categories.forEach {
-            val (category, cheapestProducts) = it
-            Log.d(category + ": ")
-            cheapestProducts.forEach { Log.d(it) }
-        }
     }
 
     @Test
