@@ -4,7 +4,6 @@ import com.google.gson.GsonBuilder
 import net.servicestack.client.Log
 import net.servicestack.func.Func
 import org.junit.Before
-import org.junit.BeforeClass
 import org.junit.Test
 import servicestack.net.kotlinlinqexamples.support.*
 import java.io.*
@@ -13,7 +12,7 @@ import java.util.*
 
 class UnitTest {
 
-    internal var _customers: ArrayList<Customer> = ArrayList()
+    private var _customers: ArrayList<Customer> = ArrayList()
 
     val customers: List<Customer> by lazy {
         _customers
@@ -30,12 +29,12 @@ class UnitTest {
     }
 
     fun getStringFromFile(fileName: String?): String {
-        var `in`: BufferedReader? = null
+        var bufferedReader: BufferedReader? = null
         return try {
-            `in` = BufferedReader(InputStreamReader(FileInputStream(File(fileName)), "utf-8"))
+            bufferedReader = BufferedReader(InputStreamReader(FileInputStream(File(fileName)), "utf-8"))
             var line: String?
             val buffer = StringBuilder()
-            while (`in`.readLine().also { line = it } != null) {
+            while (bufferedReader.readLine().also { line = it } != null) {
                 buffer.append(line).append('\n')
             }
             buffer.toString()
@@ -43,10 +42,10 @@ class UnitTest {
             e.printStackTrace()
             ""
         } finally {
-            if (`in` != null) {
+            if (bufferedReader != null) {
                 try {
-                    `in`.close()
-                    `in` = null
+                    bufferedReader.close()
+                    bufferedReader = null
                 } catch (e: IOException) {
                     e.printStackTrace()
                 }
@@ -67,39 +66,36 @@ class UnitTest {
 
     @Test
     fun linq02() {
-        val soldOutProducts = products.filter { it.unitsInStock == 0 }
-
         println("Sold out products:")
-        soldOutProducts.forEach { println("${it.productName} is sold out!") }
+        products.filter { it.unitsInStock == 0 }
+                .forEach { println("[${it.productName}] is sold out!") }
     }
 
     @Test
     fun linq03() {
-        val expensiveInStockProducts = products.filter { it.unitsInStock > 0 && it.unitPrice > 3.00 }
-
         println("In-stock products that cost more than 3.00:")
-        expensiveInStockProducts.forEach { println("${it.productName} is in stock and costs more than 3.00.") }
+        products.filter { it.unitsInStock > 0 && it.unitPrice > 3.00 }
+                .forEach { println("[${it.productName}] is in stock and costs more than 3.00.") }
     }
 
     @Test
     fun linq04() {
-        val waCustomers = customers.filter { "WA" == it.region }
-
         println("Customers from Washington and their orders:")
-        waCustomers.forEach { c ->
-            println("Customer ${c.customerId} ${c.companyName}")
-            c.orders.forEach { println("  Order ${it.orderId}: ${dateFmt(it.orderDate)}") }
-        }
+        customers.filter { "WA" == it.region }
+                .forEach { c ->
+                    println("Customer [${c.customerId}] --> [ ${c.companyName} ]")
+                    c.orders.forEach { println("  Order ${it.orderId}: ${dateFmt(it.orderDate)}") }
+                }
     }
 
     @Test
     fun linq05() {
         val digits = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 
-        val shortDigits = digits.filterIndexed { i, it -> it.length < i }
-
         println("Short digits:")
-        shortDigits.forEach { println("The word $it is shorter than its value.") }
+
+        digits.filterIndexed { index, it -> it.length < index }
+                .forEach { println("The word $it is shorter than its value.") }
     }
 
 
@@ -107,18 +103,17 @@ class UnitTest {
     fun linq06() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        val numsPlusOne = numbers.map { it + 1 }
-
         Log.d("Numbers + 1:")
-        numsPlusOne.forEach { Log.d(it) }
+
+        numbers.map { it + 1 }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq07() {
-        val productNames = products.map { it.productName }
-
         Log.d("Product Names:")
-        productNames.forEach { Log.d(it) }
+        products.map { it.productName }
+                .forEach { Log.d(it) }
     }
 
     @Test
@@ -126,19 +121,20 @@ class UnitTest {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
         val strings = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 
-        val textNums = numbers.map { strings[it] }
-
         Log.d("Number strings:")
-        textNums.forEach { Log.d(it) }
+        numbers.map { strings[it] }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq09() {
         val words = arrayOf("aPPLE", "BlUeBeRrY", "cHeRry")
 
-        val upperLowerWords = words.map { w -> Pair(w.toUpperCase(), w.toLowerCase()) }
-
-        upperLowerWords.forEach { Log.d("Uppercase: ${it.first}, Lowercase: ${it.second}") }
+        words.map { w ->
+            Pair(w.toUpperCase(), w.toLowerCase())
+        }.forEach {
+            Log.d("Uppercase: ${it.first}, Lowercase: ${it.second}")
+        }
     }
 
     @Test
@@ -146,33 +142,31 @@ class UnitTest {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
         val strings = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 
-        val digitOddEvens = numbers.map { Pair(strings[it], it % 2 == 0) }
-
-        digitOddEvens.forEach {
-            val (d, isEven) = it
-            Log.d("The digit $d is ${if (isEven) "even" else "odd"}.")
-        }
+        numbers.map { Pair(strings[it], it % 2 == 0) }
+                .forEach { (digit, isEven) ->
+                    Log.d("The digit ${digit} is ${if (isEven) "even" else "odd"}.")
+                }
     }
 
     @Test
     fun linq11() {
-        val productInfos = products.map { p -> Triple(p.productName, p.category, p.unitPrice) }
-
         Log.d("Product Info:")
-        productInfos.forEach {
-            val (name, category, cost) = it
-            Log.d("$name is in the category $category and costs $cost per unit.")
-        }
+        products.map { p -> Triple(p.productName, p.category, p.unitPrice) }
+                .forEach { (name, category, cost) ->
+                    Log.d("[$name] is in the category [$category] and costs [$cost] per unit.")
+                }
     }
 
     @Test
     fun linq12() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val numsInPlace = numbers.mapIndexed { index, n -> Pair(n, n == index) }
-
         Log.d("Number: In-place?")
-        numsInPlace.forEach { Log.d("${it.first.toString()}: ${it.second}") }
+        numbers
+                .mapIndexed { index, n ->
+                    Pair(n, n == index)
+                }.forEach { (index, inPlace) ->
+                    Log.d("${index}: ${inPlace}")
+                }
     }
 
     @Test
@@ -180,10 +174,10 @@ class UnitTest {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
         val digits = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 
-        val lowNums = numbers.filter { it < 5 }.map { digits[it] }
-
         Log.d("Numbers < 5:")
-        lowNums.forEach { Log.d(it) }
+        numbers.filter { it < 5 }
+                .map { digits[it] }
+                .forEach { Log.d(it) }
     }
 
     @Test
@@ -191,326 +185,317 @@ class UnitTest {
         val numbersA = intArrayOf(0, 2, 4, 5, 6, 8, 9)
         val numbersB = intArrayOf(1, 3, 5, 7, 8)
 
-        val pairs = numbersA.flatMap { a ->
-            numbersB.filter { b -> a < b }
-                    .map { Pair(a, it) }
-        }
-
         Log.d("Pairs where a < b:")
-        pairs.forEach { Log.d("${it.first.toString()} is less than ${it.second}") }
+        numbersA
+                .flatMap { a ->
+                    numbersB
+                            .filter { b ->
+                                a < b
+                            }.map {
+                                Pair(a, it)
+                            }
+                }.forEach {
+                    Log.d("${it.first} is less than ${it.second}")
+                }
     }
 
     @Test
     fun linq15() {
-        val orders = customers.flatMap { c ->
-            c.orders.filter { it.total < 500 }
-                    .map { o -> Triple(c.customerId, o.orderId, o.total) }
-        }
-
-        orders.forEach { Log.d(it) }
+        customers
+                .flatMap { c ->
+                    c.orders
+                            .filter {
+                                it.total < 500
+                            }.map { o ->
+                                Triple(c.customerId, o.orderId, o.total)
+                            }
+                }.forEach {
+                    Log.d(it)
+                }
     }
 
     @Test
     fun linq16() {
-        val date = Date(98, 0, 1) //= 1998-01-01
-        val orders = customers.flatMap { c ->
-            c.orders.filter { it.orderDate >= date }
-                    .map { o -> Triple(c.customerId, o.orderId, o.orderDate) }
-        }
-
-        orders.forEach { Log.d(it) }
+        val date = Date(98, 3, 10) //= 1998-04-10
+        customers
+                .flatMap { c ->
+                    c.orders
+                            .filter {
+                                it.orderDate >= date
+                            }.map {
+                                Triple(c.customerId, it.orderId, it.orderDate)
+                            }
+                }.forEach { Log.d(it) }
     }
 
     @Test
     fun linq17() {
-        val orders = customers.flatMap { c ->
-            c.orders.filter { it.total >= 2000 }
-                    .map { o -> Triple(c.customerId, o.orderId, o.total) }
-        }
-
-        orders.forEach { Log.d(it) }
+        customers
+                .flatMap { c ->
+                    c.orders
+                            .filter {
+                                it.total >= 2000
+                            }.map {
+                                Triple(c.customerId, it.orderId, it.total)
+                            }
+                }.forEach { Log.d(it) }
     }
 
     @Test
     fun linq18() {
         val cutoffDate = Date(97, 0, 1) //1997-01-01
-
-        val orders = customers
-                .filter { it.region == "WA" }.flatMap { c ->
-                    c.orders.filter { it.orderDate > cutoffDate }
-                            .map { o -> Pair(c.customerId, o.orderId) }
-                }
-
-        orders.forEach { Log.d(it) }
+        customers
+                .filter { it.region == "WA" }
+                .flatMap { c ->
+                    c.orders.filter {
+                        it.orderDate > cutoffDate
+                    }.map {
+                        Pair(c.customerId, it.orderId)
+                    }
+                }.forEach { Log.d(it) }
     }
 
     @Test
     fun linq19() {
-        var custIndex = 0
-        val customerOrders = customers.flatMap { c ->
-            c.orders.mapIndexed { index, o -> "Customer #$index has an order with OrderID ${o.orderId}" }
-        }
-
-        customerOrders.forEach { Log.d(it) }
+        customers
+                .flatMap { c ->
+                    c.orders.mapIndexed { index, o -> "Customer[${c.customerId}] has an order ,index = #$index and  OrderID ${o.orderId}" }
+                }.forEach { Log.d(it) }
     }
 
     @Test
     fun linq20() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        val first3Numbers = numbers.take(3)
-
         Log.d("First 3 numbers:")
-        first3Numbers.forEach { Log.d(it) }
+        numbers.take(3).forEach { Log.d(it) }
     }
 
     @Test
     fun linq21() {
-        val first3WAOrders = customers
+        Log.d("First 3 orders in WA:")
+        customers
                 .filter { it.region == "WA" }
                 .flatMap { c ->
                     c.orders.map { o -> Triple(c.customerId, o.orderId, o.orderDate) }
                 }
                 .take(3)
-
-        Log.d("First 3 orders in WA:")
-        first3WAOrders.forEach { Log.d(it) }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq22() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val allButFirst4Numbers = numbers.drop(4)
-
         Log.d("All but first 4 numbers:")
-        allButFirst4Numbers.forEach { Log.d(it) }
+        numbers.drop(4).forEach { Log.d(it) }
     }
 
     @Test
     fun linq23() {
-        val waOrders = customers
+        Log.d("All but first 2 orders in WA:")
+        customers
                 .filter { it.region == "WA" }
                 .flatMap { c ->
                     c.orders.map { o -> Triple(c.customerId, o.orderId, o.orderDate) }
                 }
-
-        val allButFirst2Orders = waOrders.drop(2)
-
-        Log.d("All but first 2 orders in WA:")
-        allButFirst2Orders.forEach { Log.d(it) }
+                .drop(2)
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq24() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        val firstNumbersLessThan6 = numbers.takeWhile { it < 6 }
-
         Log.d("First numbers less than 6:")
-        firstNumbersLessThan6.forEach { Log.d(it) }
+        numbers.takeWhile { it < 6 }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq25() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        var index = 0
-        val firstSmallNumbers = numbers.takeWhile { it >= index++ }
-
         Log.d("First numbers not less than their position:")
-        firstSmallNumbers.forEach { Log.d(it) }
+        var index = 0
+        numbers.takeWhile { it >= index++ }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq26() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
 
-        val allButFirst3Numbers = numbers.dropWhile { it % 3 != 0 }
-
         Log.d("All elements starting from first element divisible by 3:")
-        allButFirst3Numbers.forEach { Log.d(it) }
+
+        numbers.dropWhile { it % 3 != 0 }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq27() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        var index = 0
-        val laterNumbers = numbers.dropWhile { it >= index++ }
-
         Log.d("All elements starting from first element less than its position:")
-        laterNumbers.forEach { Log.d(it) }
+        var index = 0
+        numbers.dropWhile { it >= index++ }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq28() {
         val words = arrayOf("cherry", "apple", "blueberry")
-
-        val sortedWords = words.sorted()
-
         Log.d("The sorted list of words:")
-        sortedWords.forEach { Log.d(it) }
+        words.sorted()
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq29() {
         val words = arrayOf("cherry", "apple", "blueberry")
-
-        val sortedWords = words.sortedBy { s -> s.length }
-
         Log.d("The sorted list of words (by length):")
-        sortedWords.forEach { Log.d(it) }
+        words.sortedBy { it.length }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq30() {
-        val sortedProducts = products.sortedBy { it.productName }
-
-        sortedProducts.forEach { Log.d(it) }
+        products.sortedBy { it.productName }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq31() {
         val words = arrayOf("aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry")
-
-        val sortedWords = words.sortedWith(String.CASE_INSENSITIVE_ORDER)
-
-        sortedWords.forEach { Log.d(it) }
+        words.sortedWith(String.CASE_INSENSITIVE_ORDER)
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq32() {
         val doubles = doubleArrayOf(1.7, 2.3, 1.9, 4.1, 2.9)
-
-        val sortedDoubles = doubles.sortedDescending()
-
         Log.d("The doubles from highest to lowest:")
-        sortedDoubles.forEach { Log.d(it) }
+        doubles.sortedDescending()
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq33() {
-        val sortedProducts = products.sortedByDescending { it.unitsInStock }
-
-        sortedProducts.forEach { Log.d(it) }
+        products.sortedByDescending { it.unitsInStock }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq34() {
         val words = arrayOf("aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry")
-
-        val sortedWords = words.sortedWith(String.CASE_INSENSITIVE_ORDER).reversed()
-
-        sortedWords.forEach { Log.d(it) }
+        words.sortedWith(String.CASE_INSENSITIVE_ORDER)
+                .reversed()
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq35() {
         val digits = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
-
-        val sortedDigits = digits.sorted().sortedBy { it.length }
-
         Log.d("Sorted digits:")
-        sortedDigits.forEach { Log.d(it) }
+        digits.sorted()
+                .sortedBy { it.length }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq36() {
-        val words = arrayOf("aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry")
-
-        val sortedWords = words.sortedWith(String.CASE_INSENSITIVE_ORDER).sortedBy { it.length }
-
-        sortedWords.forEach { Log.d(it) }
+        val words = arrayOf("aPPLE", "AbAcUs", "AbAcUssdsadds", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry")
+        words.sortedWith(String.CASE_INSENSITIVE_ORDER)
+                .sortedBy { it.length }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq37() {
-        val sortedProducts = Func.orderByAll(products,
-                Comparator<Product> { a, b -> a.category.compareTo(b.category) },
-                Comparator<Product> { a, b -> b.unitPrice.compareTo(a.unitPrice) })
-
-        sortedProducts.forEach { Log.d(it) }
+        Func.orderByAll(products,
+                Comparator { a, b -> a.category.compareTo(b.category) },
+                Comparator { a, b -> b.unitPrice.compareTo(a.unitPrice) }
+        ).forEach { Log.d(it) }
     }
 
     @Test
     fun linq38() {
         val words = arrayOf("aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry")
 
-        val sortedWords = Func.orderByAll(words,
-                Comparator<String> { a, b -> Integer.compare(a.length, b.length) },
-                Comparator<String> { a, b -> String.CASE_INSENSITIVE_ORDER.compare(b, a) })
-
-        sortedWords.forEach { Log.d(it) }
+        Func.orderByAll(words,
+                Comparator { a, b -> a.length.compareTo(b.length) },
+                Comparator { a, b -> String.CASE_INSENSITIVE_ORDER.compare(b, a) }
+        ).forEach { Log.d(it) }
     }
 
     @Test
     fun linq39() {
         val digits = arrayOf("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
 
-        val reversedIDigits = digits.filter { it[1] == 'i' }.reversed()
-
         Log.d("A backwards list of the digits with a second character of 'i':")
-        reversedIDigits.forEach { Log.d(it) }
+        digits.filter { it[1] == 'i' }
+                .reversed()
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq40() {
         val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val numberGroups = numbers.groupBy { it % 5 }
-                .map { Pair(it.key, it) }
-
-        numberGroups.forEach { it ->
-            val (remainder, g) = it
-            Log.d("Numbers with a remainder of $remainder when divided by 5:")
-            g.value.forEach { Log.d(it) }
-        }
+        numbers.groupBy { it % 5 }
+                .entries
+                .forEach { (conditions, list) ->
+                    Log.d("Numbers with a conditions of [${conditions}] when divided by 5:")
+                    list.forEach { Log.d(it) }
+                }
     }
 
     @Test
     fun linq41() {
         val words = arrayOf("blueberry", "chimpanzee", "abacus", "banana", "apple", "cheese")
-
-        val wordGroups = words.groupBy { it[0] }
-                .map { Pair(it.key, it) }
-
-        wordGroups.forEach {
-            val (firstLetter, g) = it
-            Log.d("Words that start with the letter '$firstLetter':")
-            g.value.forEach { Log.d(it) }
-        }
+        words.groupBy { word -> word[0] }
+                .entries
+                .forEach { (firstLetter, g) ->
+                    Log.d("Words that start with the letter '$firstLetter':")
+                    g.forEach { Log.d(it) }
+                }
     }
 
     @Test
     fun linq42() {
-        val orderGroups = products.groupBy { it.category }
-                .map { Pair(it.key, it) }
-
-        orderGroups.forEach {
-            val (category, g) = it
-            Log.d("${category}:")
-            g.value.forEach { Log.d(it) }
-        }
+        products.groupBy { it.category }
+                .entries
+                .forEach { (category, g) ->
+                    Log.d("${category}:")
+                    g.forEach { Log.d(it) }
+                }
     }
 
     @Test
     fun linq43() {
-        val customerOrderGroups = customers.map { c ->
+        customers.map { c ->
             Pair(c.companyName,
+                    // 按年分组
                     c.orders.groupBy { it.orderDate.year + 1900 }
-                            .map { Pair(it.key, it.value.groupBy { it.orderDate.month + 1 }) })
-        }
-
-        customerOrderGroups.forEach {
-            val (companyName, yearGroups) = it
-            Log.d("\n# $companyName")
-            yearGroups.forEach {
-                val (year, monthGroups) = it
-                Log.d("${year.toString()}: ")
-                monthGroups.forEach { Log.d("    $it") }
+                            .map {
+                                Pair(it.key,
+                                        // 按月分组
+                                        it.value.groupBy { it.orderDate.month + 1 }
+                                )
+                            })
+        }.forEach {
+            Log.d("\n# ${it.first}")
+            it.second.forEach {
+                Log.d("${it.first}")
+                it.second.entries.forEach{
+                    Log.d("  ${it.value}")
+                }
             }
         }
+//       .forEach { (companyName, yearGroups) ->
+//            Log.d("\n# $companyName")
+//            yearGroups.forEach { (year, monthGroups) ->
+//                Log.d("${year}: ")
+//                monthGroups.forEach { Log.d("    $it") }
+//            }
+//        }
     }
 
     @Test
