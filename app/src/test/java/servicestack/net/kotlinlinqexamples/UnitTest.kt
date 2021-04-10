@@ -872,100 +872,95 @@ class UnitTest {
                     val minPrice = it.value.minByOrNull { it.unitPrice }?.unitPrice
                     Pair(it.key, it.value.filter { p -> p.unitPrice == minPrice })
                 }.forEach { (category, cheapestProducts) ->
-                    Log.d(category + ": ")
+                    Log.d("$category: ")
                     cheapestProducts.forEach { Log.d(it) }
                 }
     }
 
     @Test
     fun linq85() {
-        val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val maxNum = numbers.max()
-
-        Log.d("The maximum number is $maxNum")
+        intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
+                .max()
+                .let {
+                    Log.d("The maximum number is $it")
+                }
     }
 
     @Test
     fun linq86() {
-        val words = arrayOf("cherry", "apple", "blueberry")
-
-        val longestLength = words.maxBy { it.length }?.length
-
-        Log.d("The longest word is $longestLength characters long.")
+        arrayOf("cherry", "apple", "blueberry")
+                .maxByOrNull { it.length }?.length
+                .let {
+                    Log.d("The longest word is $it characters long.")
+                }
     }
 
     @Test
     fun linq87() {
-        val categories = products.groupBy { it.category }
-                .map { Pair(it.key, it.value.maxBy { it.unitPrice }?.unitPrice) }
-
-        categories.forEach { Log.d(it) }
+        products.groupBy { it.category }
+                .map { Pair(it.key, it.value.maxByOrNull { it.unitPrice }?.unitPrice) }
+                .forEach { Log.d(it) }
     }
 
     @Test
     fun linq88() {
-        val categories = products.groupBy { it.category }
+        products.groupBy { it.category }
                 .map {
-                    val maxPrice = it.value.maxBy { p -> p.unitPrice }?.unitPrice
+                    val maxPrice = it.value.maxByOrNull { p -> p.unitPrice }?.unitPrice
                     Pair(it.key, it.value.filter { p -> p.unitPrice == maxPrice })
+                }.forEach { (category, mostExpensiveProducts) ->
+                    Log.d("$category: ")
+                    mostExpensiveProducts.forEach { Log.d(it) }
                 }
-
-        categories.forEach {
-            val (category, mostExpensiveProducts) = it
-            Log.d("$category: ")
-            mostExpensiveProducts.forEach { Log.d(it) }
-        }
     }
 
     @Test
     fun linq89() {
-        val numbers = intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
-
-        val averageNum = numbers.average()
-
-        Log.d("The average number is $averageNum")
+        intArrayOf(5, 4, 1, 3, 9, 8, 6, 7, 2, 0)
+                .average()
+                .let {
+                    Log.d("The average number is $it")
+                }
     }
 
     @Test
     fun linq90() {
-        val words = arrayOf("cherry", "apple", "blueberry")
-
-        val averageLength = words.map { it.length }.average()
-
-        Log.d("The average word length is $averageLength characters.")
+        arrayOf("cherry", "apple", "blueberry")
+                .map { it.length }
+                .average()
+                .let {
+                    Log.d("The average word length is $it characters.")
+                }
     }
 
     @Test
     fun linq91() {
-        val categories = products.groupBy { it.category }
+        products.groupBy { it.category }
                 .map { Pair(it.key, it.value.map { it.unitPrice }.average()) }
-
-        categories.forEach { Log.d("Category: ${it.first}, AveragePrice: ${it.second}") }
+                .forEach { Log.d("Category: ${it.first}, AveragePrice: ${it.second}") }
     }
 
     @Test
     fun linq92() {
-        val doubles = doubleArrayOf(1.7, 2.3, 1.9, 4.1, 2.9)
-
-        val product = doubles.reduce { runningProduct, nextFactor -> runningProduct * nextFactor }
-
-        Log.d("Total product of all numbers: $product")
+        doubleArrayOf(1.7, 2.3, 1.9, 4.1, 2.9)
+                .reduce { runningProduct, nextFactor -> runningProduct * nextFactor }
+                .let {
+                    Log.d("Total product of all numbers: $it")
+                }
     }
 
     @Test
     fun linq93() {
         val startBalance = 100
-
-        val attemptedWithdrawals = intArrayOf(20, 10, 40, 50, 10, 70, 30)
-
         var i = 0
-        val endBalance = attemptedWithdrawals.reduce { acc, nextWithdrawal ->
-            val balance = if (i++ == 0 && nextWithdrawal <= acc) startBalance - acc else acc
-            if (nextWithdrawal <= balance) balance - nextWithdrawal else balance
-        }
-
-        Log.d("Ending balance: $endBalance")
+        intArrayOf(20, 10, 40, 50, 10, 70, 30)
+                .reduce { acc, nextWithdrawal ->
+                    val balance = if (i++ == 0 && nextWithdrawal <= acc) startBalance - acc else acc
+                    if (nextWithdrawal <= balance) balance - nextWithdrawal else balance
+                }
+                .let {
+                    Log.d("Ending balance: $it")
+                }
     }
 
     @Test
@@ -1055,48 +1050,42 @@ class UnitTest {
     @Test
     fun linq102() {
         val categories = listOf("Beverages", "Condiments", "Vegetables", "Dairy Products", "Seafood")
-
-        val q = Func.join(categories, products) { c, p -> c == p.category }
+        Func.join(categories, products) { c, p -> c == p.category }
                 .map { Pair(it.A, it.B.productName) }
-
-        q.forEach { Log.d("${it.first}: ${it.second}") }
+                .forEach { Log.d("${it.first}: ${it.second}") }
     }
 
     @Test
     fun linq103() {
         val categories = listOf("Beverages", "Condiments", "Vegetables", "Dairy Products", "Seafood")
 
-        val q = Func.joinGroup(categories, products) { c, p -> c == p.category }
+        Func.joinGroup(categories, products) { c, p -> c == p.category }
                 .map { Pair(it.key, it.items.map { it.B }) }
-
-        q.forEach {
-            Log.d("${it.first}:")
-            it.second.forEach { p -> Log.d("   ${p.productName}") }
-        }
+                .forEach {
+                    Log.d("${it.first}:")
+                    it.second.forEach { p -> Log.d("   ${p.productName}") }
+                }
     }
 
     @Test
     fun linq104() {
         val categories = listOf("Beverages", "Condiments", "Vegetables", "Dairy Products", "Seafood")
 
-        val q = Func.joinGroup(categories, products) { c, p -> c == p.category }
+        Func.joinGroup(categories, products) { c, p -> c == p.category }
                 .flatMap { j -> j.items.map { it.B }.map { Pair(j.key, it.productName) } }
-
-        q.forEach { Log.d("${it.second}: ${it.first}") }
+                .forEach { Log.d("${it.second}: ${it.first}") }
     }
 
     @Test
     fun linq105() {
         val categories = listOf("Beverages", "Condiments", "Vegetables", "Dairy Products", "Seafood")
 
-        val q = categories.flatMap { c ->
+        categories.flatMap { c ->
             val catProducts = products.filter { c == it.category }
             if (catProducts.isEmpty())
                 listOf(Pair(c, "(No products)"))
             else
                 catProducts.map { Pair(c, it.productName) }
-        }
-
-        q.forEach { Log.d("${it.second}: ${it.first}") }
+        }.forEach { Log.d("${it.second}: ${it.first}") }
     }
 }
