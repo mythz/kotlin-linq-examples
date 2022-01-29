@@ -2972,7 +2972,7 @@ public void Linq79()
 fun linq79() {
     val words = arrayOf("cherry", "apple", "blueberry")
 
-    val totalChars = words.sumBy { it.length }
+    val totalChars = words.sumOf { it.length }
 
     Log.d("There are a total of $totalChars characters in these words.")
 }
@@ -3000,7 +3000,7 @@ public void Linq80()
 //kotlin
 fun linq80() {
     val categories = products.groupBy { it.category }
-        .map { Pair(it.key, it.value.sumBy { it.unitsInStock }) }
+        .map { Pair(it.key, it.value.sumOf { it.unitsInStock }) }
 
     categories.forEach { Log.d(it) }
 }
